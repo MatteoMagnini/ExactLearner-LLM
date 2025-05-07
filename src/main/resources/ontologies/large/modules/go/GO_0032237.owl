@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/doid.owlhttp://purl.obolibrary.org/obo/GO_0032237.owl#"
+     xml:base="http://purl.obolibrary.org/obo/doid.owlhttp://purl.obolibrary.org/obo/GO_0032237.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/doid.owlhttp://purl.obolibrary.org/obo/GO_0032237.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010959 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010959">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of metal ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043269"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0022898 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0022898">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of transmembrane transporter activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032409"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034762"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032237">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">activation of store-operated calcium channel activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901341"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032409">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of transporter activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0065009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032411 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032411">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of transporter activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032409"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044093"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032412 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032412">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of monoatomic ion transmembrane transporter activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0022898"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034765"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032414 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032414">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of ion transmembrane transporter activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032411"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032412"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034767"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032879 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032879">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of localization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0034762 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0034762">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0034764 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0034764">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034762"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048522"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0034765 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0034765">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of monoatomic ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034762"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043269"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0034767 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0034767">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of monoatomic ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034764"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034765"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043270"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043269">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of monoatomic ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043270">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of monoatomic ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043269"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044093">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of molecular function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0065009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048518">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of biological process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048522">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of cellular process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050789 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050789">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of biological process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0065007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050794 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050794">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of cellular process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051049">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032879"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051924 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051924">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of calcium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010959"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051928 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051928">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of calcium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043270"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051924"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0065007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0065007">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological regulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0065009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0065009">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of molecular function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0065007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901019">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of calcium ion transmembrane transporter activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032412"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1903169"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901021">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of calcium ion transmembrane transporter activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032414"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1904427"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901339">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of store-operated calcium channel activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_2001257"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901341">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of store-operated calcium channel activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901339"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_2001259"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1903169">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of calcium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051924"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1904062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1904062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904062">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of monoatomic cation transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034765"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1904064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904064">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of cation transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034767"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1904062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1904427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904427">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of calcium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051928"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1903169"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1904064"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_2001257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_2001257">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of cation channel activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032412"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1904062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_2001259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_2001259">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of cation channel activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032414"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1904064"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_2001257"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
+

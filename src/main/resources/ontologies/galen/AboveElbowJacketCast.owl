@@ -1,0 +1,270 @@
+<rdf:RDF xmlns:ns1="http://www.w3.org/2002/07/owl#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns3="http://data.bioontology.org/metadata/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlAboveElbowJacketCast.owl">
+	<ns1:Ontology rdf:about="/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlAboveElbowJacketCast.owl" />
+	<ns1:AnnotationProperty rdf:about="http://data.bioontology.org/metadata/prefixIRI" />
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#Attribute">
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseAttribute" />
+		<ns2:label>Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#ConstructiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute" />
+		<ns2:label>Constructive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#DomainAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#Attribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns2:label>Domain Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseAttribute">
+		<ns2:label>Inverse Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns2:label>Inverse Constructive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseAttribute" />
+		<ns2:label>Inverse Domain Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseModifierAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierAttribute" />
+		<ns2:label>Inverse Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseModifierAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns2:label>Inverse Status Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#ModifierAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainAttribute" />
+		<ns2:label>Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#StatusAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierAttribute" />
+		<ns2:label>Status Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasCountability">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isCountabilityOf" />
+		<ns2:label>has Countability</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasPhysicalMeans">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ConstructiveAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isPhysicalMeansOf" />
+		<ns2:label>has Physical Means</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isCountabilityOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute" />
+		<ns2:label>is Countability Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isPhysicalMeansOf">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute" />
+		<ns2:label>is Physical Means Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#AboveElbowJacketCast">
+		<ns2:label>Above Elbow Jacket Cast</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#UpperLimbJacketCast" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AboveElbowJacketCast</ns3:prefixIRI>
+		<ns2:label>Above Elbow Jacket Cast</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Aspect">
+		<ns2:label>Aspect</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierConcept" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect</ns3:prefixIRI>
+		<ns2:label>Aspect</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Cast">
+		<ns2:label>Cast</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#ImmobilisingDevice" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cast</ns3:prefixIRI>
+		<ns2:label>Cast</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#CountabilityStatus">
+		<ns2:label>Countability Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CountabilityStatus</ns3:prefixIRI>
+		<ns2:label>Countability Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Device">
+		<ns2:label>Device</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#InertSolidStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Device</ns3:prefixIRI>
+		<ns2:label>Device</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#DiscreteStructure">
+		<ns2:label>Discrete Structure</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasCountability" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#discrete" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiscreteStructure</ns3:prefixIRI>
+		<ns2:label>Discrete Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#DomainCategory">
+		<ns2:label>Domain Category</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#TopCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DomainCategory</ns3:prefixIRI>
+		<ns2:label>Domain Category</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#FasteningDevice">
+		<ns2:label>Fastening Device</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#Device" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isPhysicalMeansOf" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#SolidFasteningProcess" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Device" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FasteningDevice</ns3:prefixIRI>
+		<ns2:label>Fastening Device</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess">
+		<ns2:label>Freeing Or Fixing Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GenericProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FreeingOrFixingProcess</ns3:prefixIRI>
+		<ns2:label>Freeing Or Fixing Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedProcess">
+		<ns2:label>Generalised Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralisedProcess</ns3:prefixIRI>
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: Process</ns2:comment>
+		<ns2:label>Generalised Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedStructure">
+		<ns2:label>Generalised Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralisedStructure</ns3:prefixIRI>
+		<ns2:label>Generalised Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#GenericProcess">
+		<ns2:label>Generic Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GenericProcess</ns3:prefixIRI>
+		<ns2:label>Generic Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ImmobilisingDevice">
+		<ns2:label>Immobilising Device</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#Device" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isPhysicalMeansOf" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#Immobilizing" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Device" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ImmobilisingDevice</ns3:prefixIRI>
+		<ns2:label>Immobilising Device</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Immobilizing">
+		<ns2:label>Immobilizing</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SolidFasteningProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immobilizing</ns3:prefixIRI>
+		<ns2:label>Immobilizing</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#InertSolidStructure">
+		<ns2:label>Inert Solid Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SolidStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InertSolidStructure</ns3:prefixIRI>
+		<ns2:label>Inert Solid Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#JacketCast">
+		<ns2:label>Jacket Cast</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Cast" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JacketCast</ns3:prefixIRI>
+		<ns2:label>Jacket Cast</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ModifierConcept">
+		<ns2:label>Modifier Concept</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModifierConcept</ns3:prefixIRI>
+		<ns2:label>Modifier Concept</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Phenomenon">
+		<ns2:label>Phenomenon</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenomenon</ns3:prefixIRI>
+		<ns2:label>Phenomenon</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PhysicalStructure">
+		<ns2:label>Physical Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasCountability" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#discrete" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhysicalStructure</ns3:prefixIRI>
+		<ns2:label>Physical Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SolidFasteningProcess">
+		<ns2:label>Solid Fastening Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SolidFasteningProcess</ns3:prefixIRI>
+		<ns2:label>Solid Fastening Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SolidStructure">
+		<ns2:label>Solid Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#PhysicalStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SolidStructure</ns3:prefixIRI>
+		<ns2:label>Solid Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Status">
+		<ns2:label>Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Aspect" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Status</ns3:prefixIRI>
+		<ns2:label>Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#StructuralStatus">
+		<ns2:label>Structural Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Status" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StructuralStatus</ns3:prefixIRI>
+		<ns2:label>Structural Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure">
+		<ns2:label>Substance Or Physical Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SubstanceOrPhysicalStructure</ns3:prefixIRI>
+		<ns2:label>Substance Or Physical Structure</ns2:label>
+	</ns1:Class>
+	<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#TopCategory">
+		<ns2:label>Top Category</ns2:label>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TopCategory</ns3:prefixIRI>
+	</rdf:Description>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#UpperLimbJacketCast">
+		<ns2:label>Upper Limb Jacket Cast</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#JacketCast" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UpperLimbJacketCast</ns3:prefixIRI>
+		<ns2:label>Upper Limb Jacket Cast</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#discrete">
+		<ns2:label>discrete</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#CountabilityStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discrete</ns3:prefixIRI>
+		<ns2:label>discrete</ns2:label>
+	</ns1:Class>
+</rdf:RDF>

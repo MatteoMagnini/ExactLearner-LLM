@@ -1,0 +1,517 @@
+<rdf:RDF xmlns:ns1="http://www.w3.org/2002/07/owl#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns3="http://data.bioontology.org/metadata/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlFormicoidea.owl">
+	<ns1:Ontology rdf:about="/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlFormicoidea.owl" />
+	<ns1:AnnotationProperty rdf:about="http://data.bioontology.org/metadata/prefixIRI" />
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#Attribute">
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseAttribute" />
+		<ns2:label>Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#ConstructiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute" />
+		<ns2:label>Constructive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#DomainAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#Attribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns2:label>Domain Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#FunctionalAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ConstructiveAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseFunctionalAttribute" />
+		<ns2:label>Functional Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseAttribute">
+		<ns2:label>Inverse Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns2:label>Inverse Constructive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseAttribute" />
+		<ns2:label>Inverse Domain Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseFunctionalAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute" />
+		<ns2:label>Inverse Functional Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#LocativeAttribute" />
+		<ns2:label>Inverse Locative Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseModifierAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierAttribute" />
+		<ns2:label>Inverse Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseProcessLocativeAttribute">
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#ProcessLocativeAttribute" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo" />
+		<ns2:label>Inverse Process Locative Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseModifierAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns2:label>Inverse Status Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#LocativeAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: affects</ns2:comment>
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: involves</ns2:comment>
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ConstructiveAttribute" />
+		<ns2:label>Locative Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#ModifierAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainAttribute" />
+		<ns2:label>Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#ProcessLocativeAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#isNonCausallyLinkedTo" />
+		<ns2:label>Process Locative Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#StatusAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierAttribute" />
+		<ns2:label>Status Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasCountability">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isCountabilityOf" />
+		<ns2:label>has Countability</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasFunction">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseFunctionalAttribute" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseProcessLocativeAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isFunctionOf" />
+		<ns2:label>has Function</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasIntrinsicPathologicalStatus">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isIntrinsicPathologicalStatusOf" />
+		<ns2:label>has Intrinsic Pathological Status</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isNonCausallyLinkedTo" />
+		<ns2:label>has Non Causal Link To</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasSpecificFunction">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#hasFunction" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isSpecificFunctionOf" />
+		<ns2:label>has Specific Function</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isCountabilityOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute" />
+		<ns2:label>is Countability Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isFunctionOf">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#FunctionalAttribute" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ProcessLocativeAttribute" />
+		<ns2:label>is Function Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isIntrinsicPathologicalStatusOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute" />
+		<ns2:label>is Intrinsic Pathological Status Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isNonCausallyLinkedTo">
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: nonCausallyInvolves</ns2:comment>
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#LocativeAttribute" />
+		<ns2:label>is Non Causally Linked To</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isSpecificFunctionOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#isFunctionOf" />
+		<ns2:label>is Specific Function Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#AbstractStatus">
+		<ns2:label>Abstract Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Status" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AbstractStatus</ns3:prefixIRI>
+		<ns2:label>Abstract Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#AbstractStructure">
+		<ns2:label>Abstract Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AbstractStructure</ns3:prefixIRI>
+		<ns2:label>Abstract Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Animal">
+		<ns2:label>Animal</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Opisthokonts" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal</ns3:prefixIRI>
+		<ns2:label>Animal</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Arthropoda">
+		<ns2:label>Arthropoda</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Metazoa" />
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#NonHuman" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthropoda</ns3:prefixIRI>
+		<ns2:label>Arthropoda</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Aspect">
+		<ns2:label>Aspect</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierConcept" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect</ns3:prefixIRI>
+		<ns2:label>Aspect</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#BiologicalProcess">
+		<ns2:label>Biological Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SpecificProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BiologicalProcess</ns3:prefixIRI>
+		<ns2:label>Biological Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#BodyProcess">
+		<ns2:label>Body Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BiologicalProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodyProcess</ns3:prefixIRI>
+		<ns2:label>Body Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#BodySystem">
+		<ns2:label>Body System</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#System" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodySystem</ns3:prefixIRI>
+		<ns2:label>Body System</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#BodySystemPhenomenon">
+		<ns2:label>Body System Phenomenon</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#LocativeAttribute" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#BodySystem" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodySystemPhenomenon</ns3:prefixIRI>
+		<ns2:label>Body System Phenomenon</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#CountabilityStatus">
+		<ns2:label>Countability Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CountabilityStatus</ns3:prefixIRI>
+		<ns2:label>Countability Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#DiscreteStructure">
+		<ns2:label>Discrete Structure</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasCountability" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#discrete" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiscreteStructure</ns3:prefixIRI>
+		<ns2:label>Discrete Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#DomainCategory">
+		<ns2:label>Domain Category</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#TopCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DomainCategory</ns3:prefixIRI>
+		<ns2:label>Domain Category</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Eukaryota">
+		<ns2:label>Eukaryota</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Organism" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eukaryota</ns3:prefixIRI>
+		<ns2:label>Eukaryota</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Formicoidea">
+		<ns2:label>Formicoidea</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Hymenoptera" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formicoidea</ns3:prefixIRI>
+		<ns2:label>Formicoidea</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#FunctionalSystem">
+		<ns2:label>Functional System</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BodySystem" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FunctionalSystem</ns3:prefixIRI>
+		<ns2:label>Functional System</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedProcess">
+		<ns2:label>Generalised Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralisedProcess</ns3:prefixIRI>
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: Process</ns2:comment>
+		<ns2:label>Generalised Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedStructure">
+		<ns2:label>Generalised Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralisedStructure</ns3:prefixIRI>
+		<ns2:label>Generalised Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#GenericProcess">
+		<ns2:label>Generic Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GenericProcess</ns3:prefixIRI>
+		<ns2:label>Generic Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Growth">
+		<ns2:label>Growth</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#NAMEDGenericProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Growth</ns3:prefixIRI>
+		<ns2:label>Growth</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Hexapoda">
+		<ns2:label>Hexapoda</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Arthropoda" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hexapoda</ns3:prefixIRI>
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: Insect</ns2:comment>
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: Insecta</ns2:comment>
+		<ns2:label>Hexapoda</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Hymenoptera">
+		<ns2:label>Hymenoptera</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Hexapoda" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hymenoptera</ns3:prefixIRI>
+		<ns2:label>Hymenoptera</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#LogicalStructure">
+		<ns2:label>Logical Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#AbstractStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LogicalStructure</ns3:prefixIRI>
+		<ns2:label>Logical Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#MedicalStatus">
+		<ns2:label>Medical Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#AbstractStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalStatus</ns3:prefixIRI>
+		<ns2:label>Medical Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Metazoa">
+		<ns2:label>Metazoa</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Animal" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metazoa</ns3:prefixIRI>
+		<ns2:label>Metazoa</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ModifierConcept">
+		<ns2:label>Modifier Concept</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModifierConcept</ns3:prefixIRI>
+		<ns2:label>Modifier Concept</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#MultiCellularEukaryota">
+		<ns2:label>Multi Cellular Eukaryota</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Eukaryota" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MultiCellularEukaryota</ns3:prefixIRI>
+		<ns2:label>Multi Cellular Eukaryota</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#NAMEDGenericProcess">
+		<ns2:label>NAMED Generic Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GenericProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAMEDGenericProcess</ns3:prefixIRI>
+		<ns2:label>NAMED Generic Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#NAMEDPhysiologicalProcess">
+		<ns2:label>NAMED Physiological Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BodyProcess" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasIntrinsicPathologicalStatus" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#physiological" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAMEDPhysiologicalProcess</ns3:prefixIRI>
+		<ns2:label>NAMED Physiological Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#NAMEDReproductiveProcess">
+		<ns2:label>NAMED Reproductive Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#ReproductiveProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAMEDReproductiveProcess</ns3:prefixIRI>
+		<ns2:label>NAMED Reproductive Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#NonHuman">
+		<ns2:label>Non Human</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Metazoa" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NonHuman</ns3:prefixIRI>
+		<ns2:label>Non Human</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Opisthokonts">
+		<ns2:label>Opisthokonts</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#MultiCellularEukaryota" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opisthokonts</ns3:prefixIRI>
+		<ns2:label>Opisthokonts</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#OrganicSolidStructure">
+		<ns2:label>Organic Solid Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SolidStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrganicSolidStructure</ns3:prefixIRI>
+		<ns2:label>Organic Solid Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Organism">
+		<ns2:label>Organism</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#OrganicSolidStructure" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasFunction" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#Growth" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasFunction" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#OrganismReproduction" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism</ns3:prefixIRI>
+		<ns2:label>Organism</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#OrganismReproduction">
+		<ns2:label>Organism Reproduction</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#NAMEDReproductiveProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrganismReproduction</ns3:prefixIRI>
+		<ns2:label>Organism Reproduction</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PathologicalOrPhysiologicalStatus">
+		<ns2:label>Pathological Or Physiological Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#MedicalStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PathologicalOrPhysiologicalStatus</ns3:prefixIRI>
+		<ns2:label>Pathological Or Physiological Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Phenomenon">
+		<ns2:label>Phenomenon</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenomenon</ns3:prefixIRI>
+		<ns2:label>Phenomenon</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PhysicalStructure">
+		<ns2:label>Physical Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasCountability" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#discrete" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhysicalStructure</ns3:prefixIRI>
+		<ns2:label>Physical Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ReproductiveFunction">
+		<ns2:label>Reproductive Function</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#BodyProcess" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isSpecificFunctionOf" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#ReproductiveSystem" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BodyProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ReproductiveFunction</ns3:prefixIRI>
+		<ns2:label>Reproductive Function</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ReproductiveProcess">
+		<ns2:label>Reproductive Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#NAMEDPhysiologicalProcess" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isSpecificFunctionOf" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#ReproductiveSystem" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ReproductiveProcess</ns3:prefixIRI>
+		<ns2:label>Reproductive Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ReproductiveSystem">
+		<ns2:label>Reproductive System</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#FunctionalSystem" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasSpecificFunction" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#ReproductiveProcess" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ReproductiveSystem</ns3:prefixIRI>
+		<ns2:label>Reproductive System</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ReproductiveSystemPhenomenon">
+		<ns2:label>Reproductive System Phenomenon</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#LocativeAttribute" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#ReproductiveSystem" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ReproductiveSystemPhenomenon</ns3:prefixIRI>
+		<ns2:label>Reproductive System Phenomenon</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SolidStructure">
+		<ns2:label>Solid Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#PhysicalStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SolidStructure</ns3:prefixIRI>
+		<ns2:label>Solid Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SpecificProcess">
+		<ns2:label>Specific Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SpecificProcess</ns3:prefixIRI>
+		<ns2:label>Specific Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Status">
+		<ns2:label>Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Aspect" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Status</ns3:prefixIRI>
+		<ns2:label>Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#StructuralStatus">
+		<ns2:label>Structural Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Status" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StructuralStatus</ns3:prefixIRI>
+		<ns2:label>Structural Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure">
+		<ns2:label>Substance Or Physical Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SubstanceOrPhysicalStructure</ns3:prefixIRI>
+		<ns2:label>Substance Or Physical Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#System">
+		<ns2:label>System</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#LogicalStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System</ns3:prefixIRI>
+		<ns2:label>System</ns2:label>
+	</ns1:Class>
+	<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#TopCategory">
+		<ns2:label>Top Category</ns2:label>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TopCategory</ns3:prefixIRI>
+	</rdf:Description>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#discrete">
+		<ns2:label>discrete</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#CountabilityStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discrete</ns3:prefixIRI>
+		<ns2:label>discrete</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#physiological">
+		<ns2:label>physiological</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#PathologicalOrPhysiologicalStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physiological</ns3:prefixIRI>
+		<ns2:label>physiological</ns2:label>
+	</ns1:Class>
+</rdf:RDF>

@@ -1,0 +1,1628 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mathias/ontologies/2022/7/untitled-ontology-29#"
+     xml:base="http://www.semanticweb.org/mathias/ontologies/2022/7/untitled-ontology-29"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://semanticweb.org/591337/ontologies/2024/10/anatomy.owl#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
+        <rdfs:label>cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+        <rdfs:label>primary cultured cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <rdfs:label>native cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002321"/>
+        <rdfs:label>early embryonic cell (metazoa)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000578"/>
+        <rdfs:label>cultured cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>ciliated cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000325"/>
+        <rdfs:label>pigment cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000147"/>
+        <rdfs:label>visual pigment cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000183 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>contractile cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000183"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <rdfs:label>myofibroblast cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>electrically active cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>absorptive cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000215"/>
+        <rdfs:label>lining cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000215">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>barrier cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000215"/>
+        <rdfs:label>insulating cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>anucleate cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002242"/>
+        <rdfs:label>single nucleate cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000228"/>
+        <rdfs:label>binucleate cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002242"/>
+        <rdfs:label>multinucleate cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>eukaryotic cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000325"/>
+        <rdfs:label>uric acid accumulating cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000255"/>
+        <rdfs:label>Eumycetozoan cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000521"/>
+        <rdfs:label>hyphal cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000293 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000293">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>structural cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000306 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000306">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000325"/>
+        <rdfs:label>crystallin accumulating cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000308 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000325"/>
+        <rdfs:label>metal ion accumulating cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000308"/>
+        <rdfs:label>copper accumulating cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000308"/>
+        <rdfs:label>iron accumulating cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000325"/>
+        <rdfs:label>keratin accumulating cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000325 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000325">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>stuff accumulating cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000326 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000325"/>
+        <rdfs:label>glycogen accumulating cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000334">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000521"/>
+        <rdfs:label>vegetative cell (sensu Fungi)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000147"/>
+        <rdfs:label>pigment cell (sensu Nematoda and Protostomia)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:label>pigment cell (sensu Vertebrata)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000149"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000342"/>
+        <rdfs:label>visual pigment cell (sensu Vertebrata)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000007"/>
+        <rdfs:label>blastoderm cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000007"/>
+        <rdfs:label>morula cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000361">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000007"/>
+        <rdfs:label>gastrula cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000365">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0010017"/>
+        <rdfs:label>animal zygote</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000619"/>
+        <rdfs:label>sheath cell (sensu Nematoda)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000578"/>
+        <rdfs:label>protoplast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000378 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000378">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000630"/>
+        <rdfs:label>support cell (sensu Nematoda and Protostomia)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000378"/>
+        <rdfs:label>thecogen cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000378"/>
+        <rdfs:label>scolopale cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000630"/>
+        <rdfs:label>ligament cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000630"/>
+        <rdfs:label>attachment cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000211"/>
+        <rdfs:label>electrically responsive cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000211"/>
+        <rdfs:label>electrically signaling cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000384"/>
+        <rdfs:label>scolopidial ligament cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000412 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000412">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>polyploid cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000413">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>haploid cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>diploid cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000416">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000412"/>
+        <rdfs:label>polytene cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000417">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000412"/>
+        <rdfs:label>endopolyploid cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000422">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>mitogenic signaling cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000422"/>
+        <rdfs:label>tip cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000442">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000473"/>
+        <rdfs:label>follicular dendritic cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>apoptosis fated cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>defensive cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>prokaryotic cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000521 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000521">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000255"/>
+        <rdfs:label>fungal cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000371"/>
+        <rdfs:label>spheroplast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000255"/>
+        <rdfs:label>animal cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000563 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000563">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000520"/>
+        <rdfs:label>endospore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000565 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000565">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000325"/>
+        <rdfs:label>fat body cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000578">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001034"/>
+        <rdfs:label>experimentally modified cell in vitro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000596 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002369"/>
+        <rdfs:label>sexual spore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002381"/>
+        <rdfs:label>microconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000599 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000599">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000605"/>
+        <rdfs:label>conidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000228"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000521"/>
+        <rdfs:label>heterokaryon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000227"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000600"/>
+        <rdfs:label>dikaryon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000605">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002369"/>
+        <rdfs:label>fungal asexual spore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000599"/>
+        <rdfs:label>macroconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000607">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000596"/>
+        <rdfs:label>ascospore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000596"/>
+        <rdfs:label>zygospore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000615">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000596"/>
+        <rdfs:label>basidiospore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000619 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000619">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000378"/>
+        <rdfs:label>support cell (sensu Nematoda)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000627 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000627">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>transporting cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>photosynthetic cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000629">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000325"/>
+        <rdfs:label>storage cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000630">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>supporting cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000631">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000630"/>
+        <rdfs:label>labyrinth supporting cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000422"/>
+        <rdfs:label>distal tip cell (sensu Nematoda)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000663 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>valve cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000663"/>
+        <rdfs:label>permanently open valve cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000676">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000378"/>
+        <rdfs:label>cap cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000677 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000677">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000212"/>
+        <rdfs:label>gut absorptive cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000630"/>
+        <rdfs:label>paraganglia type 2 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000630"/>
+        <rdfs:label>sustentacular cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000718 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000718">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000306"/>
+        <rdfs:label>compound eye cone cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000719 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000719">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000718"/>
+        <rdfs:label>posterior cone cell (sensu Endopterygota)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000720 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000720">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000718"/>
+        <rdfs:label>anterior cone cell (sensu Endopterygota)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000721 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000721">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000718"/>
+        <rdfs:label>equatorial cone cell (sensu Endopterygota)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000724 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000724">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000520"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000725"/>
+        <rdfs:label>heterocyst</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000725 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000725">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>nitrogen fixing cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000726 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000726">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000605"/>
+        <rdfs:label>chlamydospore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000727 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000727">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001658"/>
+        <rdfs:label>primary pigment cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000728 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000728">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001658"/>
+        <rdfs:label>secondary pigment cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000729 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000729">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001658"/>
+        <rdfs:label>tertiary pigment cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000852 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000852">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000630"/>
+        <rdfs:label>neuromast support cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000891 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000891">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>foam cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000988 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000988">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <rdfs:label>hematopoietic cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0001034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <rdfs:label>cell in vitro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0001061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <rdfs:label>abnormal cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0001063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001061"/>
+        <rdfs:label>neoplastic cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0001064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001063"/>
+        <rdfs:label>malignant cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0001658 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000149"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000341"/>
+        <rdfs:label>visual pigment cell (sensu Nematoda and Protostomia)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>nucleate cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002321 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:label>embryonic cell (metazoa)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002369">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000521"/>
+        <rdfs:label>fungal spore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>somatic cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000605"/>
+        <rdfs:label>oospore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000599"/>
+        <rdfs:label>uninucleate conidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000599"/>
+        <rdfs:label>multinucleate conidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002381"/>
+        <rdfs:label>conidium of conidiophore head</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000606"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002381"/>
+        <rdfs:label>uninucleate macroconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002385">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000606"/>
+        <rdfs:label>blastoconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000606"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002382"/>
+        <rdfs:label>multinucleate macroconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000606"/>
+        <rdfs:label>arthroconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002388 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002388">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002386"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002387"/>
+        <rdfs:label>multinucleate arthroconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002389 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002384"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002387"/>
+        <rdfs:label>uninucleate arthroconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002384"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002385"/>
+        <rdfs:label>uninucleate blastconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002391">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002385"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002386"/>
+        <rdfs:label>multinucleate blastoconidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002559 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002559">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <rdfs:label>hair follicle cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002630">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000520"/>
+        <rdfs:label>actinomycete-type spore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000521"/>
+        <rdfs:label>H minus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002675 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002675">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000521"/>
+        <rdfs:label>H plus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <rdfs:label>kidney cortical cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0007001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0007001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>skeletogenic cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0007018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0007018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000064"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002321"/>
+        <rdfs:label xml:lang="en">epidermal ciliary cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0007020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0007020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000007"/>
+        <rdfs:label xml:lang="en">bottle cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0007022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0007022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:label xml:lang="en">micropylar cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0007023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0007023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label xml:lang="en">flask cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0008001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0008001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000988"/>
+        <rdfs:label>hematopoietic precursor cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0008034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0008034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <rdfs:label xml:lang="en">mural cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0009002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0009002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <rdfs:label>inflammatory cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0009003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0009003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <rdfs:label>larval midgut cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0009005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0009005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <rdfs:label>salivary gland cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0009015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0009015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000442"/>
+        <rdfs:label>Peyer&apos;s patch follicular dendritic cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0009019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0009019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002681"/>
+        <rdfs:label>nephrogenic zone cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0010016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0010016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000064"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:label>collar cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0010017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0010017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label xml:lang="en">zygote</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0011023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001063"/>
+        <rdfs:label>CD25+ mast cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000663"/>
+        <rdfs:label>cardiac valve cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000423"/>
+        <rdfs:label>malpighian tubule tip cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <rdfs:label>kidney cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <rdfs:label>kidney interstitial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <rdfs:label>kidney medulla cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <rdfs:label>kidney pelvis cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <rdfs:label>kidney tubule cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000504"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1001225"/>
+        <rdfs:label>kidney medulla collecting duct epithelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000617"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1001225"/>
+        <rdfs:label>kidney inner medulla collecting duct epithelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000616"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1001225"/>
+        <rdfs:label>kidney outer medulla collecting duct epithelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002681"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1001225"/>
+        <rdfs:label>kidney cortex collecting duct epithelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1001225"/>
+        <rdfs:label>kidney papillary duct principal epithelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000596 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002681"/>
+        <rdfs:label>inner renal cortex cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000617"/>
+        <rdfs:label>papillary tips cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:label>lower urinary tract cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000601 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000601">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:label>ureteral cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000504"/>
+        <rdfs:label>kidney outer medulla cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000617 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000617">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000504"/>
+        <rdfs:label>kidney inner medulla cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000618 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000618">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002681"/>
+        <rdfs:label>juxtaglomerular complex cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000682">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000500"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000504"/>
+        <rdfs:label>kidney medulla interstitial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000691">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000186"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000500"/>
+        <rdfs:label>kidney interstitial myofibroblast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000803 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000803">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000617"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000682"/>
+        <rdfs:label>kidney inner medulla interstitial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000804 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000804">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000616"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000682"/>
+        <rdfs:label>kidney outer medulla interstitial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <rdfs:label>kidney collecting duct cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000600"/>
+        <rdfs:label>bladder cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000600"/>
+        <rdfs:label>urethra cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>pituitary gland cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>inner cell mass cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>sebaceous gland cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:label>hypothalamus cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000852"/>
+        <rdfs:label>anterior lateral line neuromast support cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000852"/>
+        <rdfs:label>posterior lateral line neuromast support cell</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

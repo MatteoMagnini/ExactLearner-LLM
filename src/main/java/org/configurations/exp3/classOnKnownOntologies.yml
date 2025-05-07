@@ -1,0 +1,35 @@
+models:
+  - "mistral"
+  - "mixtral"
+  - "llama2"
+  - "llama2:13b"
+  - "llama3"
+ontologies:
+  - "src/main/resources/ontologies/small/animals.owl"
+  - "src/main/resources/ontologies/small/university.owl"
+  - "src/main/resources/ontologies/small/generations.owl"
+  - "src/main/resources/ontologies/small/football.owl"
+  - "src/main/resources/ontologies/small/cl.owl"
+  - "src/main/resources/ontologies/medium/biosphere.owl"
+  - "src/main/resources/ontologies/medium/biological-measure-primitive.owl"
+systems:
+  - >
+    Answer with True or False.
+  - >
+    You need to classify the following statements as True or False. The statement will be provided in either Manchester OWL syntax or natural language. Strictly follow these guidelines:
+    1. answer with only True or False;
+    2. entities with has part relation are not in a subclass relation;
+    3. take a deep breath before answering;
+    4. if you are unsure about the classification, answer with False.
+queryFormats:
+  - name: Manchester
+    axiom: manchester
+    conceptName: class
+  - name: NLPClass
+    axiom: originalNLP
+    conceptName: class
+  - name: NLPLabel
+    axiom: NLP
+    conceptName: quotedLabel
+maxTokens: 2
+type: "classQuerying"

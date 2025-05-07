@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/doid.owlhttp://purl.obolibrary.org/obo/GO_0046887.owl#"
+     xml:base="http://purl.obolibrary.org/obo/doid.owlhttp://purl.obolibrary.org/obo/GO_0046887.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/doid.owlhttp://purl.obolibrary.org/obo/GO_0046887.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010646 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010646">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of cell communication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010647 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010647">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of cell communication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010646"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048522"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010817 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010817">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of hormone levels</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0065008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0023051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0023051">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of signaling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0023056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0023056">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of signaling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0023051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048518"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032879 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032879">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of localization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046883 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0046883">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of hormone secretion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010646"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010817"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0023051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1903530"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046887 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0046887">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of hormone secretion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010647"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0023056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046883"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1903532"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048518">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of biological process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048522">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of cellular process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050789 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050789">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of biological process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0065007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050794 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050794">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of cellular process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051046">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of secretion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051047">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of secretion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051046"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051049">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032879"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0065007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0065007">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological regulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0065008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0065008">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of biological quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0065007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1903530">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation of secretion by cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051046"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903532 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1903532">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive regulation of secretion by cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048522"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051047"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1903530"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
+

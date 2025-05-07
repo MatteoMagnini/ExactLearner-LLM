@@ -1,0 +1,610 @@
+<rdf:RDF xmlns:ns1="http://www.w3.org/2002/07/owl#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns3="http://data.bioontology.org/metadata/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlConeOfTissue.owl">
+	<ns1:Ontology rdf:about="/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlConeOfTissue.owl" />
+	<ns1:AnnotationProperty rdf:about="http://data.bioontology.org/metadata/prefixIRI" />
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#Attribute">
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseAttribute" />
+		<ns2:label>Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#ConstructiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute" />
+		<ns2:label>Constructive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#DomainAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#Attribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns2:label>Domain Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#FeatureStateAttribute">
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierAttribute" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#isNonCausallyLinkedTo" />
+		<ns2:label>Feature State Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#HasDivision">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#IsDivisionOf" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute" />
+		<ns2:label>Has Division</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseAttribute">
+		<ns2:label>Inverse Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns2:label>Inverse Constructive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseAttribute" />
+		<ns2:label>Inverse Domain Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseModifierAttribute" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo" />
+		<ns2:label>Inverse Feature State Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#LocativeAttribute" />
+		<ns2:label>Inverse Locative Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseModifierAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierAttribute" />
+		<ns2:label>Inverse Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ConstructiveAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#PartitiveAttribute" />
+		<ns2:label>Inverse Partitive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseModifierAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns2:label>Inverse Status Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseStructuralAppearanceModifier">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStructuralModifierAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralAppearanceModifier" />
+		<ns2:label>Inverse Structural Appearance Modifier</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseStructuralModifierAttribute">
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralModifierAttribute" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#hasFeature" />
+		<ns2:label>Inverse Structural Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute" />
+		<ns2:label>Inverse Structural Partitive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#IsDivisionOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute" />
+		<ns2:label>Is Division Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#LocativeAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: affects</ns2:comment>
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: involves</ns2:comment>
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ConstructiveAttribute" />
+		<ns2:label>Locative Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#ModifierAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainAttribute" />
+		<ns2:label>Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#PartitiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute" />
+		<ns2:label>Partitive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#StatusAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierAttribute" />
+		<ns2:label>Status Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#StructuralAppearanceModifier">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralModifierAttribute" />
+		<ns2:label>Structural Appearance Modifier</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#StructuralModifierAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#isFeatureOf" />
+		<ns2:label>Structural Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#PartitiveAttribute" />
+		<ns2:label>Structural Partitive Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasAbsoluteState">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#hasState" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isAbsoluteStateOf" />
+		<ns2:label>has Absolute State</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasCountability">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isCountabilityOf" />
+		<ns2:label>has Countability</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasFeature">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isFeatureOf" />
+		<ns2:label>has Feature</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isNonCausallyLinkedTo" />
+		<ns2:label>has Non Causal Link To</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasShape">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStructuralAppearanceModifier" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isShapeOf" />
+		<ns2:label>has Shape</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasSolidDivision">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#hasSolidRegion" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isSolidDivisionOf" />
+		<ns2:label>has Solid Division</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasSolidRegion">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#HasDivision" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isSolidRegionOf" />
+		<ns2:label>has Solid Region</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasState">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isStateOf" />
+		<ns2:label>has State</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isAbsoluteStateOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#isStateOf" />
+		<ns2:label>is Absolute State Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isCountabilityOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute" />
+		<ns2:label>is Countability Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isFeatureOf">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#FeatureStateAttribute" />
+		<ns2:label>is Feature Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isNonCausallyLinkedTo">
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: nonCausallyInvolves</ns2:comment>
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#LocativeAttribute" />
+		<ns2:label>is Non Causally Linked To</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isPairedOrUnpaired">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isPairedOrUnpairedOf" />
+		<ns2:label>is Paired Or Unpaired</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isPairedOrUnpairedOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute" />
+		<ns2:label>is Paired Or Unpaired Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isShapeOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralAppearanceModifier" />
+		<ns2:label>is Shape Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isSolidDivisionOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#isSolidRegionOf" />
+		<ns2:label>is Solid Division Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isSolidRegionOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#IsDivisionOf" />
+		<ns2:label>is Solid Region Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isStateOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#FeatureStateAttribute" />
+		<ns2:label>is State Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#AbsoluteShapeState">
+		<ns2:label>Absolute Shape State</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#ShapeState" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AbsoluteShapeState</ns3:prefixIRI>
+		<ns2:label>Absolute Shape State</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Appearance">
+		<ns2:label>Appearance</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Morphology" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appearance</ns3:prefixIRI>
+		<ns2:label>Appearance</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Aspect">
+		<ns2:label>Aspect</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierConcept" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect</ns3:prefixIRI>
+		<ns2:label>Aspect</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#BodyRegion">
+		<ns2:label>Body Region</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SolidRegion" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isPairedOrUnpaired" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#atLeastPaired" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodyRegion</ns3:prefixIRI>
+		<ns2:label>Body Region</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#BodyStructure">
+		<ns2:label>Body Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#OrganicSolidStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodyStructure</ns3:prefixIRI>
+		<ns2:label>Body Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#BodyStructureByFeature">
+		<ns2:label>Body Structure By Feature</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasFeature" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#Feature" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodyStructureByFeature</ns3:prefixIRI>
+		<ns2:label>Body Structure By Feature</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#BodyStructureByShape">
+		<ns2:label>Body Structure By Shape</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasFeature" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#Shape" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BodyStructureByShape</ns3:prefixIRI>
+		<ns2:label>Body Structure By Shape</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ConeOfTissue">
+		<ns2:label>Cone Of Tissue</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#InternalRegion" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasShape" />
+						<ns1:someValuesFrom>
+							<ns1:Class>
+								<ns1:intersectionOf rdf:parseType="Collection">
+									<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#Shape" />
+									<ns1:Restriction>
+										<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasAbsoluteState" />
+										<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#conical" />
+									</ns1:Restriction>
+								</ns1:intersectionOf>
+							</ns1:Class>
+						</ns1:someValuesFrom>
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#InternalRegion" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ConeOfTissue</ns3:prefixIRI>
+		<ns2:label>Cone Of Tissue</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#CountabilityStatus">
+		<ns2:label>Countability Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CountabilityStatus</ns3:prefixIRI>
+		<ns2:label>Countability Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#DiscreteStructure">
+		<ns2:label>Discrete Structure</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasCountability" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#discrete" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiscreteStructure</ns3:prefixIRI>
+		<ns2:label>Discrete Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#DomainCategory">
+		<ns2:label>Domain Category</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#TopCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DomainCategory</ns3:prefixIRI>
+		<ns2:label>Domain Category</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Feature">
+		<ns2:label>Feature</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Aspect" />
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature</ns3:prefixIRI>
+		<ns2:label>Feature</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedStructure">
+		<ns2:label>Generalised Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralisedStructure</ns3:prefixIRI>
+		<ns2:label>Generalised Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#InternalRegion">
+		<ns2:label>Internal Region</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#BodyRegion" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isSolidDivisionOf" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BodyRegion" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InternalRegion</ns3:prefixIRI>
+		<ns2:label>Internal Region</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#InternalRegionOfSolid">
+		<ns2:label>Internal Region Of Solid</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#SolidRegion" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isSolidDivisionOf" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#SolidStructure" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SolidRegion" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InternalRegionOfSolid</ns3:prefixIRI>
+		<ns2:label>Internal Region Of Solid</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ModifierConcept">
+		<ns2:label>Modifier Concept</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModifierConcept</ns3:prefixIRI>
+		<ns2:label>Modifier Concept</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Morphology">
+		<ns2:label>Morphology</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralFeature" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morphology</ns3:prefixIRI>
+		<ns2:label>Morphology</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#MorphologyState">
+		<ns2:label>Morphology State</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralState" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MorphologyState</ns3:prefixIRI>
+		<ns2:label>Morphology State</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#OrganicSolidStructure">
+		<ns2:label>Organic Solid Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SolidStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrganicSolidStructure</ns3:prefixIRI>
+		<ns2:label>Organic Solid Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PairedOrUnpairedStatus">
+		<ns2:label>Paired Or Unpaired Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#StructuralStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PairedOrUnpairedStatus</ns3:prefixIRI>
+		<ns2:label>Paired Or Unpaired Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PartOfBodyStructure">
+		<ns2:label>Part Of Body Structure</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#IsDivisionOf" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PartOfBodyStructure</ns3:prefixIRI>
+		<ns2:label>Part Of Body Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Phenomenon">
+		<ns2:label>Phenomenon</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenomenon</ns3:prefixIRI>
+		<ns2:label>Phenomenon</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PhysicalStructure">
+		<ns2:label>Physical Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedStructure" />
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasCountability" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#discrete" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhysicalStructure</ns3:prefixIRI>
+		<ns2:label>Physical Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PropertyOfPhenomenon">
+		<ns2:label>Property Of Phenomenon</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#Feature" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isFeatureOf" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Feature" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PropertyOfPhenomenon</ns3:prefixIRI>
+		<ns2:label>Property Of Phenomenon</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Shape">
+		<ns2:label>Shape</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Appearance" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shape</ns3:prefixIRI>
+		<ns2:label>Shape</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ShapeState">
+		<ns2:label>Shape State</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#MorphologyState" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ShapeState</ns3:prefixIRI>
+		<ns2:label>Shape State</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SolidPartOfBodyStructure">
+		<ns2:label>Solid Part Of Body Structure</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isSolidDivisionOf" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#BodyStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SolidPartOfBodyStructure</ns3:prefixIRI>
+		<ns2:label>Solid Part Of Body Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SolidRegion">
+		<ns2:label>Solid Region</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SolidStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SolidRegion</ns3:prefixIRI>
+		<ns2:label>Solid Region</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SolidStructure">
+		<ns2:label>Solid Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#PhysicalStructure" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SolidStructure</ns3:prefixIRI>
+		<ns2:label>Solid Structure</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#State">
+		<ns2:label>State</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#StateOrQuantity" />
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SymbolicValueType" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">State</ns3:prefixIRI>
+		<ns2:label>State</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#StateOrQuantity">
+		<ns2:label>State Or Quantity</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Aspect" />
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StateOrQuantity</ns3:prefixIRI>
+		<ns2:label>State Or Quantity</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Status">
+		<ns2:label>Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Aspect" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Status</ns3:prefixIRI>
+		<ns2:label>Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#StructuralFeature">
+		<ns2:label>Structural Feature</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Feature" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StructuralFeature</ns3:prefixIRI>
+		<ns2:label>Structural Feature</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#StructuralState">
+		<ns2:label>Structural State</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#State" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StructuralState</ns3:prefixIRI>
+		<ns2:label>Structural State</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#StructuralStatus">
+		<ns2:label>Structural Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Status" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StructuralStatus</ns3:prefixIRI>
+		<ns2:label>Structural Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure">
+		<ns2:label>Substance Or Physical Structure</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SubstanceOrPhysicalStructure</ns3:prefixIRI>
+		<ns2:label>Substance Or Physical Structure</ns2:label>
+	</ns1:Class>
+	<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#SymbolicValueType">
+		<ns2:label>Symbolic Value Type</ns2:label>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SymbolicValueType</ns3:prefixIRI>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#TopCategory">
+		<ns2:label>Top Category</ns2:label>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TopCategory</ns3:prefixIRI>
+	</rdf:Description>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#atLeastPaired">
+		<ns2:label>at Least Paired</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#PairedOrUnpairedStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atLeastPaired</ns3:prefixIRI>
+		<ns2:label>at Least Paired</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#conical">
+		<ns2:label>conical</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#solidShape" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conical</ns3:prefixIRI>
+		<ns2:label>conical</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#discrete">
+		<ns2:label>discrete</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#CountabilityStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discrete</ns3:prefixIRI>
+		<ns2:label>discrete</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#solidShape">
+		<ns2:label>solid Shape</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#AbsoluteShapeState" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solidShape</ns3:prefixIRI>
+		<ns2:label>solid Shape</ns2:label>
+	</ns1:Class>
+	<ns1:Class>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SolidRegion" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#isPairedOrUnpaired" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#atLeastPaired" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns1:intersectionOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#SolidRegion" />
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#IsDivisionOf" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#SolidStructure" />
+			</ns1:Restriction>
+		</ns1:intersectionOf>
+	</ns1:Class>
+</rdf:RDF>

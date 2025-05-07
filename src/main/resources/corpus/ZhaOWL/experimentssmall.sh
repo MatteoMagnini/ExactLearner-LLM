@@ -1,0 +1,35 @@
+java -jar learner.jar src/main/resources/ontologies/small/university2.owl on t f f t f f f f f f > university2.txt
+java -jar learner.jar src/main/resources/ontologies/small/university3.owl on f t f f t f f f f f > university3.txt
+java -jar learner.jar src/main/resources/ontologies/small/university4.owl on f f t f f t f f f f > university4.txt
+java -jar learner.jar src/main/resources/ontologies/small/university5.owl f f f f f f t t t t > university5.txt
+java -jar learner.jar src/main/resources/ontologies/small/university6.owl f f f f f f t f t f > university6.txt
+java -jar learner.jar src/main/resources/ontologies/small/university7.owl f f f f f f f t f t > university7.txt
+java -jar learner.jar src/main/resources/ontologies/small/university1.owl on t t t t t t f f f f > university1.txt
+java -jar learner.jar src/main/resources/ontologies/small/animals2.owl on t f f t f f f f f f > animals2.txt
+java -jar learner.jar src/main/resources/ontologies/small/animals3.owl on f t f f t f f f f f > animals3.txt
+java -jar learner.jar src/main/resources/ontologies/small/animals4.owl on f f t f f t f f f f > animals4.txt
+java -jar learner.jar src/main/resources/ontologies/small/animals5.owl f f f f f f t t t t > animals5.txt
+java -jar learner.jar src/main/resources/ontologies/small/animals6.owl f f f f f f t f t f > animals6.txt
+java -jar learner.jar src/main/resources/ontologies/small/animals7.owl f f f f f f f t f t > animals7.txt
+java -jar learner.jar src/main/resources/ontologies/small/animals1.owl on t t t t t t f f f f > animals1.txt
+java -jar learner.jar src/main/resources/ontologies/small/football2.owl on t f f t f f f f f f > university2.txt
+java -jar learner.jar src/main/resources/ontologies/small/football3.owl on f t f f t f f f f f > university3.txt
+java -jar learner.jar src/main/resources/ontologies/small/football4.owl on f f t f f t f f f f > university4.txt
+java -jar learner.jar src/main/resources/ontologies/small/football5.owl f f f f f f t t t t > university5.txt
+java -jar learner.jar src/main/resources/ontologies/small/football6.owl f f f f f f t f t f > university6.txt
+java -jar learner.jar src/main/resources/ontologies/small/football7.owl f f f f f f f t f t > university7.txt
+java -jar learner.jar src/main/resources/ontologies/small/football1.owl on t t t t t t f f f f > university1.txt
+java -jar learner.jar src/main/resources/ontologies/small/cell2.owl on t f f t f f f f f f > university2.txt
+java -jar learner.jar src/main/resources/ontologies/small/cell3.owl on f t f f t f f f f f > university3.txt
+java -jar learner.jar src/main/resources/ontologies/small/cell4.owl on f f t f f t f f f f > university4.txt
+java -jar learner.jar src/main/resources/ontologies/small/cell5.owl f f f f f f t t t t > university5.txt
+java -jar learner.jar src/main/resources/ontologies/small/cell6.owl f f f f f f t f t f > university6.txt
+java -jar learner.jar src/main/resources/ontologies/small/cell7.owl f f f f f f f t f t > university7.txt
+java -jar learner.jar src/main/resources/ontologies/small/cell1.owl on t t t t t t f f f f > university1.txt
+java -jar learner.jar src/main/resources/ontologies/small/generations2.owl on t f f t f f f f f f > university2.txt
+java -jar learner.jar src/main/resources/ontologies/small/generations3.owl on f t f f t f f f f f > university3.txt
+java -jar learner.jar src/main/resources/ontologies/small/generations4.owl on f f t f f t f f f f > university4.txt
+java -jar learner.jar src/main/resources/ontologies/small/generations5.owl f f f f f f t t t t > university5.txt
+java -jar learner.jar src/main/resources/ontologies/small/generations6.owl f f f f f f t f t f > university6.txt
+java -jar learner.jar src/main/resources/ontologies/small/generations7.owl f f f f f f f t f t > university7.txt
+java -jar learner.jar src/main/resources/ontologies/small/generations1.owl on t t t t t t f f f f > university1.txt

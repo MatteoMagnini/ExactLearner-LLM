@@ -1,0 +1,18 @@
+models:
+  - "mixtral"
+ontologies:
+#  - "src/main/resources/ontologies/galen/Relaxing.owl"
+  - "src/main/resources/ontologies/galen/OleicAcidAsDrug.owl"
+  - "src/main/resources/ontologies/galen/AdrenergicReceptor.owl"
+  - "src/main/resources/ontologies/galen/Cyclostomata.owl"
+#  - "src/main/resources/ontologies/galen/DisordersOfCalciumMetabolism.owl"
+  - "src/main/resources/ontologies/galen/Spinach.owl"
+  - "src/main/resources/ontologies/galen/Formicoidea.owl"
+  - "src/main/resources/ontologies/galen/SexualArousal.owl"
+  - "src/main/resources/ontologies/galen/MucusProduction.owl"
+  - "src/main/resources/ontologies/galen/BNFSection2_2_5.owl"
+system: >
+  Answer with only True or False.
+maxTokens: 2
+queryFormat: "nlp"
+type: "statementsQuerying"

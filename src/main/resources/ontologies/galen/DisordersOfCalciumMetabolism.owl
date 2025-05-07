@@ -1,0 +1,283 @@
+<rdf:RDF xmlns:ns1="http://www.w3.org/2002/07/owl#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns3="http://data.bioontology.org/metadata/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlDisordersOfCalciumMetabolism.owl">
+	<ns1:Ontology rdf:about="/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlDisordersOfCalciumMetabolism.owl" />
+	<ns1:AnnotationProperty rdf:about="http://data.bioontology.org/metadata/prefixIRI" />
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#Attribute">
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseAttribute" />
+		<ns2:label>Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#DomainAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#Attribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns2:label>Domain Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseAttribute">
+		<ns2:label>Inverse Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseAttribute" />
+		<ns2:label>Inverse Domain Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseModifierAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseDomainAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierAttribute" />
+		<ns2:label>Inverse Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseModifierAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns2:label>Inverse Status Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#ModifierAttribute">
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainAttribute" />
+		<ns2:label>Modifier Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#StatusAttribute">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierAttribute" />
+		<ns2:label>Status Attribute</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasAbnormalityStatus">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isAbnormalityStatusOf" />
+		<ns2:label>has Abnormality Status</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#hasPathologicalStatus">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#StatusAttribute" />
+		<ns1:inverseOf rdf:resource="http://www.co-ode.org/ontologies/galen#isPathologicalStatusOf" />
+		<ns2:label>has Pathological Status</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isAbnormalityStatusOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute" />
+		<ns2:label>is Abnormality Status Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/galen#isPathologicalStatusOf">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty" />
+		<ns2:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/galen#InverseStatusAttribute" />
+		<ns2:label>is Pathological Status Of</ns2:label>
+	</ns1:ObjectProperty>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#AbstractStatus">
+		<ns2:label>Abstract Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Status" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AbstractStatus</ns3:prefixIRI>
+		<ns2:label>Abstract Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Aspect">
+		<ns2:label>Aspect</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#ModifierConcept" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect</ns3:prefixIRI>
+		<ns2:label>Aspect</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ChemicalProcess">
+		<ns2:label>Chemical Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#NonBiologicalProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemicalProcess</ns3:prefixIRI>
+		<ns2:label>Chemical Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#DisordersOfCalciumMetabolism">
+		<ns2:label>Disorders Of Calcium Metabolism</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#NAMEDMetabolicPathologicalProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisordersOfCalciumMetabolism</ns3:prefixIRI>
+		<ns2:label>Disorders Of Calcium Metabolism</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#DomainCategory">
+		<ns2:label>Domain Category</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#TopCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DomainCategory</ns3:prefixIRI>
+		<ns2:label>Domain Category</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedProcess">
+		<ns2:label>Generalised Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralisedProcess</ns3:prefixIRI>
+		<ns2:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym: Process</ns2:comment>
+		<ns2:label>Generalised Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#MedicalStatus">
+		<ns2:label>Medical Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#AbstractStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedicalStatus</ns3:prefixIRI>
+		<ns2:label>Medical Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#MetabolicDisorder">
+		<ns2:label>Metabolic Disorder</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#MetabolicProcess" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasPathologicalStatus" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#pathological" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#MetabolicProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetabolicDisorder</ns3:prefixIRI>
+		<ns2:label>Metabolic Disorder</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#MetabolicProcess">
+		<ns2:label>Metabolic Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#ChemicalProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetabolicProcess</ns3:prefixIRI>
+		<ns2:label>Metabolic Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#ModifierConcept">
+		<ns2:label>Modifier Concept</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModifierConcept</ns3:prefixIRI>
+		<ns2:label>Modifier Concept</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#NAMEDMetabolicPathologicalProcess">
+		<ns2:label>NAMED Metabolic Pathological Process</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#NAMEDMetabolicProcess" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasPathologicalStatus" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#pathological" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#NAMEDMetabolicProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAMEDMetabolicPathologicalProcess</ns3:prefixIRI>
+		<ns2:label>NAMED Metabolic Pathological Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#NAMEDMetabolicProcess">
+		<ns2:label>NAMED Metabolic Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#MetabolicProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAMEDMetabolicProcess</ns3:prefixIRI>
+		<ns2:label>NAMED Metabolic Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#NonBiologicalProcess">
+		<ns2:label>Non Biological Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#SpecificProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NonBiologicalProcess</ns3:prefixIRI>
+		<ns2:label>Non Biological Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#NonNormalPhenomenon">
+		<ns2:label>Non Normal Phenomenon</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasAbnormalityStatus" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#nonNormal" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NonNormalPhenomenon</ns3:prefixIRI>
+		<ns2:label>Non Normal Phenomenon</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#NormalOrNonNormalStatus">
+		<ns2:label>Normal Or Non Normal Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#MedicalStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NormalOrNonNormalStatus</ns3:prefixIRI>
+		<ns2:label>Normal Or Non Normal Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PathologicalMetabolicProcess">
+		<ns2:label>Pathological Metabolic Process</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#MetabolicProcess" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasPathologicalStatus" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#pathological" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#MetabolicProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PathologicalMetabolicProcess</ns3:prefixIRI>
+		<ns2:label>Pathological Metabolic Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PathologicalOrPhysiologicalStatus">
+		<ns2:label>Pathological Or Physiological Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#MedicalStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PathologicalOrPhysiologicalStatus</ns3:prefixIRI>
+		<ns2:label>Pathological Or Physiological Status</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PathologicalPhenomenon">
+		<ns2:label>Pathological Phenomenon</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasPathologicalStatus" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#pathological" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Phenomenon" />
+		<ns2:subClassOf>
+			<ns1:Restriction>
+				<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasAbnormalityStatus" />
+				<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#nonNormal" />
+			</ns1:Restriction>
+		</ns2:subClassOf>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PathologicalPhenomenon</ns3:prefixIRI>
+		<ns2:label>Pathological Phenomenon</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#PathologicalProcess">
+		<ns2:label>Pathological Process</ns2:label>
+		<ns1:equivalentClass>
+			<ns1:Class>
+				<ns1:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#GeneralisedProcess" />
+					<ns1:Restriction>
+						<ns1:onProperty rdf:resource="http://www.co-ode.org/ontologies/galen#hasPathologicalStatus" />
+						<ns1:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/galen#pathological" />
+					</ns1:Restriction>
+				</ns1:intersectionOf>
+			</ns1:Class>
+		</ns1:equivalentClass>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PathologicalProcess</ns3:prefixIRI>
+		<ns2:label>Pathological Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Phenomenon">
+		<ns2:label>Phenomenon</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#DomainCategory" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenomenon</ns3:prefixIRI>
+		<ns2:label>Phenomenon</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#SpecificProcess">
+		<ns2:label>Specific Process</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#GeneralisedProcess" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SpecificProcess</ns3:prefixIRI>
+		<ns2:label>Specific Process</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#Status">
+		<ns2:label>Status</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#Aspect" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Status</ns3:prefixIRI>
+		<ns2:label>Status</ns2:label>
+	</ns1:Class>
+	<rdf:Description rdf:about="http://www.co-ode.org/ontologies/galen#TopCategory">
+		<ns2:label>Top Category</ns2:label>
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TopCategory</ns3:prefixIRI>
+	</rdf:Description>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#nonNormal">
+		<ns2:label>non Normal</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#NormalOrNonNormalStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonNormal</ns3:prefixIRI>
+		<ns2:label>non Normal</ns2:label>
+	</ns1:Class>
+	<ns1:Class rdf:about="http://www.co-ode.org/ontologies/galen#pathological">
+		<ns2:label>pathological</ns2:label>
+		<ns2:subClassOf rdf:resource="http://www.co-ode.org/ontologies/galen#PathologicalOrPhysiologicalStatus" />
+		<ns3:prefixIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathological</ns3:prefixIRI>
+		<ns2:label>pathological</ns2:label>
+	</ns1:Class>
+</rdf:RDF>

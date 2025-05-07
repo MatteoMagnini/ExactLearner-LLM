@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/doid.owlhttp://purl.obolibrary.org/obo/GO_0019264.owl#"
+     xml:base="http://purl.obolibrary.org/obo/doid.owlhttp://purl.obolibrary.org/obo/GO_0019264.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/doid.owlhttp://purl.obolibrary.org/obo/GO_0019264.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006082">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044281"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006520">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amino acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044238"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901564"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006544">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycine metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009069"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006545">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycine biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006544"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009070"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006563 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006563">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-serine metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009069"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006807 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006807">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete nitrogen compound metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008152">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008652">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amino acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006520"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046394"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901566"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009058">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009069">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serine family amino acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901605"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009070">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serine family amino acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009069"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901607"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016053">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044249"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044283"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019264">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycine biosynthetic process from serine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006545"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006563"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019752 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019752">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carboxylic acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043436"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043436">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxoacid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006082"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044237">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044238">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044249">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044281">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small molecule metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044283">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small molecule biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044281"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0046394">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carboxylic acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016053"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0071704">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete organic substance metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901564 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901564">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete organonitrogen compound metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006807"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901566 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901566">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete organonitrogen compound biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901564"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901576 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901576">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete organic substance biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901605">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-amino acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006520"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901607">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-amino acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008652"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901605"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
+

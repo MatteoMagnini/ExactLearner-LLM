@@ -1,0 +1,12 @@
+models:
+  - "mistral"
+  - "mixtral"
+  - "llama2"#:7b"
+  - "llama2:13b"
+ontologies:
+  - "src/main/resources/ontologies/anatomy.owl"
+system: >
+  Answer with Yes or No.
+maxTokens: 2
+type: "axiomsQuerying"
+
