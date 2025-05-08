@@ -1,18 +1,21 @@
 package org.exactlearner.learner;
 
-import static org.junit.Assert.fail;
-
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.exactlearner.engine.BaseEngine;
+import org.exactlearner.engine.ELEngine;
+import org.exactlearner.tree.ELTree;
+import org.exactlearner.utils.Metrics;
 import org.junit.Before;
 import org.junit.Test;
 import org.semanticweb.owlapi.apibinding.OWLManager;
-import org.semanticweb.owlapi.model.*;
-import org.exactlearner.engine.ELEngine;
-import org.exactlearner.utils.Metrics;
-import org.semanticweb.owlapi.manchestersyntax.renderer.ManchesterOWLSyntaxOWLObjectRendererImpl;
 import org.semanticweb.owlapi.io.OWLObjectRenderer;
+import org.semanticweb.owlapi.manchestersyntax.renderer.ManchesterOWLSyntaxOWLObjectRendererImpl;
+import org.semanticweb.owlapi.model.*;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.fail;
 
 public class ELLearnerTest {
 
@@ -92,18 +95,21 @@ public class ELLearnerTest {
         //System.out.println(targetOntology.getClassesInSignature());
 
         // Begin unsaturation of inclusion
-        // A \sqcap B \sqcap C \sqcap D \sqcap E \sqcap F  \sqsubseteq A
-        OWLClassExpression ABCDEF = df.getOWLObjectIntersectionOf(A,B,C,D,E,F);
-        axiom = df.getOWLSubClassOfAxiom(ABCDEF, A);
+        // B \sqcap C \sqcap D \sqcap E \sqcap F  \sqsubseteq A
+        OWLClassExpression BCDEF = df.getOWLObjectIntersectionOf(B,C,D,E,F);
+        axiom = df.getOWLSubClassOfAxiom(BCDEF, A);
         man.addAxiom(targetOntology, axiom);
+
+        baseLearner.precomputation();
 
         try
         {
-            axiom = baseLearner.unsaturateLeft(ABCDEF, A);
+            // Why was this changed?
+            axiom = baseLearner.unsaturateLeft(BCDEF, A);
 
             // Expected
             // B \sqsubseteq A
-            System.out.println("Unsaturation: " + axiom);
+            compare(axiom, df.getOWLSubClassOfAxiom(B, A));
         }
         catch (Exception e) {
             System.out.println("Error in unsaturate left");
@@ -263,6 +269,226 @@ public class ELLearnerTest {
             e.printStackTrace();
         }
     }
-    
- 
+
+    @Test
+    public void saturateHypothesisRight() {
+        OWLDataFactory df = man.getOWLDataFactory();
+
+        OWLClass A = df.getOWLClass(IRI.create(":A"));
+        OWLClass B = df.getOWLClass(IRI.create(":B"));
+        OWLClass C = df.getOWLClass(IRI.create(":C"));
+        OWLObjectProperty R = df.getOWLObjectProperty(IRI.create(":r"));
+
+        OWLClassExpression right = df.getOWLObjectSomeValuesFrom(R, B);
+        OWLSubClassOfAxiom axiom = df.getOWLSubClassOfAxiom(A, df.getOWLObjectIntersectionOf(C, right));
+        man.addAxiom(targetOntology, axiom);
+        baseLearner.precomputation();
+
+        try {
+            OWLSubClassOfAxiom result = baseLearner.saturateRight(A, df.getOWLObjectSomeValuesFrom(R, df.getOWLThing()));
+            OWLSubClassOfAxiom target = df.getOWLSubClassOfAxiom(A, df.getOWLObjectIntersectionOf(C, df.getOWLObjectSomeValuesFrom(R, B)));
+            compare(result, target);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    @Test
+    public void rightDecompositionBecomeEdge() {
+        OWLDataFactory df = man.getOWLDataFactory();
+
+        OWLClass A = df.getOWLClass(IRI.create(":A"));
+        OWLObjectProperty R = df.getOWLObjectProperty(IRI.create(":r"));
+
+        OWLClassExpression right2 = df.getOWLObjectSomeValuesFrom(R, A);
+        OWLSubClassOfAxiom axiom = df.getOWLSubClassOfAxiom(A, right2);
+        man.addAxiom(targetOntology, axiom);
+        baseLearner.precomputation();
+
+        OWLClassExpression right1 = df.getOWLObjectSomeValuesFrom(R, df.getOWLObjectIntersectionOf(A, right2));
+        try {
+            OWLSubClassOfAxiom result = baseLearner.decomposeRight(A, df.getOWLObjectIntersectionOf(A, right1));
+            OWLSubClassOfAxiom target = df.getOWLSubClassOfAxiom(A, right2);
+            compare(result, target);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @Test
+    public void rightDecompositionNewLeft() {
+        OWLDataFactory df = man.getOWLDataFactory();
+
+        OWLClass A = df.getOWLClass(IRI.create(":A"));
+        OWLClass B = df.getOWLClass(IRI.create(":B"));
+        OWLObjectProperty R = df.getOWLObjectProperty(IRI.create(":r"));
+
+        OWLClassExpression right = df.getOWLObjectSomeValuesFrom(R, B);
+        OWLSubClassOfAxiom axiom = df.getOWLSubClassOfAxiom(B, right);
+        man.addAxiom(targetOntology, axiom);
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(A, B));
+        baseLearner.precomputation();
+
+        try {
+            OWLSubClassOfAxiom result = baseLearner.decomposeRight(A, right);
+            OWLSubClassOfAxiom target = df.getOWLSubClassOfAxiom(B, right);
+            compare(result, target);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void rightDecompositionDropEdge() {
+        OWLDataFactory df = man.getOWLDataFactory();
+
+        OWLClass A = df.getOWLClass(IRI.create(":A"));
+        OWLClass B = df.getOWLClass(IRI.create(":B"));
+        OWLClass C = df.getOWLClass(IRI.create(":C"));
+        OWLObjectProperty R = df.getOWLObjectProperty(IRI.create(":r"));
+
+        OWLClassExpression rA = df.getOWLObjectSomeValuesFrom(R, A);
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(A, rA));
+        OWLClassExpression rB = df.getOWLObjectSomeValuesFrom(R, B);
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(C, rB));
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(C, A));
+        baseLearner.precomputation();
+
+        man.addAxiom(hypothesisOntology, df.getOWLSubClassOfAxiom(A, rA));
+
+        try {
+            OWLSubClassOfAxiom result = baseLearner.decomposeRight(C, df.getOWLObjectIntersectionOf(rA, rB));
+            OWLSubClassOfAxiom target = df.getOWLSubClassOfAxiom(C, df.getOWLObjectIntersectionOf(A, rB));
+            compare(result, target);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void saturateHypothesisLeft() {
+        OWLDataFactory df = man.getOWLDataFactory();
+
+        OWLClass A = df.getOWLClass(IRI.create(":A"));
+        OWLClass B = df.getOWLClass(IRI.create(":B"));
+        OWLClass C = df.getOWLClass(IRI.create(":C"));
+        OWLObjectProperty R = df.getOWLObjectProperty(IRI.create(":r"));
+
+        OWLClassExpression rB = df.getOWLObjectSomeValuesFrom(R, B);
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(rB, B));
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(rB, C));
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(B, A));
+        baseLearner.precomputation();
+
+        man.addAxiom(hypothesisOntology, df.getOWLSubClassOfAxiom(rB, C));
+
+        try {
+            OWLSubClassOfAxiom result = baseLearner.decomposeLeft(rB, B);
+            OWLSubClassOfAxiom target = df.getOWLSubClassOfAxiom(df.getOWLObjectIntersectionOf(C,
+                    df.getOWLObjectSomeValuesFrom(R, df.getOWLObjectIntersectionOf(A, B))
+            ), B);
+            compare(result, target);
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+    }
+
+    @Test
+    public void decompositionLeftDropEdge() {
+        OWLDataFactory df = man.getOWLDataFactory();
+
+        OWLClass A = df.getOWLClass(IRI.create(":A"));
+        OWLObjectProperty R = df.getOWLObjectProperty(IRI.create(":r"));
+        OWLObjectProperty S = df.getOWLObjectProperty(IRI.create(":s"));
+
+        OWLClassExpression sA = df.getOWLObjectSomeValuesFrom(S, A);
+        OWLClassExpression rT = df.getOWLObjectSomeValuesFrom(R, df.getOWLThing());
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(sA, A));
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(rT, A));
+        baseLearner.precomputation();
+
+        man.addAxiom(hypothesisOntology, df.getOWLSubClassOfAxiom(rT, A));
+
+        try {
+            OWLSubClassOfAxiom result = baseLearner.decomposeLeft(df.getOWLObjectSomeValuesFrom(S,
+                    df.getOWLObjectIntersectionOf(A, df.getOWLObjectSomeValuesFrom(R, A))), A);
+            OWLSubClassOfAxiom target = df.getOWLSubClassOfAxiom(sA, A);
+            compare(result, target);
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+    }
+
+    @Test
+    public void decompositionLeftFindEdge() {
+        OWLDataFactory df = man.getOWLDataFactory();
+
+        OWLClass A = df.getOWLClass(IRI.create(":A"));
+        OWLClass B = df.getOWLClass(IRI.create(":B"));
+        OWLObjectProperty R = df.getOWLObjectProperty(IRI.create(":r"));
+        OWLObjectProperty S = df.getOWLObjectProperty(IRI.create(":s"));
+
+        OWLClassExpression sA = df.getOWLObjectSomeValuesFrom(S, A);
+        OWLClassExpression rA = df.getOWLObjectSomeValuesFrom(R, A);
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(sA, A));
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(rA, B));
+        baseLearner.precomputation();
+
+        man.addAxiom(hypothesisOntology, df.getOWLSubClassOfAxiom(sA, A));
+
+        try {
+            OWLSubClassOfAxiom result = baseLearner.decomposeLeft(df.getOWLObjectSomeValuesFrom(S,
+                    df.getOWLObjectIntersectionOf(A, rA)), A);
+            OWLSubClassOfAxiom target = df.getOWLSubClassOfAxiom(df.getOWLObjectIntersectionOf(A, rA), B);
+            compare(result, target);
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+    }
+
+    @Test
+    public void unsaturateLeftExtended() {
+        OWLDataFactory df = man.getOWLDataFactory();
+
+        OWLClass A = df.getOWLClass(IRI.create(":A"));
+        OWLClass B = df.getOWLClass(IRI.create(":B"));
+        OWLObjectProperty R = df.getOWLObjectProperty(IRI.create(":r"));
+        OWLObjectProperty S = df.getOWLObjectProperty(IRI.create(":s"));
+
+        OWLClassExpression sA = df.getOWLObjectSomeValuesFrom(S, A);
+        OWLClassExpression rA = df.getOWLObjectSomeValuesFrom(R, A);
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(sA, A));
+        man.addAxiom(targetOntology, df.getOWLSubClassOfAxiom(rA, B));
+        baseLearner.precomputation();
+
+        man.addAxiom(hypothesisOntology, df.getOWLSubClassOfAxiom(sA, A));
+
+        try {
+            OWLSubClassOfAxiom result = baseLearner.decomposeLeft(df.getOWLObjectSomeValuesFrom(S,
+                    df.getOWLObjectIntersectionOf(A, rA)), A);
+            OWLSubClassOfAxiom target = df.getOWLSubClassOfAxiom(df.getOWLObjectIntersectionOf(A, rA), B);
+            compare(result, target);
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+    }
+
+    private void compare(OWLSubClassOfAxiom value, OWLSubClassOfAxiom expected) {
+        compare(value.getSubClass(), expected.getSubClass());
+        compare(value.getSuperClass(), expected.getSuperClass());
+    }
+
+    private void compare(OWLClassExpression value, OWLClassExpression expected) {
+        try {
+            assertThat(new ELTree(value).equals(new ELTree(expected)), is(true));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

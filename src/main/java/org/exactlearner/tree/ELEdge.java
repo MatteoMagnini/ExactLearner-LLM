@@ -5,6 +5,8 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLProperty;
 import uk.ac.manchester.cs.owl.owlapi.OWLDataFactoryImpl;
 
+import java.util.Objects;
+
 public class ELEdge {
 	private final OWLProperty label;
 	private final String strLabel;
@@ -70,5 +72,17 @@ public class ELEdge {
 	public OWLClassExpression transformToDescription() {
 		OWLClassExpression child = node.transformToDescription();
 		return df.getOWLObjectSomeValuesFrom(label.asOWLObjectProperty(), child);
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof ELEdge edge)) return false;
+        return Objects.equals(label, edge.label) && Objects.equals(strLabel, edge.strLabel) && Objects.equals(node, edge.node);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(label, strLabel, node);
 	}
 }

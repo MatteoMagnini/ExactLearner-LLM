@@ -132,7 +132,10 @@ public class ConceptRelation<T> {
         if (order.size() < 2) {
             return new ArrayList<>(order);
         }
-        return new ArrayList<>(topologicalOrder().stream().filter(order::contains).toList());
+        List<T> existing = new ArrayList<>(topologicalOrder().stream().filter(order::contains).toList());
+        List<T> out = new ArrayList<>(order.stream().filter(t -> !existing.contains(t)).toList());
+        out.addAll(existing);
+        return out;
     }
 
     private void removeNode(ConceptRelationNode<T> node, Map<ConceptRelationNode<T>, Integer> parents, Queue<ConceptRelationNode<T>> empty) {

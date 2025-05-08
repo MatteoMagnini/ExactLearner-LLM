@@ -133,4 +133,16 @@ public class ELTree {
     public void setRootNode(ELNode rootNode) {
         this.rootNode = rootNode;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ELTree elTree)) return false;
+        return Objects.equals(rootNode, elTree.rootNode);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(rootNode);
+    }
 }

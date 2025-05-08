@@ -84,8 +84,7 @@ public class ELNode {
 		getLabel().remove(cl);
 	}
 	public void remove(ELEdge e) {
-		edges.add(e);
-
+		edges.remove(e);
 	}
 	/**
 	 * Adds an entry to the node label.
@@ -223,6 +222,24 @@ public class ELNode {
     
     public boolean isRoot() {
 		return parent == null;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof ELNode elNode)) return false;
+		Set<OWLClass> l = new HashSet<>(label);
+		l.remove(df.getOWLThing());
+		Set<OWLClass> lo = new HashSet<>(elNode.getLabel());
+		lo.remove(df.getOWLThing());
+        return level == elNode.level && isClassNode == elNode.isClassNode && Objects.equals(l, lo) && Objects.equals(new HashSet<>(edges), new HashSet<>(elNode.edges));
+	}
+
+	@Override
+	public int hashCode() {
+		Set<OWLClass> l = new HashSet<>(label);
+		l.remove(df.getOWLThing());
+		return Objects.hash(l, new HashSet<>(edges), level, isClassNode);
 	}
 }
 

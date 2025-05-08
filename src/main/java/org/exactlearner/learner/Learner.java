@@ -169,12 +169,22 @@ public class Learner implements BaseLearner {
         if (rightTree.getMaxLevel() > 1) {
             for (int i = 0; i < rightTree.getMaxLevel(); i++) {
                 for (ELNode nod : rightTree.getNodesOnLevel(i + 1)) {
+                    if (nod.isRoot()) {
+                        for (OWLClass cl1 : myEngineForT.getClassesInSignature()) {
+                            if (!nod.getLabel().contains(cl1) && !cl1.equals(cl)) {
+                                if (myEngineForH.entailed(myEngineForH.getSubClassAxiom(cl, cl1))) {
+                                    nod.extendLabel(cl1);
+                                }
+                            }
+                        }
+                    }
+                    oldTree = new ELTree(rightTree.transformToClassExpression());
                     for (OWLClass cl1 : myEngineForH.getClassesInSignature()) {
                         if (!nod.getLabel().contains(cl1)) {
                             nod.extendLabel(cl1);
                             if (myEngineForH.entailed(myEngineForH.getSubClassAxiom(
                                     oldTree.transformToClassExpression(), rightTree.transformToClassExpression()))) {
-                                oldTree = new ELTree(leftTree.transformToClassExpression());
+                                oldTree = new ELTree(rightTree.transformToClassExpression());
                             } else {
                                 nod.remove(cl1);
                             }
@@ -231,10 +241,11 @@ public class Learner implements BaseLearner {
                             continue;
                         }
 
-                        if (myEngineForT.entailed(axiom)) {
+                        if (myEngineForH.entailed(axiom)) {
                             // If the axiom is entailed from the hypothesis ontology, it is removed from the node
                             nod.remove(edge);
                             rightDecompositionCounter++;
+                            myExpression = tree.transformToClassExpression();
                             break;
                         } else {
                             // If the axiom is not entailed from the hypothesis, it becomes the new counter example
