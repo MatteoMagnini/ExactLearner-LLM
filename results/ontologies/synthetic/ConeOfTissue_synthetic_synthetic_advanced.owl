@@ -1,0 +1,903 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <urn:absoluteiri:defaultvalue#>
+
+
+
+Ontology: 
+
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Domain Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Modifier Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+
+    Annotations: 
+        rdfs:label "Is Division Of"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasFeature>
+
+    Annotations: 
+        rdfs:label "has Feature"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo>
+
+    Annotations: 
+        rdfs:label "has Non Causal Link To"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#AbsoluteShapeState>
+
+    Annotations: 
+        rdfs:label "Absolute Shape State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#MorphologyState>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#ShapeState>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#StructuralState>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Appearance>
+
+    Annotations: 
+        rdfs:label "Appearance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Feature>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Morphology>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#StructuralFeature>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BodyRegion>
+
+    Annotations: 
+        rdfs:label "Body Region"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidRegion>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PairedOrUnpairedStatus>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#atLeastPaired>),
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BodyStructure>
+
+    Annotations: 
+        rdfs:label "Body Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BodyStructureByFeature>
+
+    Annotations: 
+        rdfs:label "Body Structure By Feature"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#hasFeature> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BodyStructureByShape>
+
+    Annotations: 
+        rdfs:label "Body Structure By Shape"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#BodyStructureByFeature>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Appearance>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Morphology>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#Shape>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ConeOfTissue>
+
+    Annotations: 
+        rdfs:label "Cone Of Tissue"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyRegion>,
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#BodyStructureByFeature>,
+        <http://www.co-ode.org/ontologies/galen#BodyStructureByShape>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InternalRegion>,
+        <http://www.co-ode.org/ontologies/galen#InternalRegionOfSolid>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#PartOfBodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidPartOfBodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidRegion>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BodyStructure>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BodyStructure>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsoluteShapeState>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#MorphologyState>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#ShapeState>
+             and <http://www.co-ode.org/ontologies/galen#State>
+             and <http://www.co-ode.org/ontologies/galen#StateOrQuantity>
+             and <http://www.co-ode.org/ontologies/galen#StructuralState>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#conical>
+             and <http://www.co-ode.org/ontologies/galen#solidShape>),
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some 
+            (<http://www.co-ode.org/ontologies/galen#BodyStructure>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+
+    Annotations: 
+        rdfs:label "Discrete Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Feature>
+
+    Annotations: 
+        rdfs:label "Feature"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+
+    Annotations: 
+        rdfs:label "Generalised Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InternalRegion>
+
+    Annotations: 
+        rdfs:label "Internal Region"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyRegion>,
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InternalRegionOfSolid>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#PartOfBodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidPartOfBodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidRegion>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InternalRegionOfSolid>
+
+    Annotations: 
+        rdfs:label "Internal Region Of Solid"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidRegion>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Morphology>
+
+    Annotations: 
+        rdfs:label "Morphology"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Feature>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#StructuralFeature>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#MorphologyState>
+
+    Annotations: 
+        rdfs:label "Morphology State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#StructuralState>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>
+
+    Annotations: 
+        rdfs:label "Organic Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PairedOrUnpairedStatus>
+
+    Annotations: 
+        rdfs:label "Paired Or Unpaired Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PartOfBodyStructure>
+
+    Annotations: 
+        rdfs:label "Part Of Body Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+
+    Annotations: 
+        rdfs:label "Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PropertyOfPhenomenon>
+
+    Annotations: 
+        rdfs:label "Property Of Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Feature>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Shape>
+
+    Annotations: 
+        rdfs:label "Shape"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Appearance>,
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Feature>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Morphology>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#StructuralFeature>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ShapeState>
+
+    Annotations: 
+        rdfs:label "Shape State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#MorphologyState>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#StructuralState>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidPartOfBodyStructure>
+
+    Annotations: 
+        rdfs:label "Solid Part Of Body Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#PartOfBodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidRegion>
+
+    Annotations: 
+        rdfs:label "Solid Region"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidStructure>
+
+    Annotations: 
+        rdfs:label "Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#State>
+
+    Annotations: 
+        rdfs:label "State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StateOrQuantity>
+
+    Annotations: 
+        rdfs:label "State Or Quantity"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+
+    Annotations: 
+        rdfs:label "Structural Feature"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Feature>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralState>
+
+    Annotations: 
+        rdfs:label "Structural State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+
+    Annotations: 
+        rdfs:label "Symbolic Value Type"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#atLeastPaired>
+
+    Annotations: 
+        rdfs:label "at Least Paired"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#PairedOrUnpairedStatus>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#conical>
+
+    Annotations: 
+        rdfs:label "conical"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#AbsoluteShapeState>,
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#MorphologyState>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#ShapeState>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#StructuralState>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#solidShape>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#discrete>
+
+    Annotations: 
+        rdfs:label "discrete"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#solidShape>
+
+    Annotations: 
+        rdfs:label "solid Shape"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#AbsoluteShapeState>,
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#MorphologyState>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#ShapeState>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#StructuralState>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    

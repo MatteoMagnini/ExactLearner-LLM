@@ -1,0 +1,154 @@
+Prefix: : <http://obo.sourceforge.net/cl.owl#>
+Prefix: cl: <http://obo.sourceforge.net/cl.owl#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://obo.sourceforge.net/cl.owl>
+
+
+AnnotationProperty: rdfs:comment
+
+    
+Datatype: xsd:string
+
+    
+Class: cl:AnimalCell
+
+    SubClassOf: 
+        cl:CellByOrganism
+    
+    
+Class: cl:Cell
+
+    Annotations: 
+        rdfs:comment "Extract from OBO Cell Type Ontology"
+    
+    
+Class: cl:CellByClass
+
+    SubClassOf: 
+        cl:Cell
+    
+    
+Class: cl:CellByDevelopmentStage
+
+    SubClassOf: 
+        cl:Cell
+    
+    
+Class: cl:CellByOrganism
+
+    SubClassOf: 
+        cl:Cell
+    
+    
+Class: cl:ChondroBlast
+
+    SubClassOf: 
+        cl:InMatureCell
+    
+    
+Class: cl:ChondroCyte
+
+    SubClassOf: 
+        cl:MatureCell
+    
+    
+Class: cl:CirculatingCell
+
+    SubClassOf: 
+        cl:CellByClass
+    
+    
+Class: cl:ElectricallyActiveCell
+
+    SubClassOf: 
+        cl:CellByClass
+    
+    
+Class: cl:Erythrocyte
+
+    SubClassOf: 
+        cl:CirculatingCell,
+        cl:MatureCell
+    
+    
+Class: cl:InMatureCell
+
+    SubClassOf: 
+        cl:CellByDevelopmentStage
+    
+    
+Class: cl:LeafCell
+
+    SubClassOf: 
+        cl:MatureCell,
+        cl:PhotosyntheticCell
+    
+    
+Class: cl:MatureCell
+
+    SubClassOf: 
+        cl:CellByDevelopmentStage
+    
+    
+Class: cl:MioBlast
+
+    SubClassOf: 
+        cl:InMatureCell
+    
+    
+Class: cl:Miocyte
+
+    SubClassOf: 
+        cl:MatureCell
+    
+    
+Class: cl:Neuron
+
+    SubClassOf: 
+        cl:ElectricallyActiveCell,
+        cl:MatureCell
+    
+    
+Class: cl:Osteocyte
+
+    SubClassOf: 
+        cl:MatureCell
+    
+    
+Class: cl:PhotoreceptorCell
+
+    SubClassOf: 
+        cl:MatureCell
+    
+    
+Class: cl:PhotosyntheticCell
+
+    SubClassOf: 
+        cl:CellByClass
+    
+    
+Class: cl:PlantCell
+
+    SubClassOf: 
+        cl:CellByOrganism
+    
+    
+Class: cl:SclerenchymaCell
+
+    SubClassOf: 
+        cl:MatureCell
+    
+    
+Class: cl:StructuralCell
+
+    SubClassOf: 
+        cl:CellByClass
+    
+    

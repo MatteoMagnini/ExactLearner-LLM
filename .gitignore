@@ -14,7 +14,8 @@ table3.tex
 results/axiomsQuerying
 results/classesQuerying
 results/old
-results/ontologies/**/*.owl
+#results/ontologies/**/*.owl
+results/ontologies/*.owl
 warnings.txt
 logging_file_name.txt
 results.sqlite3

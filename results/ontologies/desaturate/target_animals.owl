@@ -1,0 +1,115 @@
+Prefix: : <http://www.semanticweb.org/ontologies/2014/3/animals.owl#>
+Prefix: animals: <http://www.semanticweb.org/ontologies/2014/3/animals.owl#>
+Prefix: owl2xml: <http://www.w3.org/2006/12/owl2-xml#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/ontologies/2014/3/animals.owl>
+
+
+ObjectProperty: animals:eats
+
+    
+ObjectProperty: animals:has_part
+
+    
+ObjectProperty: animals:lays
+
+    
+ObjectProperty: animals:lives_in
+
+    
+Class: animals:Animal
+
+    
+Class: animals:Backbone
+
+    
+Class: animals:Bird
+
+    SubClassOf: 
+        animals:Vertebrate,
+        (animals:has_part some animals:Leg)
+         and (animals:has_part some animals:Wing),
+        animals:lays some animals:Egg
+    
+    
+Class: animals:Carnivore
+
+    EquivalentTo: 
+        animals:Animal
+         and (animals:eats some animals:Meat)
+    
+    
+Class: animals:Cat
+
+    SubClassOf: 
+        animals:Carnivore
+         and animals:Mammal
+    
+    
+Class: animals:Egg
+
+    
+Class: animals:Elephant
+
+    SubClassOf: 
+        animals:Herbivore
+         and animals:Mammal
+    
+    
+Class: animals:Fish
+
+    SubClassOf: 
+        animals:Vertebrate,
+        animals:Animal
+         and (animals:lives_in some animals:Water)
+    
+    
+Class: animals:Herbivore
+
+    EquivalentTo: 
+        animals:Animal
+         and (animals:eats some animals:Plant)
+    
+    
+Class: animals:Leg
+
+    
+Class: animals:Mammal
+
+    SubClassOf: 
+        animals:Vertebrate
+    
+    
+Class: animals:Meat
+
+    
+Class: animals:Plant
+
+    
+Class: animals:Reptile
+
+    SubClassOf: 
+        animals:Carnivore
+         and (animals:lays some animals:Egg)
+    
+    
+Class: animals:Vertebrate
+
+    EquivalentTo: 
+        animals:Animal
+         and (animals:has_part some animals:Backbone)
+    
+    
+Class: animals:Water
+
+    
+Class: animals:Wing
+
+    

@@ -1,0 +1,787 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <urn:absoluteiri:defaultvalue#>
+
+
+
+Ontology: 
+
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+
+    Annotations: 
+        rdfs:label "Role Designating Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#SelectorAttribute>
+
+    Annotations: 
+        rdfs:label "Selector Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralSelectorAttribute>
+
+    Annotations: 
+        rdfs:label "Structural Selector Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasPositionalSelector>
+
+    Annotations: 
+        rdfs:label "has Positional Selector"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+
+    Annotations: 
+        rdfs:label "Absolute Position Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#PositionSelector>,
+        <http://www.co-ode.org/ontologies/galen#Selector>,
+        <http://www.co-ode.org/ontologies/galen#StructuralSelector>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+
+    Annotations: 
+        rdfs:label "Biochemical Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>,
+        <http://www.co-ode.org/ontologies/galen#Role>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Fruit>
+
+    Annotations: 
+        rdfs:label "Fruit"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDNonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDOrganicSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDVegetableSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PlantDerivative>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>),
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+             and <http://www.co-ode.org/ontologies/galen#OrganicRole>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+             and <http://www.co-ode.org/ontologies/galen#OrganicRole>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+             and <http://www.co-ode.org/ontologies/galen#OrganicRole>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+             and <http://www.co-ode.org/ontologies/galen#OrganicRole>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#SelectorAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>),
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#StructuralSelectorAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#hasPositionalSelector> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>
+
+    Annotations: 
+        rdfs:label "Generalised Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+
+    Annotations: 
+        rdfs:label "Internal External Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>,
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#PositionSelector>,
+        <http://www.co-ode.org/ontologies/galen#Selector>,
+        <http://www.co-ode.org/ontologies/galen#StructuralSelector>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NAMEDNonBodySubstance>
+
+    Annotations: 
+        rdfs:label "NAMED Non Body Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#SelectorAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>),
+        <http://www.co-ode.org/ontologies/galen#StructuralSelectorAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NAMEDOrganicSubstance>
+
+    Annotations: 
+        rdfs:label "NAMED Organic Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDNonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#NonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+             and <http://www.co-ode.org/ontologies/galen#OrganicRole>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+             and <http://www.co-ode.org/ontologies/galen#OrganicRole>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+             and <http://www.co-ode.org/ontologies/galen#OrganicRole>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NAMEDVegetableSubstance>
+
+    Annotations: 
+        rdfs:label "NAMED Vegetable Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDNonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDOrganicSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NonBodySubstance>
+
+    Annotations: 
+        rdfs:label "Non Body Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#SelectorAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PositionSelector>
+             and <http://www.co-ode.org/ontologies/galen#Selector>
+             and <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+             and <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#externalSelection>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+
+    Annotations: 
+        rdfs:label "Organic Or Inorganic Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BiochemicalRole>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>,
+        <http://www.co-ode.org/ontologies/galen#Role>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#OrganicRole>
+
+    Annotations: 
+        rdfs:label "Organic Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BiochemicalRole>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>,
+        <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>,
+        <http://www.co-ode.org/ontologies/galen#Role>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#OrganicSubstance>
+
+    Annotations: 
+        rdfs:label "Organic Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+
+    Annotations: 
+        rdfs:label "Physiological Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Role>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PlantDerivative>
+
+    Annotations: 
+        rdfs:label "Plant Derivative"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDNonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDOrganicSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDVegetableSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PositionSelector>
+
+    Annotations: 
+        rdfs:label "Position Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Selector>,
+        <http://www.co-ode.org/ontologies/galen#StructuralSelector>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Role>
+
+    Annotations: 
+        rdfs:label "Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Selector>
+
+    Annotations: 
+        rdfs:label "Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+
+    Annotations: 
+        rdfs:label "Structural Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Selector>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Substance>
+
+    Annotations: 
+        rdfs:label "Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+
+    Annotations: 
+        rdfs:label "Symbolic Value Type"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Zuccini>
+
+    Annotations: 
+        rdfs:label "Zuccini"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Fruit>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDNonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDOrganicSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDVegetableSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#OrganicSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PlantDerivative>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#externalSelection>
+
+    Annotations: 
+        rdfs:label "external Selection"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>,
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#PositionSelector>,
+        <http://www.co-ode.org/ontologies/galen#Selector>,
+        <http://www.co-ode.org/ontologies/galen#StructuralSelector>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+
+    Annotations: 
+        rdfs:label "infinitely Divisible"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#mass>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#mass>
+
+    Annotations: 
+        rdfs:label "mass"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    

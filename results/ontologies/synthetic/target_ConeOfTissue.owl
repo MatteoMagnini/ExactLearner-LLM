@@ -1,0 +1,1053 @@
+Prefix: ns1: <http://www.w3.org/2002/07/owl#>
+Prefix: ns2: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: ns3: <http://data.bioontology.org/metadata/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlConeOfTissue.owl>
+
+
+
+Ontology: <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlConeOfTissue.owl>
+
+
+AnnotationProperty: ns3:prefixIRI
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Constructive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#FeatureStateAttribute>
+
+    Annotations: 
+        rdfs:label "Feature State Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>,
+        <http://www.co-ode.org/ontologies/galen#isNonCausallyLinkedTo>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#HasDivision>
+
+    Annotations: 
+        rdfs:label "Has Division"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Constructive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Feature State Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>,
+        <http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#FeatureStateAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Locative Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#LocativeAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#PartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralAppearanceModifier>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Appearance Modifier"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralAppearanceModifier>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#hasFeature>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+
+    Annotations: 
+        rdfs:label "Is Division Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#HasDivision>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#LocativeAttribute>
+
+    Annotations: 
+        rdfs:comment "Synonym: affects",
+        rdfs:comment "Synonym: involves",
+        rdfs:label "Locative Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#PartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralAppearanceModifier>
+
+    Annotations: 
+        rdfs:label "Structural Appearance Modifier"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralAppearanceModifier>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Structural Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#isFeatureOf>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Structural Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#PartitiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasAbsoluteState>
+
+    Annotations: 
+        rdfs:label "has Absolute State"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#hasState>
+    
+    Characteristics: 
+        Functional,
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isAbsoluteStateOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasFeature>
+
+    Annotations: 
+        rdfs:label "has Feature"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isFeatureOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo>
+
+    Annotations: 
+        rdfs:label "has Non Causal Link To"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isNonCausallyLinkedTo>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasShape>
+
+    Annotations: 
+        rdfs:label "has Shape"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralAppearanceModifier>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isShapeOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasSolidDivision>
+
+    Annotations: 
+        rdfs:label "has Solid Division"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#hasSolidRegion>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isSolidDivisionOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasSolidRegion>
+
+    Annotations: 
+        rdfs:label "has Solid Region"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#HasDivision>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isSolidRegionOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasState>
+
+    Annotations: 
+        rdfs:label "has State"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute>
+    
+    Characteristics: 
+        Functional,
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isStateOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isAbsoluteStateOf>
+
+    Annotations: 
+        rdfs:label "is Absolute State Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#isStateOf>
+    
+    Characteristics: 
+        Functional,
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasAbsoluteState>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+
+    Annotations: 
+        rdfs:label "is Countability Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasCountability>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isFeatureOf>
+
+    Annotations: 
+        rdfs:label "is Feature Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#FeatureStateAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasFeature>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isNonCausallyLinkedTo>
+
+    Annotations: 
+        rdfs:comment "Synonym: nonCausallyInvolves",
+        rdfs:label "is Non Causally Linked To"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#LocativeAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isPairedOrUnpaired>
+
+    Annotations: 
+        rdfs:label "is Paired Or Unpaired"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isPairedOrUnpairedOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isPairedOrUnpairedOf>
+
+    Annotations: 
+        rdfs:label "is Paired Or Unpaired Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isPairedOrUnpaired>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isShapeOf>
+
+    Annotations: 
+        rdfs:label "is Shape Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralAppearanceModifier>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasShape>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isSolidDivisionOf>
+
+    Annotations: 
+        rdfs:label "is Solid Division Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#isSolidRegionOf>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasSolidDivision>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isSolidRegionOf>
+
+    Annotations: 
+        rdfs:label "is Solid Region Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasSolidRegion>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isStateOf>
+
+    Annotations: 
+        rdfs:label "is State Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#FeatureStateAttribute>
+    
+    Characteristics: 
+        Functional,
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasState>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#AbsoluteShapeState>
+
+    Annotations: 
+        ns3:prefixIRI "AbsoluteShapeState",
+        rdfs:label "Absolute Shape State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ShapeState>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Appearance>
+
+    Annotations: 
+        ns3:prefixIRI "Appearance",
+        rdfs:label "Appearance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Morphology>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        ns3:prefixIRI "Aspect",
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BodyRegion>
+
+    Annotations: 
+        ns3:prefixIRI "BodyRegion",
+        rdfs:label "Body Region"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidRegion>,
+        <http://www.co-ode.org/ontologies/galen#isPairedOrUnpaired> some <http://www.co-ode.org/ontologies/galen#atLeastPaired>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BodyStructure>
+
+    Annotations: 
+        ns3:prefixIRI "BodyStructure",
+        rdfs:label "Body Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BodyStructureByFeature>
+
+    Annotations: 
+        ns3:prefixIRI "BodyStructureByFeature",
+        rdfs:label "Body Structure By Feature"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>
+         and (<http://www.co-ode.org/ontologies/galen#hasFeature> some <http://www.co-ode.org/ontologies/galen#Feature>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BodyStructureByShape>
+
+    Annotations: 
+        ns3:prefixIRI "BodyStructureByShape",
+        rdfs:label "Body Structure By Shape"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>
+         and (<http://www.co-ode.org/ontologies/galen#hasFeature> some <http://www.co-ode.org/ontologies/galen#Shape>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ConeOfTissue>
+
+    Annotations: 
+        ns3:prefixIRI "ConeOfTissue",
+        rdfs:label "Cone Of Tissue"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#InternalRegion>
+         and (<http://www.co-ode.org/ontologies/galen#hasShape> some 
+            (<http://www.co-ode.org/ontologies/galen#Shape>
+             and (<http://www.co-ode.org/ontologies/galen#hasAbsoluteState> some <http://www.co-ode.org/ontologies/galen#conical>)))
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#InternalRegion>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        ns3:prefixIRI "CountabilityStatus",
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+
+    Annotations: 
+        ns3:prefixIRI "DiscreteStructure",
+        rdfs:label "Discrete Structure"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+         and (<http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        ns3:prefixIRI "DomainCategory",
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Feature>
+
+    Annotations: 
+        ns3:prefixIRI "Feature",
+        rdfs:label "Feature"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+
+    Annotations: 
+        ns3:prefixIRI "GeneralisedStructure",
+        rdfs:label "Generalised Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InternalRegion>
+
+    Annotations: 
+        ns3:prefixIRI "InternalRegion",
+        rdfs:label "Internal Region"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#BodyRegion>
+         and (<http://www.co-ode.org/ontologies/galen#isSolidDivisionOf> some <http://www.co-ode.org/ontologies/galen#BodyStructure>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyRegion>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InternalRegionOfSolid>
+
+    Annotations: 
+        ns3:prefixIRI "InternalRegionOfSolid",
+        rdfs:label "Internal Region Of Solid"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#SolidRegion>
+         and (<http://www.co-ode.org/ontologies/galen#isSolidDivisionOf> some <http://www.co-ode.org/ontologies/galen#SolidStructure>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#SolidRegion>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        ns3:prefixIRI "ModifierConcept",
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Morphology>
+
+    Annotations: 
+        ns3:prefixIRI "Morphology",
+        rdfs:label "Morphology"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#MorphologyState>
+
+    Annotations: 
+        ns3:prefixIRI "MorphologyState",
+        rdfs:label "Morphology State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralState>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#OrganicSolidStructure>
+
+    Annotations: 
+        ns3:prefixIRI "OrganicSolidStructure",
+        rdfs:label "Organic Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PairedOrUnpairedStatus>
+
+    Annotations: 
+        ns3:prefixIRI "PairedOrUnpairedStatus",
+        rdfs:label "Paired Or Unpaired Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PartOfBodyStructure>
+
+    Annotations: 
+        ns3:prefixIRI "PartOfBodyStructure",
+        rdfs:label "Part Of Body Structure"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>
+         and (<http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BodyStructure>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        ns3:prefixIRI "Phenomenon",
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "PhysicalStructure",
+        rdfs:label "Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#discrete>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PropertyOfPhenomenon>
+
+    Annotations: 
+        ns3:prefixIRI "PropertyOfPhenomenon",
+        rdfs:label "Property Of Phenomenon"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#Feature>
+         and (<http://www.co-ode.org/ontologies/galen#isFeatureOf> some <http://www.co-ode.org/ontologies/galen#Phenomenon>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Feature>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Shape>
+
+    Annotations: 
+        ns3:prefixIRI "Shape",
+        rdfs:label "Shape"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Appearance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ShapeState>
+
+    Annotations: 
+        ns3:prefixIRI "ShapeState",
+        rdfs:label "Shape State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#MorphologyState>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidPartOfBodyStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SolidPartOfBodyStructure",
+        rdfs:label "Solid Part Of Body Structure"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>
+         and (<http://www.co-ode.org/ontologies/galen#isSolidDivisionOf> some <http://www.co-ode.org/ontologies/galen#BodyStructure>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BodyStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidRegion>
+
+    Annotations: 
+        ns3:prefixIRI "SolidRegion",
+        rdfs:label "Solid Region"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SolidStructure",
+        rdfs:label "Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#State>
+
+    Annotations: 
+        ns3:prefixIRI "State",
+        rdfs:label "State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StateOrQuantity>
+
+    Annotations: 
+        ns3:prefixIRI "StateOrQuantity",
+        rdfs:label "State Or Quantity"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        ns3:prefixIRI "Status",
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+
+    Annotations: 
+        ns3:prefixIRI "StructuralFeature",
+        rdfs:label "Structural Feature"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Feature>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralState>
+
+    Annotations: 
+        ns3:prefixIRI "StructuralState",
+        rdfs:label "Structural State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#State>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        ns3:prefixIRI "StructuralStatus",
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Status>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SubstanceOrPhysicalStructure",
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+
+    Annotations: 
+        ns3:prefixIRI "SymbolicValueType",
+        rdfs:label "Symbolic Value Type"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        ns3:prefixIRI "TopCategory",
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#atLeastPaired>
+
+    Annotations: 
+        ns3:prefixIRI "atLeastPaired",
+        rdfs:label "at Least Paired"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PairedOrUnpairedStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#conical>
+
+    Annotations: 
+        ns3:prefixIRI "conical",
+        rdfs:label "conical"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#solidShape>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#discrete>
+
+    Annotations: 
+        ns3:prefixIRI "discrete",
+        rdfs:label "discrete"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#solidShape>
+
+    Annotations: 
+        ns3:prefixIRI "solidShape",
+        rdfs:label "solid Shape"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#AbsoluteShapeState>
+    
+    

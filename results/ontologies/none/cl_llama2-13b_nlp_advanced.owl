@@ -1,0 +1,74 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <urn:absoluteiri:defaultvalue#>
+
+
+
+Ontology: 
+
+Class: <http://obo.sourceforge.net/cl.owl#AnimalCell>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#Cell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#CellByClass>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#CellByDevelopmentStage>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#CellByOrganism>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#ChondroBlast>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#ChondroCyte>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#CirculatingCell>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#Erythrocyte>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#InMatureCell>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#LeafCell>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#MatureCell>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#MioBlast>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#Miocyte>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#PhotoreceptorCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#PlantCell>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#StructuralCell>
+
+    

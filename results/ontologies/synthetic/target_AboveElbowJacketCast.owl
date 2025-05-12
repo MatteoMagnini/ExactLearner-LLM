@@ -1,0 +1,483 @@
+Prefix: ns1: <http://www.w3.org/2002/07/owl#>
+Prefix: ns2: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: ns3: <http://data.bioontology.org/metadata/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlAboveElbowJacketCast.owl>
+
+
+
+Ontology: <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlAboveElbowJacketCast.owl>
+
+
+AnnotationProperty: ns3:prefixIRI
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Constructive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Constructive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasPhysicalMeans>
+
+    Annotations: 
+        rdfs:label "has Physical Means"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isPhysicalMeansOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+
+    Annotations: 
+        rdfs:label "is Countability Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasCountability>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isPhysicalMeansOf>
+
+    Annotations: 
+        rdfs:label "is Physical Means Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasPhysicalMeans>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#AboveElbowJacketCast>
+
+    Annotations: 
+        ns3:prefixIRI "AboveElbowJacketCast",
+        rdfs:label "Above Elbow Jacket Cast"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#UpperLimbJacketCast>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        ns3:prefixIRI "Aspect",
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Cast>
+
+    Annotations: 
+        ns3:prefixIRI "Cast",
+        rdfs:label "Cast"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ImmobilisingDevice>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        ns3:prefixIRI "CountabilityStatus",
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Device>
+
+    Annotations: 
+        ns3:prefixIRI "Device",
+        rdfs:label "Device"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#InertSolidStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+
+    Annotations: 
+        ns3:prefixIRI "DiscreteStructure",
+        rdfs:label "Discrete Structure"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+         and (<http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        ns3:prefixIRI "DomainCategory",
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#FasteningDevice>
+
+    Annotations: 
+        ns3:prefixIRI "FasteningDevice",
+        rdfs:label "Fastening Device"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#Device>
+         and (<http://www.co-ode.org/ontologies/galen#isPhysicalMeansOf> some <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Device>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>
+
+    Annotations: 
+        ns3:prefixIRI "FreeingOrFixingProcess",
+        rdfs:label "Freeing Or Fixing Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GenericProcess>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>
+
+    Annotations: 
+        ns3:prefixIRI "GeneralisedProcess",
+        rdfs:comment "Synonym: Process",
+        rdfs:label "Generalised Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+
+    Annotations: 
+        ns3:prefixIRI "GeneralisedStructure",
+        rdfs:label "Generalised Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GenericProcess>
+
+    Annotations: 
+        ns3:prefixIRI "GenericProcess",
+        rdfs:label "Generic Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ImmobilisingDevice>
+
+    Annotations: 
+        ns3:prefixIRI "ImmobilisingDevice",
+        rdfs:label "Immobilising Device"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#Device>
+         and (<http://www.co-ode.org/ontologies/galen#isPhysicalMeansOf> some <http://www.co-ode.org/ontologies/galen#Immobilizing>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Device>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Immobilizing>
+
+    Annotations: 
+        ns3:prefixIRI "Immobilizing",
+        rdfs:label "Immobilizing"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InertSolidStructure>
+
+    Annotations: 
+        ns3:prefixIRI "InertSolidStructure",
+        rdfs:label "Inert Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#JacketCast>
+
+    Annotations: 
+        ns3:prefixIRI "JacketCast",
+        rdfs:label "Jacket Cast"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Cast>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        ns3:prefixIRI "ModifierConcept",
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        ns3:prefixIRI "Phenomenon",
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "PhysicalStructure",
+        rdfs:label "Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#discrete>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>
+
+    Annotations: 
+        ns3:prefixIRI "SolidFasteningProcess",
+        rdfs:label "Solid Fastening Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SolidStructure",
+        rdfs:label "Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        ns3:prefixIRI "Status",
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        ns3:prefixIRI "StructuralStatus",
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Status>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SubstanceOrPhysicalStructure",
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        ns3:prefixIRI "TopCategory",
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#UpperLimbJacketCast>
+
+    Annotations: 
+        ns3:prefixIRI "UpperLimbJacketCast",
+        rdfs:label "Upper Limb Jacket Cast"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#JacketCast>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#discrete>
+
+    Annotations: 
+        ns3:prefixIRI "discrete",
+        rdfs:label "discrete"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+    
+    

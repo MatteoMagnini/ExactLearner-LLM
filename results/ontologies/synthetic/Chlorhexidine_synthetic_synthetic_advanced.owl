@@ -1,0 +1,492 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <urn:absoluteiri:defaultvalue#>
+
+
+
+Ontology: 
+
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+
+    Annotations: 
+        rdfs:label "Role Designating Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>
+
+    Annotations: 
+        rdfs:label "Active Drug Additive Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BiochemicalRole>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>,
+        <http://www.co-ode.org/ontologies/galen#Role>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ActiveDrugChemicalIngredient>
+
+    Annotations: 
+        rdfs:label "Active Drug Chemical Ingredient"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ActiveDrugIngredient>,
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ActiveDrugIngredient>
+
+    Annotations: 
+        rdfs:label "Active Drug Ingredient"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+             and <http://www.co-ode.org/ontologies/galen#Role>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+
+    Annotations: 
+        rdfs:label "Biochemical Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>,
+        <http://www.co-ode.org/ontologies/galen#Role>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+
+    Annotations: 
+        rdfs:label "Chemical Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+             and <http://www.co-ode.org/ontologies/galen#mass>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Chlorhexidine>
+
+    Annotations: 
+        rdfs:label "Chlorhexidine"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ActiveDrugChemicalIngredient>,
+        <http://www.co-ode.org/ontologies/galen#ActiveDrugIngredient>,
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#NAMEDActiveDrugIngredient>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+
+    Annotations: 
+        rdfs:label "Drug Additive Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BiochemicalRole>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>,
+        <http://www.co-ode.org/ontologies/galen#Role>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>
+
+    Annotations: 
+        rdfs:label "Generalised Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NAMEDActiveDrugIngredient>
+
+    Annotations: 
+        rdfs:label "NAMED Active Drug Ingredient"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ActiveDrugChemicalIngredient>,
+        <http://www.co-ode.org/ontologies/galen#ActiveDrugIngredient>,
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+
+    Annotations: 
+        rdfs:label "Physiological Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Role>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Role>
+
+    Annotations: 
+        rdfs:label "Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Substance>
+
+    Annotations: 
+        rdfs:label "Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+
+    Annotations: 
+        rdfs:label "infinitely Divisible"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#mass>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#mass>
+
+    Annotations: 
+        rdfs:label "mass"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    

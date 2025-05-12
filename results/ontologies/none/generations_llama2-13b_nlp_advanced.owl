@@ -1,0 +1,128 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <urn:absoluteiri:defaultvalue#>
+
+
+
+Ontology: 
+
+Class: <http://www.owl-ontologies.com/generations.owl#Brother>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Child>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Daughter>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Father>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Female>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#GrandFather>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#GrandMother>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#GrandParent>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Male>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Man>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Mother>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#OffSpring>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Parent>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Person>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Sex>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Sibling>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Sister>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Son>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://www.owl-ontologies.com/generations.owl#Woman>
+
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: owl:Thing
+
+    

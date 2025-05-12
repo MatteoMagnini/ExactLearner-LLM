@@ -1,0 +1,504 @@
+Prefix: ns1: <http://www.w3.org/2002/07/owl#>
+Prefix: ns2: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: ns3: <http://data.bioontology.org/metadata/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlProstaglandinDrug.owl>
+
+
+
+Ontology: <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlProstaglandinDrug.owl>
+
+
+AnnotationProperty: ns3:prefixIRI
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseRoleDesignatingAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Role Designating Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+
+    Annotations: 
+        rdfs:label "Role Designating Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseRoleDesignatingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+
+    Annotations: 
+        rdfs:label "is Countability Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasCountability>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isPhysiologicalRolePlayedBy>
+
+    Annotations: 
+        rdfs:label "is Physiological Role Played By"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseRoleDesignatingAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole>
+
+    Annotations: 
+        rdfs:label "plays Physiological Role"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isPhysiologicalRolePlayedBy>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>
+
+    Annotations: 
+        ns3:prefixIRI "ActiveDrugAdditiveRole",
+        rdfs:label "Active Drug Additive Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ActiveDrugChemicalIngredient>
+
+    Annotations: 
+        ns3:prefixIRI "ActiveDrugChemicalIngredient",
+        rdfs:label "Active Drug Chemical Ingredient"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+         and (<http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ActiveDrugIngredient>
+
+    Annotations: 
+        ns3:prefixIRI "ActiveDrugIngredient",
+        rdfs:label "Active Drug Ingredient"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+         and (<http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        ns3:prefixIRI "Aspect",
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+
+    Annotations: 
+        ns3:prefixIRI "BiochemicalRole",
+        rdfs:label "Biochemical Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+
+    Annotations: 
+        ns3:prefixIRI "ChemicalSubstance",
+        rdfs:label "Chemical Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        ns3:prefixIRI "CountabilityStatus",
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        ns3:prefixIRI "DomainCategory",
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+
+    Annotations: 
+        ns3:prefixIRI "DrugAdditiveRole",
+        rdfs:label "Drug Additive Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Eicosanoid>
+
+    Annotations: 
+        ns3:prefixIRI "Eicosanoid",
+        rdfs:label "Eicosanoid"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#FattyAcid>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#FattyAcid>
+
+    Annotations: 
+        ns3:prefixIRI "FattyAcid",
+        rdfs:label "Fatty Acid"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Lipid>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>
+
+    Annotations: 
+        ns3:prefixIRI "GeneralisedSubstance",
+        rdfs:label "Generalised Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Hormone>
+
+    Annotations: 
+        ns3:prefixIRI "Hormone",
+        rdfs:label "Hormone"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+         and (<http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#HormoneRole>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#HormoneRole>
+
+    Annotations: 
+        ns3:prefixIRI "HormoneRole",
+        rdfs:label "Hormone Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Lipid>
+
+    Annotations: 
+        ns3:prefixIRI "Lipid",
+        rdfs:label "Lipid"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#OrganicComplexChemical>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        ns3:prefixIRI "ModifierConcept",
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#OrganicComplexChemical>
+
+    Annotations: 
+        ns3:prefixIRI "OrganicComplexChemical",
+        rdfs:label "Organic Complex Chemical"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        ns3:prefixIRI "Phenomenon",
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+
+    Annotations: 
+        ns3:prefixIRI "PhysiologicalRole",
+        rdfs:label "Physiological Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Role>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Prostaglandin>
+
+    Annotations: 
+        ns3:prefixIRI "Prostaglandin",
+        rdfs:label "Prostaglandin"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Eicosanoid>,
+        <http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#HormoneRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ProstaglandinDrug>
+
+    Annotations: 
+        ns3:prefixIRI "ProstaglandinDrug",
+        rdfs:label "Prostaglandin Drug"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#Prostaglandin>
+         and (<http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Prostaglandin>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Role>
+
+    Annotations: 
+        ns3:prefixIRI "Role",
+        rdfs:label "Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        ns3:prefixIRI "Status",
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        ns3:prefixIRI "StructuralStatus",
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Status>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Substance>
+
+    Annotations: 
+        ns3:prefixIRI "Substance",
+        rdfs:label "Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SubstanceOrPhysicalStructure",
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        ns3:prefixIRI "TopCategory",
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+
+    Annotations: 
+        ns3:prefixIRI "infinitelyDivisible",
+        rdfs:label "infinitely Divisible"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#mass>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#mass>
+
+    Annotations: 
+        ns3:prefixIRI "mass",
+        rdfs:label "mass"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+    
+    

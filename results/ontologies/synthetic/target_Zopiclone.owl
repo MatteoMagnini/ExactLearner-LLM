@@ -1,0 +1,829 @@
+Prefix: ns1: <http://www.w3.org/2002/07/owl#>
+Prefix: ns2: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: ns3: <http://data.bioontology.org/metadata/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlZopiclone.owl>
+
+
+
+Ontology: <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlZopiclone.owl>
+
+
+AnnotationProperty: ns3:prefixIRI
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Constructive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ContainmentAttribute>
+
+    Annotations: 
+        rdfs:comment "Synonym: contains",
+        rdfs:label "Containment Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DelimitingAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseContainmentAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DelimitingAttribute>
+
+    Annotations: 
+        rdfs:label "Delimiting Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDelimitingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#HasDivision>
+
+    Annotations: 
+        rdfs:label "Has Division"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Constructive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseContainmentAttribute>
+
+    Annotations: 
+        rdfs:comment "Synonym: isContainedIn",
+        rdfs:label "Inverse Containment Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDelimitingAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ContainmentAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDelimitingAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Delimiting Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#DelimitingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#PartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseRoleDesignatingAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Role Designating Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+
+    Annotations: 
+        rdfs:label "Is Division Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#HasDivision>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#PartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+
+    Annotations: 
+        rdfs:label "Role Designating Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseRoleDesignatingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralAttribute>
+
+    Annotations: 
+        rdfs:label "Structural Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Structural Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#PartitiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasChemicalSubgroup>
+
+    Annotations: 
+        rdfs:label "has Chemical Subgroup"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#hasMixedThroughout>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isChemicalSubgroupOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasMixedThroughout>
+
+    Annotations: 
+        rdfs:label "has Mixed Throughout"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#partitivelyContains>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isMixedThroughout>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasStructuralComponent>
+
+    Annotations: 
+        rdfs:label "has Structural Component"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#HasDivision>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isStructuralComponentOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isChemicalSubgroupOf>
+
+    Annotations: 
+        rdfs:label "is Chemical Subgroup Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#isMixedThroughout>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasChemicalSubgroup>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+
+    Annotations: 
+        rdfs:label "is Countability Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasCountability>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isMixedThroughout>
+
+    Annotations: 
+        rdfs:label "is Mixed Throughout"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#isPartitivelyContainedIn>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasMixedThroughout>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isPartitivelyContainedIn>
+
+    Annotations: 
+        rdfs:label "is Partitively Contained In"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseContainmentAttribute>,
+        <http://www.co-ode.org/ontologies/galen#isStructuralComponentOf>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#partitivelyContains>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isPhysiologicalRolePlayedBy>
+
+    Annotations: 
+        rdfs:label "is Physiological Role Played By"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseRoleDesignatingAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isStructuralComponentOf>
+
+    Annotations: 
+        rdfs:label "is Structural Component Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasStructuralComponent>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#partitivelyContains>
+
+    Annotations: 
+        rdfs:label "partitively Contains"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ContainmentAttribute>,
+        <http://www.co-ode.org/ontologies/galen#hasStructuralComponent>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isPartitivelyContainedIn>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole>
+
+    Annotations: 
+        rdfs:label "plays Physiological Role"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isPhysiologicalRolePlayedBy>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>
+
+    Annotations: 
+        ns3:prefixIRI "ActiveDrugAdditiveRole",
+        rdfs:label "Active Drug Additive Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ActiveDrugChemicalIngredient>
+
+    Annotations: 
+        ns3:prefixIRI "ActiveDrugChemicalIngredient",
+        rdfs:label "Active Drug Chemical Ingredient"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+         and (<http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ActiveDrugIngredient>
+
+    Annotations: 
+        ns3:prefixIRI "ActiveDrugIngredient",
+        rdfs:label "Active Drug Ingredient"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+         and (<http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        ns3:prefixIRI "Aspect",
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+
+    Annotations: 
+        ns3:prefixIRI "BiochemicalRole",
+        rdfs:label "Biochemical Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ChemicalGroup>
+
+    Annotations: 
+        ns3:prefixIRI "ChemicalGroup",
+        rdfs:label "Chemical Group"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ChemicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "ChemicalStructure",
+        rdfs:label "Chemical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+
+    Annotations: 
+        ns3:prefixIRI "ChemicalSubstance",
+        rdfs:label "Chemical Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        ns3:prefixIRI "CountabilityStatus",
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CyclopyrroloneChemical>
+
+    Annotations: 
+        ns3:prefixIRI "CyclopyrroloneChemical",
+        rdfs:label "Cyclopyrrolone Chemical"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+         and (<http://www.co-ode.org/ontologies/galen#hasChemicalSubgroup> some <http://www.co-ode.org/ontologies/galen#CyclopyrroloneGroup>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalSubstance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CyclopyrroloneChemicalAsDrug>
+
+    Annotations: 
+        ns3:prefixIRI "CyclopyrroloneChemicalAsDrug",
+        rdfs:label "Cyclopyrrolone Chemical As Drug"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#CyclopyrroloneChemical>
+         and (<http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#ActiveDrugAdditiveRole>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#CyclopyrroloneChemical>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CyclopyrroloneGroup>
+
+    Annotations: 
+        ns3:prefixIRI "CyclopyrroloneGroup",
+        rdfs:label "Cyclopyrrolone Group"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ChemicalGroup>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+
+    Annotations: 
+        ns3:prefixIRI "DiscreteStructure",
+        rdfs:label "Discrete Structure"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+         and (<http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        ns3:prefixIRI "DomainCategory",
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DrugAdditiveRole>
+
+    Annotations: 
+        ns3:prefixIRI "DrugAdditiveRole",
+        rdfs:label "Drug Additive Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+
+    Annotations: 
+        ns3:prefixIRI "GeneralisedStructure",
+        rdfs:label "Generalised Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>
+
+    Annotations: 
+        ns3:prefixIRI "GeneralisedSubstance",
+        rdfs:label "Generalised Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        ns3:prefixIRI "ModifierConcept",
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NAMEDActiveDrugIngredient>
+
+    Annotations: 
+        ns3:prefixIRI "NAMEDActiveDrugIngredient",
+        rdfs:label "NAMED Active Drug Ingredient"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ActiveDrugChemicalIngredient>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        ns3:prefixIRI "Phenomenon",
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "PhysicalStructure",
+        rdfs:label "Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#discrete>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+
+    Annotations: 
+        ns3:prefixIRI "PhysiologicalRole",
+        rdfs:label "Physiological Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Role>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Role>
+
+    Annotations: 
+        ns3:prefixIRI "Role",
+        rdfs:label "Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        ns3:prefixIRI "Status",
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        ns3:prefixIRI "StructuralStatus",
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Status>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Substance>
+
+    Annotations: 
+        ns3:prefixIRI "Substance",
+        rdfs:label "Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SubstanceOrPhysicalStructure",
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        ns3:prefixIRI "TopCategory",
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Zopiclone>
+
+    Annotations: 
+        ns3:prefixIRI "Zopiclone",
+        rdfs:label "Zopiclone"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#NAMEDActiveDrugIngredient>,
+        <http://www.co-ode.org/ontologies/galen#hasChemicalSubgroup> some <http://www.co-ode.org/ontologies/galen#CyclopyrroloneGroup>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#discrete>
+
+    Annotations: 
+        ns3:prefixIRI "discrete",
+        rdfs:label "discrete"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+
+    Annotations: 
+        ns3:prefixIRI "infinitelyDivisible",
+        rdfs:label "infinitely Divisible"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#mass>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#mass>
+
+    Annotations: 
+        ns3:prefixIRI "mass",
+        rdfs:label "mass"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+    
+    

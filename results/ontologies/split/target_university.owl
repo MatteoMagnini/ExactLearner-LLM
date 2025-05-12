@@ -1,0 +1,58 @@
+Prefix: : <http://www.semanticweb.org/ontologies/2014/3/university.owl#>
+Prefix: owl2xml: <http://www.w3.org/2006/12/owl2-xml#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: university: <http://www.semanticweb.org/ontologies/2014/3/university.owl#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/ontologies/2014/3/university.owl>
+
+
+ObjectProperty: university:employed_by
+
+    
+ObjectProperty: university:manages
+
+    
+ObjectProperty: university:teaches
+
+    
+Class: university:Module
+
+    
+Class: university:Person
+
+    
+Class: university:Professor
+
+    SubClassOf: 
+        university:Researcher
+         and university:Teacher
+    
+    
+Class: university:Project
+
+    
+Class: university:Researcher
+
+    SubClassOf: 
+        university:Person
+         and (university:employed_by some university:University),
+        university:manages some university:Project
+    
+    
+Class: university:Teacher
+
+    SubClassOf: 
+        university:Person
+         and (university:employed_by some university:University)
+         and (university:teaches some university:Module)
+    
+    
+Class: university:University
+
+    

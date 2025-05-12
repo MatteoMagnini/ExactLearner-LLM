@@ -1,0 +1,734 @@
+Prefix: ns1: <http://www.w3.org/2002/07/owl#>
+Prefix: ns2: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: ns3: <http://data.bioontology.org/metadata/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlBNFSection13_11.owl>
+
+
+
+Ontology: <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlBNFSection13_11.owl>
+
+
+AnnotationProperty: ns3:prefixIRI
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Constructive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ContainmentAttribute>
+
+    Annotations: 
+        rdfs:comment "Synonym: contains",
+        rdfs:label "Containment Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DelimitingAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseContainmentAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DelimitingAttribute>
+
+    Annotations: 
+        rdfs:label "Delimiting Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDelimitingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#HasDivision>
+
+    Annotations: 
+        rdfs:label "Has Division"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Constructive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseContainmentAttribute>
+
+    Annotations: 
+        rdfs:comment "Synonym: isContainedIn",
+        rdfs:label "Inverse Containment Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDelimitingAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ContainmentAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDelimitingAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Delimiting Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#DelimitingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#PartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+
+    Annotations: 
+        rdfs:label "Is Division Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+    
+    Characteristics: 
+        Transitive
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#HasDivision>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#PartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralAttribute>
+
+    Annotations: 
+        rdfs:label "Structural Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralPartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Structural Partitive Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#PartitiveAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+
+    Annotations: 
+        rdfs:label "is Countability Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasCountability>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#AbstractStructure>
+
+    Annotations: 
+        ns3:prefixIRI "AbstractStructure",
+        rdfs:label "Abstract Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        ns3:prefixIRI "Aspect",
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFBookChapter13>
+
+    Annotations: 
+        ns3:prefixIRI "BNFBookChapter13",
+        rdfs:label "BNF Book Chapter 13"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFBookChapter>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFBookChapter>
+
+    Annotations: 
+        ns3:prefixIRI "BNFBookChapter",
+        rdfs:label "BNF Book Chapter"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+         and (<http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>
+
+    Annotations: 
+        ns3:prefixIRI "BNFChapter13Section",
+        rdfs:label "BNF Chapter 13 Section"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+         and (<http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BNFBookChapter13>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>
+
+    Annotations: 
+        ns3:prefixIRI "BNFChapter13_11Section",
+        rdfs:label "BNF Chapter 13_11 Section"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+         and (<http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+
+    Annotations: 
+        ns3:prefixIRI "BNFSection13_11",
+        rdfs:label "BNF Section 13_11"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#HasDivision> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11_1>,
+        <http://www.co-ode.org/ontologies/galen#HasDivision> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11_2>,
+        <http://www.co-ode.org/ontologies/galen#HasDivision> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11_3>,
+        <http://www.co-ode.org/ontologies/galen#HasDivision> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11_4>,
+        <http://www.co-ode.org/ontologies/galen#HasDivision> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11_5>,
+        <http://www.co-ode.org/ontologies/galen#HasDivision> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11_6>,
+        <http://www.co-ode.org/ontologies/galen#HasDivision> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11_7>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_1>
+
+    Annotations: 
+        ns3:prefixIRI "BNFSection13_11_1",
+        rdfs:label "BNF Section 13_11_1"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_2>
+
+    Annotations: 
+        ns3:prefixIRI "BNFSection13_11_2",
+        rdfs:label "BNF Section 13_11_2"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_3>
+
+    Annotations: 
+        ns3:prefixIRI "BNFSection13_11_3",
+        rdfs:label "BNF Section 13_11_3"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_4>
+
+    Annotations: 
+        ns3:prefixIRI "BNFSection13_11_4",
+        rdfs:label "BNF Section 13_11_4"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_5>
+
+    Annotations: 
+        ns3:prefixIRI "BNFSection13_11_5",
+        rdfs:label "BNF Section 13_11_5"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_6>
+
+    Annotations: 
+        ns3:prefixIRI "BNFSection13_11_6",
+        rdfs:label "BNF Section 13_11_6"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_7>
+
+    Annotations: 
+        ns3:prefixIRI "BNFSection13_11_7",
+        rdfs:label "BNF Section 13_11_7"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+
+    Annotations: 
+        ns3:prefixIRI "BritishNationalFormulary",
+        rdfs:comment "Synonym: BNF",
+        rdfs:label "British National Formulary"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PrintedBook>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        ns3:prefixIRI "CountabilityStatus",
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+
+    Annotations: 
+        ns3:prefixIRI "DiscreteStructure",
+        rdfs:label "Discrete Structure"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+         and (<http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        ns3:prefixIRI "DomainCategory",
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+
+    Annotations: 
+        ns3:prefixIRI "GeneralisedStructure",
+        rdfs:label "Generalised Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Information>
+
+    Annotations: 
+        ns3:prefixIRI "Information",
+        rdfs:label "Information"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InformationSource>
+
+    Annotations: 
+        ns3:prefixIRI "InformationSource",
+        rdfs:label "Information Source"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+         and (<http://www.co-ode.org/ontologies/galen#ContainmentAttribute> some <http://www.co-ode.org/ontologies/galen#Information>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "LogicalStructure",
+        rdfs:label "Logical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#AbstractStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        ns3:prefixIRI "ModifierConcept",
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        ns3:prefixIRI "Phenomenon",
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "PhysicalStructure",
+        rdfs:label "Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#discrete>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedBook>
+
+    Annotations: 
+        ns3:prefixIRI "PrintedBook",
+        rdfs:label "Printed Book"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+
+    Annotations: 
+        ns3:prefixIRI "PrintedBookDivision",
+        rdfs:label "Printed Book Division"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+         and (<http://www.co-ode.org/ontologies/galen#IsDivisionOf> some <http://www.co-ode.org/ontologies/galen#PrintedBook>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+
+    Annotations: 
+        ns3:prefixIRI "PrintedChapter",
+        rdfs:label "Printed Chapter"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+
+    Annotations: 
+        ns3:prefixIRI "PrintedChapterSection",
+        rdfs:label "Printed Chapter Section"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+
+    Annotations: 
+        ns3:prefixIRI "PrintedMaterial",
+        rdfs:label "Printed Material"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#ContainmentAttribute> some <http://www.co-ode.org/ontologies/galen#Information>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SolidStructure",
+        rdfs:label "Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        ns3:prefixIRI "Status",
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        ns3:prefixIRI "StructuralStatus",
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Status>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SubstanceOrPhysicalStructure",
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        ns3:prefixIRI "TopCategory",
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#discrete>
+
+    Annotations: 
+        ns3:prefixIRI "discrete",
+        rdfs:label "discrete"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+    
+    

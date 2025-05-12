@@ -1,0 +1,206 @@
+Prefix: : <http://www.owl-ontologies.com/generations.owl#>
+Prefix: generations: <http://www.owl-ontologies.com/generations.owl#>
+Prefix: owl2xml: <http://www.w3.org/2006/12/owl2-xml#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.owl-ontologies.com/generations.owl>
+
+
+Annotations: 
+    owl:versionInfo "An example ontology created by Matthew Horridge"
+
+AnnotationProperty: owl:versionInfo
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: generations:hasChild
+
+    InverseOf: 
+        generations:hasParent
+    
+    
+ObjectProperty: generations:hasParent
+
+    InverseOf: 
+        generations:hasChild
+    
+    
+ObjectProperty: generations:hasSex
+
+    Characteristics: 
+        Functional
+    
+    Range: 
+        generations:Sex
+    
+    
+ObjectProperty: generations:hasSibling
+
+    Characteristics: 
+        Symmetric
+    
+    
+Class: generations:Brother
+
+    EquivalentTo: 
+        generations:Person
+         and ((generations:hasSibling some generations:Person)
+         and (generations:hasSex value generations:MaleSex))
+    
+    
+Class: generations:Child
+
+    SubClassOf: 
+        generations:Person
+    
+    
+Class: generations:Daughter
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasParent some generations:Person)
+         and (generations:hasSex value generations:FemaleSex)
+    
+    
+Class: generations:Father
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasChild some generations:Person)
+         and (generations:hasSex value generations:MaleSex)
+    
+    
+Class: generations:Female
+
+    EquivalentTo: 
+        generations:hasSex value generations:FemaleSex
+    
+    
+Class: generations:GrandFather
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasChild some 
+            (generations:Person
+             and (generations:hasChild some generations:Person)))
+         and (generations:hasSex value generations:MaleSex)
+    
+    
+Class: generations:GrandMother
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasChild some 
+            (generations:Person
+             and (generations:hasChild some generations:Person)))
+         and (generations:hasSex value generations:FemaleSex)
+    
+    
+Class: generations:GrandParent
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasChild some 
+            (generations:Person
+             and (generations:hasChild some generations:Person)))
+    
+    
+Class: generations:Male
+
+    EquivalentTo: 
+        generations:hasSex value generations:MaleSex
+    
+    
+Class: generations:Man
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasSex value generations:MaleSex)
+    
+    
+Class: generations:Mother
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasChild some generations:Person)
+         and (generations:hasSex value generations:FemaleSex)
+    
+    
+Class: generations:OffSpring
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasParent some generations:Person)
+    
+    
+Class: generations:Parent
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasChild some generations:Person)
+    
+    
+Class: generations:Person
+
+    
+Class: generations:Sex
+
+    EquivalentTo: 
+        {generations:FemaleSex , generations:MaleSex}
+    
+    
+Class: generations:Sibling
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasSibling some generations:Person)
+    
+    
+Class: generations:Sister
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasSibling some generations:Person)
+         and (generations:hasSex value generations:FemaleSex)
+    
+    
+Class: generations:Son
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasParent some generations:Person)
+         and (generations:hasSex value generations:MaleSex)
+    
+    
+Class: generations:Woman
+
+    EquivalentTo: 
+        generations:Person
+         and (generations:hasSex value generations:FemaleSex)
+    
+    
+Class: owl:Thing
+
+    
+Individual: generations:FemaleSex
+
+    Types: 
+        generations:Sex,
+        owl:Thing
+    
+    
+Individual: generations:MaleSex
+
+    Types: 
+        generations:Sex,
+        owl:Thing
+    
+    

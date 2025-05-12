@@ -1,0 +1,1277 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <urn:absoluteiri:defaultvalue#>
+
+
+
+Ontology: 
+
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Constructive Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ContainmentAttribute>
+
+    Annotations: 
+        rdfs:label "Containment Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DelimitingAttribute>
+
+    Annotations: 
+        rdfs:label "Delimiting Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Constructive Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Domain Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Partitive Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Partitive Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#IsDivisionOf>
+
+    Annotations: 
+        rdfs:label "Is Division Of"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralAttribute>
+
+    Annotations: 
+        rdfs:label "Structural Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#AbstractStructure>
+
+    Annotations: 
+        rdfs:label "Abstract Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFBookChapter13>
+
+    Annotations: 
+        rdfs:label "BNF Book Chapter 13"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFBookChapter>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapter>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFBookChapter>
+
+    Annotations: 
+        rdfs:label "BNF Book Chapter"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapter>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#ContainmentAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DelimitingAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some 
+            (<http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#StructuralAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>
+
+    Annotations: 
+        rdfs:label "BNF Chapter 13 Section"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFBookChapter>
+             and <http://www.co-ode.org/ontologies/galen#BNFBookChapter13>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFBookChapter>
+             and <http://www.co-ode.org/ontologies/galen#BNFBookChapter13>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#ContainmentAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DelimitingAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFBookChapter>
+             and <http://www.co-ode.org/ontologies/galen#BNFBookChapter13>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InversePartitiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFBookChapter>
+             and <http://www.co-ode.org/ontologies/galen#BNFBookChapter13>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFBookChapter>
+             and <http://www.co-ode.org/ontologies/galen#BNFBookChapter13>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFBookChapter>
+             and <http://www.co-ode.org/ontologies/galen#BNFBookChapter13>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#IsDivisionOf> some 
+            (<http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#StructuralAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>
+
+    Annotations: 
+        rdfs:label "BNF Chapter 13_11 Section"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFChapter13Section>
+             and <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFChapter13Section>
+             and <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFChapter13Section>
+             and <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11>
+
+    Annotations: 
+        rdfs:label "BNF Section 13_11"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFChapter13Section>
+             and <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>
+             and <http://www.co-ode.org/ontologies/galen#BNFSection13_11_5>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#BNFChapter13Section>
+             and <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>
+             and <http://www.co-ode.org/ontologies/galen#BNFSection13_11_2>
+             and <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+             and <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_1>
+
+    Annotations: 
+        rdfs:label "BNF Section 13_11_1"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_2>
+
+    Annotations: 
+        rdfs:label "BNF Section 13_11_2"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_3>
+
+    Annotations: 
+        rdfs:label "BNF Section 13_11_3"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_4>
+
+    Annotations: 
+        rdfs:label "BNF Section 13_11_4"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_5>
+
+    Annotations: 
+        rdfs:label "BNF Section 13_11_5"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_6>
+
+    Annotations: 
+        rdfs:label "BNF Section 13_11_6"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BNFSection13_11_7>
+
+    Annotations: 
+        rdfs:label "BNF Section 13_11_7"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13Section>,
+        <http://www.co-ode.org/ontologies/galen#BNFChapter13_11Section>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>,
+        <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BritishNationalFormulary>
+
+    Annotations: 
+        rdfs:label "British National Formulary"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedBook>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#ContainmentAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DelimitingAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+
+    Annotations: 
+        rdfs:label "Discrete Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+
+    Annotations: 
+        rdfs:label "Generalised Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Information>
+
+    Annotations: 
+        rdfs:label "Information"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#AbstractStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#LogicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InformationSource>
+
+    Annotations: 
+        rdfs:label "Information Source"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#ContainmentAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DelimitingAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#AbstractStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#Information>
+             and <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#LogicalStructure>
+
+    Annotations: 
+        rdfs:label "Logical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#AbstractStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+
+    Annotations: 
+        rdfs:label "Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedBook>
+
+    Annotations: 
+        rdfs:label "Printed Book"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedBookDivision>
+
+    Annotations: 
+        rdfs:label "Printed Book Division"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#ConstructiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralPartitiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+             and <http://www.co-ode.org/ontologies/galen#InformationSource>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#PrintedBook>
+             and <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+             and <http://www.co-ode.org/ontologies/galen#SolidStructure>
+             and <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedChapter>
+
+    Annotations: 
+        rdfs:label "Printed Chapter"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedChapterSection>
+
+    Annotations: 
+        rdfs:label "Printed Chapter Section"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#PrintedMaterial>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PrintedMaterial>
+
+    Annotations: 
+        rdfs:label "Printed Material"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InformationSource>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidStructure>
+
+    Annotations: 
+        rdfs:label "Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#discrete>
+
+    Annotations: 
+        rdfs:label "discrete"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    

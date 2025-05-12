@@ -1,0 +1,278 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <urn:absoluteiri:defaultvalue#>
+
+
+
+Ontology: 
+
+Class: <http://obo.sourceforge.net/cl.owl#AnimalCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#MatureCell>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#Cell>
+
+    
+Class: <http://obo.sourceforge.net/cl.owl#CellByClass>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#CirculatingCell>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#InMatureCell>,
+        <http://obo.sourceforge.net/cl.owl#LeafCell>,
+        <http://obo.sourceforge.net/cl.owl#MatureCell>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#Miocyte>,
+        <http://obo.sourceforge.net/cl.owl#Osteocyte>,
+        <http://obo.sourceforge.net/cl.owl#PhotoreceptorCell>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>,
+        <http://obo.sourceforge.net/cl.owl#SclerenchymaCell>,
+        <http://obo.sourceforge.net/cl.owl#StructuralCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#CellByDevelopmentStage>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#ChondroBlast>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#Miocyte>,
+        <http://obo.sourceforge.net/cl.owl#Osteocyte>,
+        <http://obo.sourceforge.net/cl.owl#PhotoreceptorCell>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>,
+        <http://obo.sourceforge.net/cl.owl#SclerenchymaCell>,
+        <http://obo.sourceforge.net/cl.owl#StructuralCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#CellByOrganism>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#ChondroBlast>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#ChondroCyte>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#CirculatingCell>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#MatureCell>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>,
+        <http://obo.sourceforge.net/cl.owl#SclerenchymaCell>,
+        <http://obo.sourceforge.net/cl.owl#StructuralCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#CirculatingCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#Neuron>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#Erythrocyte>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#CirculatingCell>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#MatureCell>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>,
+        <http://obo.sourceforge.net/cl.owl#SclerenchymaCell>,
+        <http://obo.sourceforge.net/cl.owl#StructuralCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#InMatureCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#Cell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#LeafCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#CellByDevelopmentStage>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#MatureCell>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#PhotoreceptorCell>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>,
+        <http://obo.sourceforge.net/cl.owl#SclerenchymaCell>,
+        <http://obo.sourceforge.net/cl.owl#StructuralCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#MatureCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#CirculatingCell>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>,
+        <http://obo.sourceforge.net/cl.owl#SclerenchymaCell>,
+        <http://obo.sourceforge.net/cl.owl#StructuralCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#MioBlast>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#Cell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#Miocyte>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#Cell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#Neuron>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#Osteocyte>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#PhotoreceptorCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Neuron>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#MatureCell>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#PlantCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#MatureCell>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#SclerenchymaCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>,
+        <http://obo.sourceforge.net/cl.owl#StructuralCell>
+    
+    
+Class: <http://obo.sourceforge.net/cl.owl#StructuralCell>
+
+    SubClassOf: 
+        <http://obo.sourceforge.net/cl.owl#AnimalCell>,
+        <http://obo.sourceforge.net/cl.owl#Cell>,
+        <http://obo.sourceforge.net/cl.owl#CellByClass>,
+        <http://obo.sourceforge.net/cl.owl#CellByDevelopmentStage>,
+        <http://obo.sourceforge.net/cl.owl#CellByOrganism>,
+        <http://obo.sourceforge.net/cl.owl#ChondroCyte>,
+        <http://obo.sourceforge.net/cl.owl#ElectricallyActiveCell>,
+        <http://obo.sourceforge.net/cl.owl#Erythrocyte>,
+        <http://obo.sourceforge.net/cl.owl#MioBlast>,
+        <http://obo.sourceforge.net/cl.owl#Osteocyte>,
+        <http://obo.sourceforge.net/cl.owl#PhotoreceptorCell>,
+        <http://obo.sourceforge.net/cl.owl#PhotosyntheticCell>,
+        <http://obo.sourceforge.net/cl.owl#PlantCell>,
+        <http://obo.sourceforge.net/cl.owl#SclerenchymaCell>
+    
+    

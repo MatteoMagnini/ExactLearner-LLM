@@ -1,0 +1,930 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <urn:absoluteiri:defaultvalue#>
+
+
+
+Ontology: 
+
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Constructive Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Domain Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Feature State Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseFunctionalAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Functional Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Locative Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Modifier Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseProcessLocativeAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Process Locative Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralFunctionModifier>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Function Modifier"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasFunction>
+
+    Annotations: 
+        rdfs:label "has Function"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo>
+
+    Annotations: 
+        rdfs:label "has Non Causal Link To"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isActedOnSpecificallyBy>
+
+    Annotations: 
+        rdfs:label "is Acted On Specifically By"
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isFeatureOf>
+
+    Annotations: 
+        rdfs:label "is Feature Of"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Device>
+
+    Annotations: 
+        rdfs:label "Device"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InertSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#Attribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DeviceByPhenomenon>
+
+    Annotations: 
+        rdfs:label "Device By Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Device>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InertSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DiscreteStructure>
+
+    Annotations: 
+        rdfs:label "Discrete Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>),
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Status>
+             and <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>
+             and <http://www.co-ode.org/ontologies/galen#discrete>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Feature>
+
+    Annotations: 
+        rdfs:label "Feature"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#FixationDevice>
+
+    Annotations: 
+        rdfs:label "Fixation Device"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Device>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InertSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Fixing>
+             and <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>
+             and <http://www.co-ode.org/ontologies/galen#GenericProcess>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseFunctionalAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Fixing>
+             and <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>
+             and <http://www.co-ode.org/ontologies/galen#GenericProcess>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Fixing>
+             and <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>
+             and <http://www.co-ode.org/ontologies/galen#GenericProcess>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseProcessLocativeAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Fixing>
+             and <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>
+             and <http://www.co-ode.org/ontologies/galen#GenericProcess>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#hasFunction> some 
+            (<http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Fixing>
+             and <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>
+             and <http://www.co-ode.org/ontologies/galen#GenericProcess>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Fixing>
+
+    Annotations: 
+        rdfs:label "Fixing"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>,
+        <http://www.co-ode.org/ontologies/galen#GenericProcess>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>
+
+    Annotations: 
+        rdfs:label "Freeing Or Fixing Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>,
+        <http://www.co-ode.org/ontologies/galen#GenericProcess>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>
+
+    Annotations: 
+        rdfs:label "Generalised Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>
+
+    Annotations: 
+        rdfs:label "Generalised Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GenericProcess>
+
+    Annotations: 
+        rdfs:label "Generic Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Implantability>
+
+    Annotations: 
+        rdfs:label "Implantability"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Feature>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#StructuralFeature>,
+        <http://www.co-ode.org/ontologies/galen#StructuralFunctionFeature>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ImplantabilityState>
+
+    Annotations: 
+        rdfs:label "Implantability State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#StructuralFunctionState>,
+        <http://www.co-ode.org/ontologies/galen#StructuralState>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ImplantableDevice>
+
+    Annotations: 
+        rdfs:label "Implantable Device"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Device>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InertSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#InverseConstructiveAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#Implantability>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFunctionFeature>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#Implantability>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFunctionFeature>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseFeatureStateAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#Implantability>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFunctionFeature>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseLocativeAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#Implantability>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFunctionFeature>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#Implantability>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFunctionFeature>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralFunctionModifier> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#Implantability>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFunctionFeature>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>),
+        <http://www.co-ode.org/ontologies/galen#hasNonCausalLinkTo> some 
+            (<http://www.co-ode.org/ontologies/galen#Aspect>
+             and <http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Feature>
+             and <http://www.co-ode.org/ontologies/galen#Implantability>
+             and <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+             and <http://www.co-ode.org/ontologies/galen#StructuralFunctionFeature>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InertSolidStructure>
+
+    Annotations: 
+        rdfs:label "Inert Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InstallingProcess>
+
+    Annotations: 
+        rdfs:label "Installing Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>,
+        <http://www.co-ode.org/ontologies/galen#GenericProcess>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#ResourceManagementProcess>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhenomenonInvolvingDevice>
+
+    Annotations: 
+        rdfs:label "Phenomenon Involving Device"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysicalStructure>
+
+    Annotations: 
+        rdfs:label "Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Pin>
+
+    Annotations: 
+        rdfs:label "Pin"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Device>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#FixationDevice>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#ImplantableDevice>,
+        <http://www.co-ode.org/ontologies/galen#InertSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SurgicalFixationDevice>,
+        <http://www.co-ode.org/ontologies/galen#SurgicalInternalFixationDevice>,
+        <http://www.co-ode.org/ontologies/galen#SurgicallyImplantableDevice>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#isActedOnSpecificallyBy> some 
+            (<http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>
+             and <http://www.co-ode.org/ontologies/galen#GenericProcess>
+             and <http://www.co-ode.org/ontologies/galen#InstallingProcess>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#ResourceManagementProcess>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PropertyOfPhenomenon>
+
+    Annotations: 
+        rdfs:label "Property Of Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Feature>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>,
+        <http://www.co-ode.org/ontologies/galen#isFeatureOf> some 
+            (<http://www.co-ode.org/ontologies/galen#DomainCategory>
+             and <http://www.co-ode.org/ontologies/galen#Phenomenon>
+             and <http://www.co-ode.org/ontologies/galen#TopCategory>)
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ResourceManagementProcess>
+
+    Annotations: 
+        rdfs:label "Resource Management Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>,
+        <http://www.co-ode.org/ontologies/galen#GenericProcess>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidFasteningProcess>
+
+    Annotations: 
+        rdfs:label "Solid Fastening Process"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#FreeingOrFixingProcess>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedProcess>,
+        <http://www.co-ode.org/ontologies/galen#GenericProcess>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SolidStructure>
+
+    Annotations: 
+        rdfs:label "Solid Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#State>
+
+    Annotations: 
+        rdfs:label "State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StateOrQuantity>
+
+    Annotations: 
+        rdfs:label "State Or Quantity"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralFeature>
+
+    Annotations: 
+        rdfs:label "Structural Feature"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Feature>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralFunctionFeature>
+
+    Annotations: 
+        rdfs:label "Structural Function Feature"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Feature>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#StructuralFeature>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralFunctionState>
+
+    Annotations: 
+        rdfs:label "Structural Function State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#StructuralState>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralState>
+
+    Annotations: 
+        rdfs:label "Structural State"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SurgicalFixationDevice>
+
+    Annotations: 
+        rdfs:label "Surgical Fixation Device"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Device>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#FixationDevice>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#InertSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SurgicalInternalFixationDevice>
+
+    Annotations: 
+        rdfs:label "Surgical Internal Fixation Device"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Device>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#FixationDevice>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#ImplantableDevice>,
+        <http://www.co-ode.org/ontologies/galen#InertSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SurgicalFixationDevice>,
+        <http://www.co-ode.org/ontologies/galen#SurgicallyImplantableDevice>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SurgicallyImplantableDevice>
+
+    Annotations: 
+        rdfs:label "Surgically Implantable Device"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Device>,
+        <http://www.co-ode.org/ontologies/galen#DiscreteStructure>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#GeneralisedStructure>,
+        <http://www.co-ode.org/ontologies/galen#ImplantableDevice>,
+        <http://www.co-ode.org/ontologies/galen#InertSolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#PhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#SolidStructure>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+
+    Annotations: 
+        rdfs:label "Symbolic Value Type"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#discrete>
+
+    Annotations: 
+        rdfs:label "discrete"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Status>,
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#implantable>
+
+    Annotations: 
+        rdfs:label "implantable"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>,
+        <http://www.co-ode.org/ontologies/galen#ImplantabilityState>,
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>,
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>,
+        <http://www.co-ode.org/ontologies/galen#State>,
+        <http://www.co-ode.org/ontologies/galen#StateOrQuantity>,
+        <http://www.co-ode.org/ontologies/galen#StructuralFunctionState>,
+        <http://www.co-ode.org/ontologies/galen#StructuralState>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>,
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    

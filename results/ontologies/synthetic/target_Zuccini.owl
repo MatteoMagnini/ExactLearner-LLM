@@ -1,0 +1,637 @@
+Prefix: ns1: <http://www.w3.org/2002/07/owl#>
+Prefix: ns2: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: ns3: <http://data.bioontology.org/metadata/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlZuccini.owl>
+
+
+
+Ontology: <file:/Users/matteomagnini/Documents/repositories/technologies/ExactLearner/src/main/resources/ontologies/galen.owlZuccini.owl>
+
+
+AnnotationProperty: ns3:prefixIRI
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#Attribute>
+
+    Annotations: 
+        rdfs:label "Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+
+    Annotations: 
+        rdfs:label "Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Attribute"
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#Attribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Domain Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseDomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseRoleDesignatingAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Role Designating Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseSelectorAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Selector Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#SelectorAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#InverseStructuralSelectorAttribute>
+
+    Annotations: 
+        rdfs:label "Inverse Structural Selector Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseSelectorAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralSelectorAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+
+    Annotations: 
+        rdfs:label "Modifier Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseModifierAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+
+    Annotations: 
+        rdfs:label "Role Designating Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseRoleDesignatingAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#SelectorAttribute>
+
+    Annotations: 
+        rdfs:label "Selector Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseSelectorAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+
+    Annotations: 
+        rdfs:label "Status Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#StructuralSelectorAttribute>
+
+    Annotations: 
+        rdfs:label "Structural Selector Attribute"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#SelectorAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralSelectorAttribute>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasCountability>
+
+    Annotations: 
+        rdfs:label "has Countability"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StatusAttribute>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasInternalExternalSelector>
+
+    Annotations: 
+        rdfs:label "has Internal External Selector"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#hasPositionalSelector>
+    
+    Characteristics: 
+        Functional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isInternalExternalSelectorOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#hasPositionalSelector>
+
+    Annotations: 
+        rdfs:label "has Positional Selector"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralSelectorAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isPositionalSelectorOf>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isCountabilityOf>
+
+    Annotations: 
+        rdfs:label "is Countability Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStatusAttribute>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasCountability>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isInternalExternalSelectorOf>
+
+    Annotations: 
+        rdfs:label "is Internal External Selector Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#isPositionalSelectorOf>
+    
+    Characteristics: 
+        InverseFunctional
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasInternalExternalSelector>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isPhysiologicalRolePlayedBy>
+
+    Annotations: 
+        rdfs:label "is Physiological Role Played By"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseRoleDesignatingAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#isPositionalSelectorOf>
+
+    Annotations: 
+        rdfs:label "is Positional Selector Of"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#InverseStructuralSelectorAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#hasPositionalSelector>
+    
+    
+ObjectProperty: <http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole>
+
+    Annotations: 
+        rdfs:label "plays Physiological Role"
+    
+    SubPropertyOf: 
+        <http://www.co-ode.org/ontologies/galen#RoleDesignatingAttribute>
+    
+    InverseOf: 
+        <http://www.co-ode.org/ontologies/galen#isPhysiologicalRolePlayedBy>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+
+    Annotations: 
+        ns3:prefixIRI "AbsolutePositionSelector",
+        rdfs:label "Absolute Position Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PositionSelector>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Aspect>
+
+    Annotations: 
+        ns3:prefixIRI "Aspect",
+        rdfs:label "Aspect"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+
+    Annotations: 
+        ns3:prefixIRI "BiochemicalRole",
+        rdfs:label "Biochemical Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+
+    Annotations: 
+        ns3:prefixIRI "CountabilityStatus",
+        rdfs:label "Countability Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#DomainCategory>
+
+    Annotations: 
+        ns3:prefixIRI "DomainCategory",
+        rdfs:label "Domain Category"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#TopCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Fruit>
+
+    Annotations: 
+        ns3:prefixIRI "Fruit",
+        rdfs:label "Fruit"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#PlantDerivative>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>
+
+    Annotations: 
+        ns3:prefixIRI "GeneralisedSubstance",
+        rdfs:label "Generalised Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+
+    Annotations: 
+        ns3:prefixIRI "InternalExternalSelector",
+        rdfs:label "Internal External Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#AbsolutePositionSelector>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+
+    Annotations: 
+        ns3:prefixIRI "ModifierConcept",
+        rdfs:label "Modifier Concept"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NAMEDNonBodySubstance>
+
+    Annotations: 
+        ns3:prefixIRI "NAMEDNonBodySubstance",
+        rdfs:label "NAMED Non Body Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Substance>,
+        <http://www.co-ode.org/ontologies/galen#hasInternalExternalSelector> some <http://www.co-ode.org/ontologies/galen#externalSelection>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NAMEDOrganicSubstance>
+
+    Annotations: 
+        ns3:prefixIRI "NAMEDOrganicSubstance",
+        rdfs:label "NAMED Organic Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#NAMEDNonBodySubstance>,
+        <http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#OrganicRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NAMEDVegetableSubstance>
+
+    Annotations: 
+        ns3:prefixIRI "NAMEDVegetableSubstance",
+        rdfs:label "NAMED Vegetable Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#NAMEDOrganicSubstance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#NonBodySubstance>
+
+    Annotations: 
+        ns3:prefixIRI "NonBodySubstance",
+        rdfs:label "Non Body Substance"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+         and (<http://www.co-ode.org/ontologies/galen#hasInternalExternalSelector> some <http://www.co-ode.org/ontologies/galen#externalSelection>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+
+    Annotations: 
+        ns3:prefixIRI "OrganicOrInorganicRole",
+        rdfs:label "Organic Or Inorganic Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#BiochemicalRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#OrganicRole>
+
+    Annotations: 
+        ns3:prefixIRI "OrganicRole",
+        rdfs:label "Organic Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#OrganicOrInorganicRole>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#OrganicSubstance>
+
+    Annotations: 
+        ns3:prefixIRI "OrganicSubstance",
+        rdfs:label "Organic Substance"
+    
+    EquivalentTo: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+         and (<http://www.co-ode.org/ontologies/galen#playsPhysiologicalRole> some <http://www.co-ode.org/ontologies/galen#OrganicRole>)
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Substance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Phenomenon>
+
+    Annotations: 
+        ns3:prefixIRI "Phenomenon",
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#DomainCategory>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PhysiologicalRole>
+
+    Annotations: 
+        ns3:prefixIRI "PhysiologicalRole",
+        rdfs:label "Physiological Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Role>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PlantDerivative>
+
+    Annotations: 
+        ns3:prefixIRI "PlantDerivative",
+        rdfs:label "Plant Derivative"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#NAMEDVegetableSubstance>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#PositionSelector>
+
+    Annotations: 
+        ns3:prefixIRI "PositionSelector",
+        rdfs:label "Position Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Role>
+
+    Annotations: 
+        ns3:prefixIRI "Role",
+        rdfs:label "Role"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#ModifierConcept>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Selector>
+
+    Annotations: 
+        ns3:prefixIRI "Selector",
+        rdfs:label "Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>,
+        <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Status>
+
+    Annotations: 
+        ns3:prefixIRI "Status",
+        rdfs:label "Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Aspect>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralSelector>
+
+    Annotations: 
+        ns3:prefixIRI "StructuralSelector",
+        rdfs:label "Structural Selector"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Selector>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#StructuralStatus>
+
+    Annotations: 
+        ns3:prefixIRI "StructuralStatus",
+        rdfs:label "Structural Status"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Status>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Substance>
+
+    Annotations: 
+        ns3:prefixIRI "Substance",
+        rdfs:label "Substance"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#GeneralisedSubstance>,
+        <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>,
+        <http://www.co-ode.org/ontologies/galen#hasCountability> some <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SubstanceOrPhysicalStructure>
+
+    Annotations: 
+        ns3:prefixIRI "SubstanceOrPhysicalStructure",
+        rdfs:label "Substance Or Physical Structure"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Phenomenon>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#SymbolicValueType>
+
+    Annotations: 
+        ns3:prefixIRI "SymbolicValueType",
+        rdfs:label "Symbolic Value Type"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#TopCategory>
+
+    Annotations: 
+        ns3:prefixIRI "TopCategory",
+        rdfs:label "Top Category"
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#Zuccini>
+
+    Annotations: 
+        ns3:prefixIRI "Zuccini",
+        rdfs:label "Zuccini"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#Fruit>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#externalSelection>
+
+    Annotations: 
+        ns3:prefixIRI "externalSelection",
+        rdfs:label "external Selection"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#InternalExternalSelector>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#infinitelyDivisible>
+
+    Annotations: 
+        ns3:prefixIRI "infinitelyDivisible",
+        rdfs:label "infinitely Divisible"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#mass>
+    
+    
+Class: <http://www.co-ode.org/ontologies/galen#mass>
+
+    Annotations: 
+        ns3:prefixIRI "mass",
+        rdfs:label "mass"
+    
+    SubClassOf: 
+        <http://www.co-ode.org/ontologies/galen#CountabilityStatus>
+    
+    
