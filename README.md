@@ -18,7 +18,7 @@ The structure of the repository is as follows:
 ## How to use
 
 > Requirements:
-> - Java 17
+> - Java 21
 > - Maven
 > - sqlite3
 
@@ -38,4 +38,26 @@ The project uses a cache system based on **sqlite3** to store the results of the
 To install sqlite3, follow the instructions in the official website: https://www.sqlite.org/download.html
 
 ## About the experiments
-TODO: how to run the experiments.
+
+Run the experiments using the following commands:
+1. Run the ExactLearner+LLM tool:
+    ```bash
+     mvn exec:java -Dexec.mainClass="org.experiments.LaunchLLMLearner" -Dexec.args="<config_file>"
+    ```
+    Where `<config_file>` is the path to the configuration file among the following:
+   1. `src/main/java/org/configurations/experiments/manchester-simple.yml` for simple prompt in Manchester OWL syntax on the small ontologies using all LLMs;
+   2. `src/main/java/org/configurations/experiments/manchester-advanced.yml` for advanced prompt in Manchester OWL syntax on the small ontologies using all LLMs;
+   3. `src/main/java/org/configurations/experiments/nlp-simple.yml` for simple prompt in natural language on the small ontologies using all LLMs;
+   4. `src/main/java/org/configurations/experiments/nlp-advanced.yml` for advanced prompt in natural language on the small ontologies using all LLMs;
+   5. `src/main/java/org/configurations/experiments/moduls.yml` for advanced prompt in natural language on the modules ontologies Mistral.
+2. Run the ExactLearner+LLM tool with the synthetic teacher:
+   ```bash
+    mvn exec:java -Dexec.mainClass="org.experiments.LaunchExactLearner" -Dexec.args="<config_file>"
+    ```
+    Where `<config_file>` is the path to the configuration file among the following:
+   1. `src/main/java/org/configurations/experiments/nlp-advanced.yml` to run the tool on the small ontologies;
+   2. `src/main/java/org/configurations/experiments/moduls.yml` to run the tool on the modules ontologies Mistral.
+
+> **IMPORTANT 1:** inside the connection package (`src/main/java/org/exactlearnerconnection`) you may change the URLs of the LLMs services.
+
+> **IMPORTANT 2:** running the experiments may take a long time, depending on the number of queries and the LLMs used.

@@ -52,10 +52,13 @@ public class StatsPrinter {
         printStat("Total equivalence queries: ", myMetrics.getEquivCount(), verb);
 
         printLearnerStats(baseLearner, verb);
-        saveLearnerStats(baseLearner, statsFile.getName() + "_metrics.csv");
+        String statsFileName = statsFile + "_metrics.csv";
+        // Add "_sizes.csv" to the stats file name
+        String sizesFileName = statsFile + "_sizes.csv";
+        saveLearnerStats(baseLearner, statsFileName);
         // printOracleStats(baseOracle, verb);
         printOntologySizes(targetOntology, hypothesisOntology, myMetrics, verb, conceptNumber, roleNumber);
-        saveOntologySizes(targetOntology, hypothesisOntology, myMetrics, statsFile.getName() + "_sizes.csv", conceptNumber, roleNumber);
+        saveOntologySizes(targetOntology, hypothesisOntology, myMetrics, sizesFileName, conceptNumber, roleNumber);
     }
 
     private static void saveLearnerStats(Learner baseLearner, String filename) {

@@ -20,10 +20,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import static org.utility.StatsPrinter.printAndSaveStats;
 
-/**
- * Estende LaunchLearner utilizzando un oracolo sintetico basato su ELEngine,
- * senza dipendenze da LLM.
- */
+
 public class LaunchExactLearner extends LaunchLearner {
 
     private List<String> ontologies;
@@ -41,9 +38,7 @@ public class LaunchExactLearner extends LaunchLearner {
         new LaunchExactLearner().run(args);
     }
 
-    /**
-     * Legge dal file di configurazione solo le ontologie.
-     */
+
     protected void loadConfiguration(String fileName) {
         Configuration config = new YAMLConfigLoader().getConfig(fileName, Configuration.class);
         ontologies = config.getOntologies();
@@ -52,9 +47,6 @@ public class LaunchExactLearner extends LaunchLearner {
                 .collect(Collectors.toList());
     }
 
-    /**
-     * Principale loop dell'esperimento.
-     */
     public void run(String[] args) {
         if (args.length < 1) {
             System.err.println("Usage: LaunchSyntheticLearner <configFile> [epsilon] [delta]");
@@ -71,9 +63,7 @@ public class LaunchExactLearner extends LaunchLearner {
             for (String ontologyPath : ontologies) {
                 String ontName = Path.of(ontologyPath).getFileName().toString();
                 System.out.println("\n--- Synthetic learning for: " + ontName);
-                // Setup ontologia di base e ipotesi
                 setup(ontologyPath);
-                // Oracolo sintetico + motore EL per ipotesi
                 llmQueryEngineForT = new ELEngine(groundTruthOntology);
                 elQueryEngineForH = new ELEngine(hypothesisOntology);
 
@@ -90,16 +80,12 @@ public class LaunchExactLearner extends LaunchLearner {
         } catch (Throwable e) {
             e.printStackTrace();
         }
-        // Statistiche finali
         int n = ontologies.size();
         System.out.println("Average CE/PAC sample: " + (totalCE / n));
         System.out.println("Average membership Qs/PAC sample: " + (totalMembershipQ / n));
         System.out.println("Average equivalence Qs/PAC sample: " + (totalEquivalenceQ / n));
     }
 
-    /**
-     * Carica le ontologie e inizializza metriche.
-     */
     protected void setup(String ontologyPath) {
 
         try {
@@ -116,9 +102,6 @@ public class LaunchExactLearner extends LaunchLearner {
         }
     }
 
-    /**
-     * Loop PAC e conteggio query
-     */
     protected void runLearningExperiment(String[] args, int hypothesisSize) throws Throwable {
         long timeStart = System.currentTimeMillis();
         learner.precomputation();
@@ -145,7 +128,7 @@ public class LaunchExactLearner extends LaunchLearner {
         totalEquivalenceQ += (double) myMetrics.getEquivCount() / totalSamples;
 
         var filename =  targetFile.getName() + "_synthetic";
-        var dir = "statistics/";
+        var dir = "statistics/cache/";
         var statFile = new File(dir, filename);
         long timeEnd = System.currentTimeMillis();
         printAndSaveStats(timeStart, timeEnd, args, true,

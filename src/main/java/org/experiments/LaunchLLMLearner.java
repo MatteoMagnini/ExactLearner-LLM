@@ -21,10 +21,8 @@ import org.pac.Pac;
 import org.semanticweb.owlapi.model.*;
 import org.utility.OntologyManipulator;
 import org.utility.YAMLConfigLoader;
-
 import java.io.File;
 import java.io.IOException;
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -52,7 +50,6 @@ public class LaunchLLMLearner extends LaunchLearner {
 
     public static void main(String[] args) {
         LogManager.getRootLogger().atLevel(Level.OFF);
-        //new ResultAnalyzer("llama3","src/main/resources/ontologies/small/animals.owl").run();
         new LaunchLLMLearner().run(args);
     }
 
