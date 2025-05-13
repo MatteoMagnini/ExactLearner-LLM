@@ -48,7 +48,7 @@ public class LaunchLLMLearner extends LaunchLearner {
     private double epsilon = 0.2;
     private double delta = 0.1;
 
-    protected final CacheManager cacheManager = new CacheManager(false);;
+    protected final CacheManager cacheManager = new CacheManager();;
 
     public static void main(String[] args) {
         LogManager.getRootLogger().atLevel(Level.OFF);
