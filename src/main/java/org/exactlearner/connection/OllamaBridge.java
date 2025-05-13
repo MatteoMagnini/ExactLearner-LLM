@@ -7,7 +7,7 @@ public class OllamaBridge extends BasicBridge {
 
     private int maxTokens = 100;
     private static final String defaultURL = System.getenv("EXACTLEARNER_OLLAMA_URL") == null ?
-            "http://clusters.almaai.unibo.it:11434/api/generate" : System.getenv("EXACTLEARNER_OLLAMA_URL");
+            "http://localhost:11434/api/generate" : System.getenv("EXACTLEARNER_OLLAMA_URL");
 
     public OllamaBridge(String model) {
         super();
