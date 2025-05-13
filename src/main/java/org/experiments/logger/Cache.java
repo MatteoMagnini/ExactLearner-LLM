@@ -6,13 +6,11 @@ import java.util.Locale;
 public class Cache {
 
     private final Connection connection;
-    private final Integer model_id;
-    private final Integer system_id;
+    private final Integer settingId;
 
-    public Cache(Connection connection, Integer model_id, Integer system_id) {
+    public Cache(Connection connection, Integer settingId) {
         this.connection = connection;
-        this.model_id = model_id;
-        this.system_id = system_id;
+        this.settingId = settingId;
     }
 
     public synchronized Boolean isStrictlyTrue(String query) {
@@ -28,13 +26,11 @@ public class Cache {
         try {
             PreparedStatement ps = connection.prepareStatement("""
                 SELECT result FROM tbl_cache
-                    WHERE model_id = ?
-                    AND system_id = ?
+                    WHERE setting_id = ?
                     AND query = ?""");
 
-            ps.setInt(1, model_id);
-            ps.setInt(2, system_id);
-            ps.setString(3, query);
+            ps.setInt(1, settingId);
+            ps.setString(2, query);
 
             ResultSet rs = ps.executeQuery();
             if (!rs.next()) {
@@ -51,13 +47,12 @@ public class Cache {
     public synchronized void storeQuery(String query, String result){
         try {
             PreparedStatement ps = connection.prepareStatement("""
-                    INSERT INTO tbl_cache(model_id, system_id, query, result)
-                    VALUES (?, ?, ?, ?)""");
+                    INSERT INTO tbl_cache(setting_id, query, result)
+                    VALUES (?, ?, ?)""");
 
-            ps.setInt(1, model_id);
-            ps.setInt(2, system_id);
-            ps.setString(3, query);
-            ps.setString(4, result);
+            ps.setInt(1, settingId);
+            ps.setString(2, query);
+            ps.setString(3, result);
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
