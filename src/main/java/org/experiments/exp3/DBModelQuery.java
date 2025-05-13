@@ -1,14 +1,13 @@
 package org.experiments.exp3;
 
 import org.configurations.Configuration;
+import org.exactlearner.renderer.AnnotationShorFormProvider;
 import org.experiments.exp3.render.axiom.*;
-import org.experiments.exp3.render.concept.ClassName;
-import org.experiments.exp3.render.concept.ConceptNameRenderer;
-import org.experiments.exp3.render.concept.LabelName;
 import org.experiments.exp3.result.SettingResult;
 import org.experiments.logger.Cache;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
+import org.semanticweb.owlapi.util.ShortFormProvider;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -42,18 +41,14 @@ public class DBModelQuery {
         if (axiomRenderer.containsKey(ontology)) {
             return axiomRenderer.get(ontology);
         }
-        ConceptNameRenderer cr = switch (queryFormat .getConceptName()) {
-            case "class" -> new ClassName();
-            default -> new LabelName(ontology);
+        ShortFormProvider cr = switch (queryFormat.getConceptName()) {
+            case "class" -> null;
+            default -> new AnnotationShorFormProvider(ontology);
         };
-        if (queryFormat.getAxiom().startsWith("Custom;")) {
-            return new CustomRender(cr, queryFormat.getAxiom());
-        }
 
-        AxiomRenderer renderer = switch (queryFormat.getAxiom()) {
+        AxiomRenderer renderer = switch (queryFormat.getAxiom().toLowerCase()) {
             case "manchester" -> new ManchesterRender(cr);
-            case "originalNLP" -> new NLPRender(cr);
-            case "NLP" -> new NewNLPRender(cr);
+            case "nlp" -> new NLPRender(cr);
             default -> throw new IllegalStateException("Unexpected value: " + queryFormat.getAxiom());
         };
         axiomRenderer.put(ontology, renderer);

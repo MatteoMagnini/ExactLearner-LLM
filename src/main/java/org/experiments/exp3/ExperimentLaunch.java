@@ -3,8 +3,7 @@ package org.experiments.exp3;
 import org.configurations.Configuration;
 import org.experiments.exp3.experiment.AxiomExperiment;
 import org.experiments.exp3.experiment.ClassExperiment;
-import org.experiments.exp3.render.axiom.*;
-import org.experiments.exp3.render.concept.ClassName;
+import org.experiments.exp3.render.axiom.ManchesterRender;
 import org.experiments.exp3.result.ResultManagerDB;
 import org.experiments.exp3.result.SettingResult;
 import org.experiments.logger.Cache;
@@ -47,9 +46,9 @@ public class ExperimentLaunch {
         for (String ontologyName : config.getOntologies()) {
             switch (config.getType()) {
                 case "axiomQuerying" ->
-                        new AxiomExperiment(queries, resultManagerDB, new ManchesterRender(new ClassName()), ontologyName, testId).runExperiment();
+                        new AxiomExperiment(queries, resultManagerDB, new ManchesterRender(), ontologyName, testId).runExperiment();
                 case "classQuerying" ->
-                        new ClassExperiment(queries, resultManagerDB, new ManchesterRender(new ClassName()), ontologyName, testId).runExperiment();
+                        new ClassExperiment(queries, resultManagerDB, new ManchesterRender(), ontologyName, testId).runExperiment();
                 default -> throw new IllegalStateException("Unexpected value: " + config.getType());
             }
         }

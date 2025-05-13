@@ -35,13 +35,8 @@ public class ConceptSwap {
         c.sort(Comparator.comparing(o -> o.getIRI().getFragment()));
         Collections.shuffle(c, random);
         OWLClass concept = c.get(0);
-        Set<OWLClass> related = conceptRelation.getAllRelated(concept);
-        List<OWLClass> all = engine.getClassesInSignature();
-        all.removeAll(related);
 
-        List<OWLClass> swappable = new ArrayList<>(all);
-        swappable.sort(Comparator.comparing(o -> o.getIRI().getFragment()));
-        Collections.shuffle(swappable, random);
+        List<OWLClass> swappable = getUnrelatedConcepts(concept);
 
         OWLClass s = swappable.get(0);
         ELTree nSub = swapConcepts(new ELTree(sub), concept, s);
@@ -61,14 +56,7 @@ public class ConceptSwap {
         Collections.shuffle(c, random);
 
         for (OWLClass concept : c) {
-            Set<OWLClass> related = conceptRelation.getAllRelated(concept);
-            List<OWLClass> all = engine.getClassesInSignature();
-            all.removeAll(related);
-
-            List<OWLClass> swappable = new ArrayList<>(all);
-            swappable.sort(Comparator.comparing(o -> o.getIRI().getFragment()));
-            Collections.shuffle(swappable, random);
-
+            List<OWLClass> swappable = getUnrelatedConcepts(concept);
             for (OWLClass s : swappable) {
                 ELTree nSub = swapConcepts(new ELTree(sub), concept, s);
                 ELTree nSup = swapConcepts(new ELTree(sup), concept, s);
@@ -84,6 +72,17 @@ public class ConceptSwap {
         }
         failed++;
         throw new Exception();
+    }
+
+    private List<OWLClass> getUnrelatedConcepts(OWLClass concept) {
+        Set<OWLClass> related = conceptRelation.getAllRelated(concept);
+        List<OWLClass> all = new ArrayList<>(engine.getClassesInSignature());
+        all.removeAll(related);
+
+        List<OWLClass> swappable = new ArrayList<>(all);
+        swappable.sort(Comparator.comparing(o -> o.getIRI().getFragment()));
+        Collections.shuffle(swappable, random);
+        return swappable;
     }
 
     public int getTotal() {

@@ -1,17 +1,7 @@
 models:
-  - "llama3"
-  - "mistral"
-  - "mixtral"
-  - "llama2:13b"
-  - "llama2"
+  - "false"
 ontologies:
-  - "src/main/resources/ontologies/large/go.owl"
-  - "src/main/resources/ontologies/large/galen_fixed.owl"
   - "src/main/resources/ontologies/small/animals.owl"
-  - "src/main/resources/ontologies/small/university.owl"
-  - "src/main/resources/ontologies/small/generations.owl"
-  - "src/main/resources/ontologies/small/football.owl"
-  - "src/main/resources/ontologies/small/cl.owl"
 systems:
   - >
     Answer with True or False.

@@ -1,56 +1,34 @@
 package org.experiments.exp3.render.axiom;
 
-import org.experiments.exp3.render.concept.ConceptNameRenderer;
-import org.semanticweb.owlapi.io.OWLRenderer;
-import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
+import org.semanticweb.owlapi.util.ShortFormProvider;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
-public class NLPRender implements AxiomRenderer {
-    private final ConceptNameRenderer conceptNameRenderer;
-
-    public NLPRender(ConceptNameRenderer conceptNameRenderer) {
-        this.conceptNameRenderer = conceptNameRenderer;
+public class NLPRender extends ManchesterRender {
+    public NLPRender(ShortFormProvider provider) {
+        super(provider);
     }
 
     @Override
     public String render(OWLSubClassOfAxiom axiom) {
-        return "Can " + render(axiom.getSubClass()) +  " be considered a subcategory of '" + render(axiom.getSuperClass()) + "'?";
+        return addExtraSemantic(super.render(axiom));
     }
 
-    public String render(OWLObjectSomeValuesFrom axiom) {
-        return "something that " + render(axiom.getProperty()) + " some " + render(axiom.getFiller()) ;
-    }
-
-    public String render(OWLObjectProperty property) {
-        return conceptNameRenderer.render(property);
-    }
-
-    public String render(OWLObjectIntersectionOf intersection) {
-        return intersection.getOperands().stream().map(this::render).collect(Collectors.joining(" that is also "));
-    }
-
-    public String render(OWLObjectPropertyExpression property) {
-        if (property instanceof OWLObjectProperty p) {
-            return render(p);
+    private String addExtraSemantic(String message) {
+        if (message.contains(" SubClassOf ")) {
+            var parts = message.split(" SubClassOf ", 2);
+            String pt1 = addExtraSemantic(parts[0]);
+            String pt2 = addExtraSemantic(parts[1]);
+            return "Can " + pt1 + " be considered a subcategory of '" + pt2 + "'?";
+        } else if (message.contains(" and ")) {
+            var parts = message.split(" and ", 2);
+            return addExtraSemantic(parts[0]) + " that is also " + addExtraSemantic(parts[1]);
+        } else if (message.contains(" some ")) {
+            var parts = message.split(" some ", 2);
+            return "something that " + addExtraSemantic(parts[0]) + " some " + addExtraSemantic(parts[1]);
+        } else if (message.startsWith("(") && message.endsWith(")")) {
+            return addExtraSemantic(message.substring(1, message.length() - 1));
+        } else {
+            return message;
         }
-
-        throw new RuntimeException("Unexpected property type: " + property.getClass());
-    }
-
-    protected String render(OWLClassExpression expression) {
-        if (expression instanceof OWLClass c) {
-            return conceptNameRenderer.render(c);
-        }
-        if (expression instanceof OWLObjectSomeValuesFrom c) {
-            return render(c);
-        }
-        if (expression instanceof OWLObjectIntersectionOf c) {
-            return render(c);
-        }
-
-        throw new RuntimeException("Unexpected class: " + expression);
     }
 }

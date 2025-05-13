@@ -1,7 +1,6 @@
 package org.experiments.exp3.result;
 
 import org.experiments.exp3.render.axiom.ManchesterRender;
-import org.experiments.exp3.render.concept.ClassName;
 import org.utility.BaseDBHandler;
 
 import java.io.File;
@@ -20,7 +19,7 @@ public class ResultManagerDB extends BaseDBHandler {
         try {
            int testId = getTestId(testType, testName);
            int settingId = getSettingId(model, system, queryFormat);
-           return new ResultSaverOld(settingId, testId, ontology, connection, new ManchesterRender(new ClassName()));
+           return new ResultSaverOld(settingId, testId, ontology, connection, new ManchesterRender());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

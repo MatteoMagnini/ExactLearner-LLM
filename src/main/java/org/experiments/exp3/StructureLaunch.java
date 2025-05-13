@@ -4,7 +4,6 @@ import org.experiments.exp3.experiment.Experiment;
 import org.experiments.exp3.experiment.OntologyStructure;
 import org.experiments.exp3.render.axiom.ManchesterRender;
 import org.experiments.exp3.render.concept.ANameRenderer;
-import org.experiments.exp3.render.concept.LabelName;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLOntology;
 
