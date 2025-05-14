@@ -28,19 +28,23 @@ public class AxiomExperiment extends ExperimentBase {
         SettingResult answer = resultManager.getSetting();
         ConceptSwap conceptSwap = new ConceptSwap(ontology, getConceptRelation(ontology), new ELEngine(ontology));
         for (OWLSubClassOfAxiom axiom : new AxiomIterator(ontology, 1000)) {
-            try {
+
                 QueryResult query = resultManager.getQuery(ident.render(axiom), ontologyName, testId);
                 resultManager.saveResult(query, answer, null, "true");
                 runForAxiom(axiom, query);
 
-                axiom = conceptSwap.corrupt(axiom);
+                Optional<OWLSubClassOfAxiom> corrupt = conceptSwap.corrupt(axiom);
+                if (corrupt.isEmpty()) {
+                    System.out.println("Could not corrupt");
+                    continue;
+                }
+                axiom = corrupt.get();
                 query = resultManager.getQuery(ident.render(axiom), ontologyName, testId);
                 resultManager.saveResult(query, answer, null, "false");
                 runForAxiom(axiom, query);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+
         }
+        System.out.println("Axioms created");
         runAll();
         System.out.println("Corrupter did invent a false axiom " + conceptSwap.getNotFirst() + " out of " + conceptSwap.getTotal() + " axioms. It failed " + conceptSwap.getFails() + " number of times.");
     }

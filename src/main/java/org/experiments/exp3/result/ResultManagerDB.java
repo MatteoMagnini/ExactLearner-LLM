@@ -60,8 +60,12 @@ public class ResultManagerDB extends BaseDBHandler {
         }
     }
 
-    public QueryResult getQuery(String query, String ontology, int testId) throws SQLException {
-        return new QueryResult(connection, query, ontology, testId);
+    public QueryResult getQuery(String query, String ontology, int testId) {
+        try {
+            return new QueryResult(connection, query, ontology, testId);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private synchronized int getSettingId(String model, String system, String queryFormat) throws SQLException {

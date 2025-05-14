@@ -110,7 +110,9 @@ public abstract class ExperimentBase implements Experiment {
     protected static OWLOntology getOntology(String ontologyName) {
         try {
             File fileName = new File(ontologyName);
-            return OWLManager.createOWLOntologyManager().loadOntologyFromOntologyDocument(fileName);
+            OWLOntology ont = OWLManager.createOWLOntologyManager().loadOntologyFromOntologyDocument(fileName);
+            System.out.printf("Ontology '%s' loaded%n", ontologyName);
+            return ont;
         } catch (Exception e) {
             System.out.println("Could not load ontology: " + ontologyName + "\n" + e.getMessage());
             throw new RuntimeException(e);

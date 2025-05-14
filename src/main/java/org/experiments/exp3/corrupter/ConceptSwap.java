@@ -44,34 +44,44 @@ public class ConceptSwap {
         return this.engine.getSubClassAxiom(nSub.transformToClassExpression(), nSup.transformToClassExpression());
     }
 
-    public OWLSubClassOfAxiom corrupt(OWLSubClassOfAxiom axiom) throws Exception {
-        total++;
-        boolean first = true;
-        ELTree sub = new ELTree(axiom.getSubClass());
-        ELTree sup = new ELTree(axiom.getSuperClass());
-        Set<OWLClass> concepts = getConcepts(sub);
-        concepts.addAll(getConcepts(sup));
-        List<OWLClass> c = new ArrayList<>(concepts);
-        c.sort(Comparator.comparing(o -> o.getIRI().getFragment()));
-        Collections.shuffle(c, random);
+    public Optional<OWLSubClassOfAxiom> corrupt(OWLSubClassOfAxiom axiom) {
+        try {
+            total++;
+            boolean first = true;
+            ELTree sub = new ELTree(axiom.getSubClass());
+            ELTree sup = new ELTree(axiom.getSuperClass());
+            Set<OWLClass> concepts = getConcepts(sub);
+            concepts.addAll(getConcepts(sup));
+            List<OWLClass> c = new ArrayList<>(concepts);
+            c.sort(Comparator.comparing(o -> o.getIRI().getFragment()));
+            Collections.shuffle(c, random);
 
-        for (OWLClass concept : c) {
-            List<OWLClass> swappable = getUnrelatedConcepts(concept);
-            for (OWLClass s : swappable) {
-                ELTree nSub = swapConcepts(new ELTree(sub), concept, s);
-                ELTree nSup = swapConcepts(new ELTree(sup), concept, s);
-                OWLSubClassOfAxiom a = this.engine.getSubClassAxiom(nSub.transformToClassExpression(), nSup.transformToClassExpression());
-                if (!engine.entailed(a)) {
-                    return a;
-                }
-                if (first) {
-                    first = false;
-                    notFirst++;
+            for (OWLClass concept : c) {
+                List<OWLClass> swappable = getUnrelatedConcepts(concept);
+                int tested = 0;
+                while (!swappable.isEmpty()) {
+                    OWLClass s = swappable.remove(0);
+                    ELTree nSub = swapConcepts(new ELTree(sub), concept, s);
+                    ELTree nSup = swapConcepts(new ELTree(sup), concept, s);
+                    OWLSubClassOfAxiom a = this.engine.getSubClassAxiom(nSub.transformToClassExpression(), nSup.transformToClassExpression());
+                    if (!engine.entailed(a)) {
+                        return Optional.of(a);
+                    }
+                    swappable.removeAll(conceptRelation.getAllRelated(s));
+                    if (first) {
+                        first = false;
+                        notFirst++;
+                    }
+                    if (tested++ > 10) {
+                        break;
+                    }
                 }
             }
+            failed++;
+            return Optional.empty();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
-        failed++;
-        throw new Exception();
     }
 
     private List<OWLClass> getUnrelatedConcepts(OWLClass concept) {
