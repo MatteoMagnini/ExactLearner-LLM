@@ -13,7 +13,7 @@ ontologies:
   - "src/main/resources/ontologies/small/cl.owl"
 systems:
   - >
-    Answer with True or False.
+    Answer with only True or False.
   - >
     You need to classify the following statements as True or False. The statement will be provided in either Manchester OWL syntax or natural language. Strictly follow these guidelines:
     1. answer with only True or False;
