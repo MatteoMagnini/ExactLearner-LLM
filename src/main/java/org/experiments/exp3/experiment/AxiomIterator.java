@@ -1,5 +1,6 @@
 package org.experiments.exp3.experiment;
 
+import org.exactlearner.tree.ELTree;
 import org.jetbrains.annotations.NotNull;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.manchestersyntax.renderer.ManchesterOWLSyntaxOWLObjectRendererImpl;
@@ -56,15 +57,39 @@ public class AxiomIterator implements Iterable<OWLSubClassOfAxiom> {
                 while (it.hasNext()) {
                     OWLAxiom next = it.next();
                     if (next instanceof OWLSubClassOfAxiom s) {
-
-                        current.add(s);
+                        if (!addAxiom(s)) {
+                            continue;
+                        }
                         return true;
                     } else if (next instanceof OWLEquivalentClassesAxiom e) {
-                        current.addAll(e.asOWLSubClassOfAxioms());
+                        if (!addAxiom(e.asOWLSubClassOfAxioms())) {
+                            continue;
+                        }
                         return true;
                     }
                 }
                 return false;
+            }
+
+            private boolean addAxiom(Collection<OWLSubClassOfAxiom> axiom) {
+                boolean added = false;
+                for (OWLSubClassOfAxiom ax : axiom) {
+                    if (addAxiom(ax)) {
+                        added = true;
+                    }
+                }
+                return added;
+            }
+
+            private boolean addAxiom(OWLSubClassOfAxiom axiom) {
+                try {
+                    new ELTree(axiom.getSubClass());
+                    new ELTree(axiom.getSuperClass());
+                    current.add(axiom);
+                    return true;
+                } catch (Exception e) {
+                    return false;
+                }
             }
 
             @Override
