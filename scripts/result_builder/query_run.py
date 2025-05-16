@@ -7,7 +7,7 @@ from implied import Implied
 from oracle import ResultOracle
 from result_saver import ResultSaver
 
-con = sqlite3.connect("./results-test.sqlite3")
+con = sqlite3.connect("./results.sqlite3")
 
 test = 2
 

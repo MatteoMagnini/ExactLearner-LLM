@@ -4,7 +4,7 @@ import pandas as pd
 class ResultSaver:
 
     def __init__(self, test_id: int):
-        self.con = sqlite3.connect("./results-test.sqlite3")
+        self.con = sqlite3.connect("./results.sqlite3")
         cursor = self.con.cursor()
         cursor.execute("""
                 insert into tbl_test (test_name, test_type) values (?, ?)
