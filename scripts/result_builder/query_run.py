@@ -15,7 +15,7 @@ settings = pd.read_sql(f"""
                        select ROWID from tbl_setting ts where ts.rowid in
                         (select setting_id from tbl_result where query_id in (select rowid from tbl_query where test_id = {test}))""", con)["rowid"].tolist()
 
-ontologies = pd.read_sql("select ontology from tbl_query tq where tq.test_id = 21 group by ontology ", con)["ontology"].tolist()
+ontologies = pd.read_sql(f"select ontology from tbl_query tq where tq.test_id = {test} group by ontology ", con)["ontology"].tolist()
 
 con.close()
 
