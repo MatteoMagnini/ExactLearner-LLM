@@ -67,7 +67,7 @@ def main():
                 metric_types = ["M. OWL Syntax", "Natural Language", "E. M. OWL Syntax", "E. Natural Language"]
                 for i, metric_type in enumerate(metric_types):
                     key = (ontology_name, model, metric_type)
-                    metrics_dict[key].append(metrics[i * 4:i * 4 + 4])
+                    metrics_dict[key].append(metrics[i * 6:i * 6 + 6])
 
                 ontology_metrics[ontology_name][model].extend(metrics)
                 # print(f"Finished processing file: {file_name}\n")
@@ -92,7 +92,7 @@ def main():
         print(f"model,setting,Accuracy,Recall,Precision,F1-score")
         for k, v in models.items():
             for i, s in enumerate(["M.Syntax", "NLP", "E. M.Syntax", "E. NLP"]):
-                scors = ",".join([str(a/n) for a in v[i*4:i*4+4]])
+                scors = ",".join([str(a/n) for a in v[i*6:i*6+6]])
                 print(f"{k},{s},{scors}")
 
 if __name__ == "__main__":
