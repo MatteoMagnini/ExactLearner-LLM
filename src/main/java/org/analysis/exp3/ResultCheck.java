@@ -10,15 +10,19 @@ import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.utility.YAMLConfigLoader;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class ResultCheck extends PartialResultBase {
 
     public static void main(String[] args) {
         Configuration config = new YAMLConfigLoader().getConfig(args[0], Configuration.class);
-        new ResultCheck(config, Integer.parseInt(args[1]), Integer.parseInt(args[2])).run();
+        new ResultCheck(config, 0, 0).run();
     }
 
     private OWLOntology learnedOntology;
@@ -44,7 +48,7 @@ public class ResultCheck extends PartialResultBase {
 
         OWLReasoner predictedReasoner = new ElkReasonerFactory().createReasoner(learnedOntology);
 
-        NotSoRandomAxiomIterator iterator = new NotSoRandomAxiomIterator(expectedOntology, 150, 10);
+        Iterable<OWLSubClassOfAxiom> iterator = new AxiomIterator(expectedOntology);
         for (OWLSubClassOfAxiom axiom : iterator) {
             entail(predictedReasoner, axiom, confusionMatrix);
         }
@@ -52,6 +56,7 @@ public class ResultCheck extends PartialResultBase {
         otherWayAround(new AxiomIterator(learnedOntology), confusionMatrix);
 
         results("%s %s %s".formatted(shortName, model, setting), confusionMatrix);
+        generateSummaryFilesForLatexTable(confusionMatrix, "%s_%s_%s".formatted(shortName, model, setting));
     }
 
     private void entail(OWLReasoner target, OWLSubClassOfAxiom axiom, int[][] confusionMatrix) {
@@ -98,6 +103,25 @@ public class ResultCheck extends PartialResultBase {
         System.out.println("----------------\n" + name);
         System.out.println("Selected axioms from original in learned - \t" + res[0][0] + " true \t" + res[0][1] + " false");
         System.out.println("Leaned axioms in target ontology - \t" + res[1][0] + " true \t" + res[1][1] + " false");
+    }
+
+    private void generateSummaryFilesForLatexTable(int[][] res, String info) {
+        FileWriter fw;
+        var s = FileSystems.getDefault().getSeparator();
+        try {
+            File f = new File("analysis" + s + "exp3" + s + info + "_simple" + ".txt");
+            if (!f.exists()) {
+                f.getParentFile().mkdirs();
+            }
+            f.createNewFile();
+            fw = new FileWriter(f.getPath());
+            String result = "%d %d %d %d".formatted(res[0][0], res[0][1], res[1][0], res[1][1]);
+            fw.write(result);
+            fw.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
 }

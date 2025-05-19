@@ -132,7 +132,7 @@ public abstract class PartialResultBase {
     }
 
     protected void getAllowedValues() {
-        AxiomHandler handler = new AxiomHandler(new NotSoRandomAxiomIterator(expectedOntology, limit, base).iterator());
+        AxiomHandler handler = new AxiomHandler(new AxiomIterator(expectedOntology).iterator());
         classes = handler.getClasses();
         properties = handler.getProperties();
     }

@@ -3,11 +3,13 @@ package org.analysis.exp3;
 import org.analysis.common.Metrics;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
+import org.configurations.Configuration;
 import org.semanticweb.elk.owlapi.ElkReasonerFactory;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.utility.OntologyManipulator;
+import org.utility.YAMLConfigLoader;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -22,20 +24,16 @@ public class PartialResultAnalyzer extends PartialResultBase {
 
     public static void main(String[] args) {
         LogManager.getRootLogger().atLevel(Level.OFF);
-        // Configuration config = new YAMLConfigLoader().getConfig(args[0], Configuration.class);
-        new PartialResultAnalyzer(Integer.parseInt(args[0]), Integer.parseInt(args[1])).run();
+        Configuration config = new YAMLConfigLoader().getConfig(args[0], Configuration.class);
+        new PartialResultAnalyzer(config).run();
     }
 
     private List<Iterable<OWLSubClassOfAxiom>> allPossibleAxioms;
     private List<List<Boolean>> inferredAxiomsByExpectedOntology = new ArrayList<>();
     private OWLOntology learnedOntology;
 
-    public PartialResultAnalyzer(int limit, int base) {
-        super(List.of(
-                new ModelSetting("nlp_base", "mixtral"),
-                new ModelSetting("nlp_advanced","llama3"),
-                new ModelSetting("nlp_base", "mistral")
-        ), List.of("galen_test", "go"), limit, base);
+    public PartialResultAnalyzer(Configuration configuration) {
+        super(configuration, 0,0);
     }
 
     @Override
@@ -45,7 +43,7 @@ public class PartialResultAnalyzer extends PartialResultBase {
         String shortName = Path.of(ontology).getFileName().toString();
         String sep = FileSystems.getDefault().getSeparator();
         String ontologyResultPath = "results" + sep + "ontologies";
-        String nameThing = "%s_%s_%s_%d_%d".formatted(shortName, model, setting, limit, base);
+        String nameThing = "%s_%s_%s".formatted(shortName, model, setting);
         String learnedOntologyPath = ontologyResultPath + sep + nameThing + ".owl";
         this.learnedOntology = loadOntology(learnedOntologyPath);
 
@@ -96,7 +94,7 @@ public class PartialResultAnalyzer extends PartialResultBase {
         FileWriter fw;
         var s = FileSystems.getDefault().getSeparator();
         try {
-            File f = new File("analysis" + s + "exp3" + s + info + "_" + limit + "_" + base + ".txt");
+            File f = new File("analysis" + s + "exp3" + s + info + ".txt");
             if (!f.exists()) {
                 f.getParentFile().mkdirs();
             }
@@ -129,7 +127,7 @@ public class PartialResultAnalyzer extends PartialResultBase {
     protected void getAllowedValues() {
         super.getAllowedValues();
         inferredAxiomsByExpectedOntology = new ArrayList<>();
-        allPossibleAxioms = OntologyManipulator.getAllLimitedAxiomCombinationOWL(classes, properties, 25000).stream().toList();
+        allPossibleAxioms = OntologyManipulator.getAllPossibleAxiomsCombinationsOWL(classes, properties).stream().toList();
         if (expectedReasoner != null) {
             for (Iterable<OWLSubClassOfAxiom> axioms : allPossibleAxioms) {
                 AtomicInteger acc = new AtomicInteger();
