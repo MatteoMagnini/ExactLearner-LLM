@@ -142,27 +142,6 @@ public class OntologyManipulator {
         return getAllPossibleAxiomsCombinationsOWL(parser.getClasses().get(), parser.getObjectProperties()).stream().flatMap(i -> IteratorUtils.toList(i.iterator()).stream()).toList();
     }
 
-    public static Set<String> getAllPossibleAxiomsCombinations(Collection<String> classes, Collection<String> properties) {
-        /*There are three types of statements:
-        1. (A ∩ B) ⊑ C
-        2. B ⊑ ∃R.A
-        3. ∃R.A ⊑ B
-        * Generate all possible combinations of these statements
-         */
-        var statement1 = classes.stream().flatMap(c1 -> classes.stream().flatMap(c2 -> classes.stream()
-                        .filter(c3 -> !c3.equals(c1) && !c3.equals(c2))
-                        .map(c3 -> "( " + c1 + " and " + c2 + " ) SubClassOf: " + c3)))
-                .collect(Collectors.toSet());
-        var statement2 = classes.stream().flatMap(c1 -> properties.stream().flatMap(p -> classes.stream().map(c2 -> c1 + " SubClassOf: " + p + " some " + c2)))
-                .collect(Collectors.toSet());
-        var statement3 = classes.stream().flatMap(c1 -> properties.stream().flatMap(p -> classes.stream().map(c2 -> p + " some " + c1 + " SubClassOf: " + c2)))
-                .collect(Collectors.toSet());
-        //check empty set
-        statement1.addAll(statement2);
-        statement1.addAll(statement3);
-        return statement1;
-    }
-
     public static List<Iterable<OWLSubClassOfAxiom>> getAllLimitedAxiomCombinationOWL(Collection<OWLClass> classes, Collection<OWLObjectProperty> properties, int limit) {
         List<Iterable<OWLSubClassOfAxiom>> iters = getAllPossibleAxiomsCombinationsOWL(classes, properties);
         List<Iterable<OWLSubClassOfAxiom>> limited = new ArrayList<>();
@@ -173,7 +152,7 @@ public class OntologyManipulator {
         return limited;
     }
 
-    public static List<Iterable<OWLSubClassOfAxiom>> getAllPossibleAxiomsCombinationsOWL(Collection<OWLClass> classes, Collection<OWLObjectProperty> properties) {
+    public static List<Iterable<OWLSubClassOfAxiom>> getAllPossibleAxiomsCombinationsOWL(Collection<OWLClass> clazz, Collection<OWLObjectProperty> properties) {
         /*There are four types of axioms:
         1. A ⊑ B
         2. (A ∩ B) ⊑ C
@@ -181,7 +160,11 @@ public class OntologyManipulator {
         4. ∃R.A ⊑ B
         * Generate all possible combinations of these statements
          */
+
         OWLDataFactory factory = OWLManager.createOWLOntologyManager().getOWLDataFactory();
+
+        List<OWLClass> classes = new ArrayList<>(clazz);
+        classes.remove(factory.getOWLThing());
 
         List<Iterable<OWLSubClassOfAxiom>> statements = new ArrayList<>();
 

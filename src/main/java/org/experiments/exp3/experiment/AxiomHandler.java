@@ -3,7 +3,9 @@ package org.experiments.exp3.experiment;
 import org.exactlearner.tree.ELEdge;
 import org.exactlearner.tree.ELNode;
 import org.exactlearner.tree.ELTree;
+import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
@@ -64,7 +66,9 @@ public class AxiomHandler {
                 System.err.println("Error: " + e.getMessage());
             }
         }
-        classes = trees.stream().flatMap(t -> getConcepts(t).stream()).collect(Collectors.toSet());
+
+        OWLDataFactory factory = OWLManager.createOWLOntologyManager().getOWLDataFactory();
+        classes = trees.stream().flatMap(t -> getConcepts(t).stream()).filter(p -> !trees.equals(factory.getOWLThing())).collect(Collectors.toSet());
         properties = trees.stream().flatMap(t -> getRoles(t).stream()).collect(Collectors.toSet());
     }
 
