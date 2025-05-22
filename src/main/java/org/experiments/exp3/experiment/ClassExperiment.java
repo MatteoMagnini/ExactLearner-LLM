@@ -9,6 +9,7 @@ import org.experiments.exp3.result.SettingResult;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -27,7 +28,8 @@ public class ClassExperiment extends ExperimentBase {
     public void runExperiment() {
         SettingResult answer = resultManager.getSetting();
         ELEngine engine = new ELEngine(ontology);
-        Set<OWLClass> classes = ontology.getClassesInSignature();
+        Set<OWLClass> classes = new HashSet<>(ontology.getClassesInSignature());
+        classes.remove(ontology.getOWLOntologyManager().getOWLDataFactory().getOWLThing());
         for (OWLClass a : classes) {
             for (OWLClass b : classes) {
                 try {

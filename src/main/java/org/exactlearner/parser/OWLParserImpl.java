@@ -3,6 +3,7 @@ package org.exactlearner.parser;
 import org.semanticweb.owlapi.model.*;
 
 import java.io.File;
+import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
@@ -28,7 +29,9 @@ public class OWLParserImpl extends OWLParserBase {
 
     @Override
     public Optional<Set<OWLClass>> getClasses() {
-        return Optional.ofNullable(owl.getClassesInSignature());
+        Set<OWLClass> classes = new HashSet<>(owl.getClassesInSignature());
+        classes.remove(owl.getOWLOntologyManager().getOWLDataFactory().getOWLThing());
+        return Optional.of(classes);
     }
 
     public OWLOntology getOwl() {

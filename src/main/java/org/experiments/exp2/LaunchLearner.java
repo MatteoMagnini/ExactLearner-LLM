@@ -68,9 +68,7 @@ public abstract class LaunchLearner {
 
     void cleaningUp() {
         llmQueryEngineForT.disposeOfReasoner();
-        //llmQueryEngineForH.disposeOfReasoner();
         elQueryEngineForH.disposeOfReasoner();
-        //llmQueryEngineForH.disposeOfReasoner();
         myManager.removeOntology(hypothesisOntology);
         myManager.removeOntology(groundTruthOntology);
     }
