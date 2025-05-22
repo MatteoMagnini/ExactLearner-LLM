@@ -299,7 +299,7 @@ public class ResultAnalyzer {
         String ontologyName = Path.of(ontology).getFileName().toString().replaceAll("\\(.*\\)", "");
         //String path = String.format("results%1$sontologies%1$ssimplify%1$s%2$s_%3$s",
                 //FileSystems.getDefault().getSeparator(), "target", ontologyName);
-        String path = String.format("results%1$sontologies%1$ssynthetic%1$s%2$s_%3$s",
+        String path = String.format("results%1$sontologies%1$s%2$s_%3$s",
                 FileSystems.getDefault().getSeparator(), "target", ontologyName);
         return loadOntology(path + ".owl");
     }
