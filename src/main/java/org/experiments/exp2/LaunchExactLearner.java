@@ -14,10 +14,13 @@ import org.utility.YAMLConfigLoader;
 import org.utility.OntologyManipulator;
 import org.experiments.logger.SmartLogger;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static org.utility.StatsPrinter.printAndSaveStats;
 
 /**
  * Estende LaunchLearner utilizzando un oracolo sintetico basato su ELEngine,
@@ -127,30 +130,30 @@ public class LaunchExactLearner extends LaunchLearner {
         System.out.println("Logical axioms size: " + hypothesisSize);
         System.out.println("Hypothesis space size: " + pac.numberOfAxioms);
         System.out.println("Number of samples: " + pac.getNumberOfSamples());
-//        int ceCount = 0;
-//        long totalSamples = pac.getNumberOfSamples();
-//
-//        while (true) {
-//            myMetrics.setEquivCount(myMetrics.getEquivCount() + 1);
-//             counterExample = getCounterExample(pac);
-//            if (counterExample == null) break;
-//            ceCount++;
-//            counterExample = learner.decompose(counterExample.getSubClass(), counterExample.getSuperClass());
-//            checkTransformations();
-//        }
-//
-//        totalCE += (double) ceCount / totalSamples;
-//        totalMembershipQ += (double) myMetrics.getMembCount() / totalSamples;
-//        totalEquivalenceQ += (double) myMetrics.getEquivCount() / totalSamples;
-//
-//        var filename =  targetFile.getName() + "_synthetic";
-//        var dir = "statistics/";
-//        var statFile = new File(dir, filename);
-//        long timeEnd = System.currentTimeMillis();
-//        printAndSaveStats(timeStart, timeEnd, args, true,
-//                targetFile, statFile, myMetrics, learner, oracle, conceptNumber, roleNumber, groundTruthOntology, hypothesisOntology);
-//
-//        saveOWLFile(hypothesisOntology, new File(ontologyFolderH));
-//        validation();
+        int ceCount = 0;
+        long totalSamples = pac.getNumberOfSamples();
+
+        while (true) {
+            myMetrics.setEquivCount(myMetrics.getEquivCount() + 1);
+             counterExample = getCounterExample(pac);
+            if (counterExample == null) break;
+            ceCount++;
+            counterExample = learner.decompose(counterExample.getSubClass(), counterExample.getSuperClass());
+            checkTransformations();
+        }
+
+        totalCE += (double) ceCount / totalSamples;
+        totalMembershipQ += (double) myMetrics.getMembCount() / totalSamples;
+        totalEquivalenceQ += (double) myMetrics.getEquivCount() / totalSamples;
+
+        var filename =  targetFile.getName() + "_synthetic";
+        var dir = "statistics/";
+        var statFile = new File(dir, filename);
+        long timeEnd = System.currentTimeMillis();
+        printAndSaveStats(timeStart, timeEnd, args, true,
+                targetFile, statFile, myMetrics, learner, oracle, conceptNumber, roleNumber, groundTruthOntology, hypothesisOntology);
+
+        saveOWLFile(hypothesisOntology, new File(ontologyFolderH));
+        validation();
     }
 }
