@@ -57,7 +57,7 @@ public class Learner implements BaseLearner {
                 for (OWLClass cl : myEngineForT.getClassesInSignature()) {
                     myMetrics.setMembCount(myMetrics.getMembCount() + 1);
                     if (isCounterExample(nod.transformToDescription(), cl)) {
-                        //leftDecompositionCounter++;
+                        leftDecompositionCounter++;
                         return myEngineForT.getSubClassAxiom(nod.transformToDescription(), cl);
                     }
                 }
@@ -71,7 +71,7 @@ public class Learner implements BaseLearner {
                 for (OWLClass cl : myEngineForT.getClassesInSignature()) {
                     myMetrics.setMembCount(myMetrics.getMembCount() + 1);
                     if (isCounterExample(cl, nod.transformToDescription())) {
-                        //rightDecompositionCounter++;
+                        rightDecompositionCounter++;
                         return myEngineForT.getSubClassAxiom(cl, nod.transformToDescription());
                     }
                 }
