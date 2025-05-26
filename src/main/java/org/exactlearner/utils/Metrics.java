@@ -29,6 +29,8 @@ public class Metrics {
     private int sizeOfLargestCounterExample = 0;
     private int sizeOfHypothesis = 0;
     private int sizeOfTarget = 0;
+    private int lhsTess = 0;
+    private int rhsTess = 0;
 
     public Metrics(OWLObjectRenderer renderer) {
         this.myRenderer = renderer;
@@ -273,5 +275,21 @@ public class Metrics {
         // Let's not count it
         return 0;
 
+    }
+
+    public int getLhsTess() {
+        return lhsTess;
+    }
+
+    public void setLhsTess(int lhsTess) {
+        this.lhsTess = lhsTess;
+    }
+
+    public int getRhsTess() {
+        return rhsTess;
+    }
+
+    public void setRhsTess(int rhsTess) {
+        this.rhsTess = rhsTess;
     }
 }

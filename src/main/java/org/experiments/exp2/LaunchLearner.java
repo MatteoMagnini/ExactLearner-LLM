@@ -75,8 +75,10 @@ public abstract class LaunchLearner {
 
     protected void checkTransformations() throws Exception {
         if (canTransformELrhs()) {
+            myMetrics.setRhsTess(myMetrics.getRhsTess() + 1);
             processRightHandSideTransformations();
         } else if (canTransformELlhs()) {
+            myMetrics.setLhsTess(myMetrics.getLhsTess() + 1);
             processLeftHandSideTransformations();
         } else {
             handleNoTransformation();

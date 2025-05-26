@@ -138,8 +138,8 @@ public class StatsPrinter {
 
     private static void saveOntologySizes(OWLOntology targetOntology, OWLOntology hypothesisOntology,
                                           Metrics myMetrics, String filename, int conceptNumber, int roleNumber) {
-        String header = "Target TBox logical axioms,Size of T,Hypothesis TBox logical axioms,Size of H,Number of concept names,Number of role names,Size of largest  concept in T,Size of largest  concept in H,Size of largest counterexample, Total membership queries, Total equivalent queries";
-        String data = String.format("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",
+        String header = "Target TBox logical axioms,Size of T,Hypothesis TBox logical axioms,Size of H,Number of concept names,Number of role names,Size of largest  concept in T,Size of largest  concept in H,Size of largest counterexample, Total membership queries, Total equivalent queries, Left counterexamples, Right counterexamples";
+        String data = String.format("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",
                 targetOntology.getAxiomCount(AxiomType.SUBCLASS_OF) +
                         targetOntology.getAxiomCount(AxiomType.EQUIVALENT_CLASSES),
                 myMetrics.getSizeOfTarget(),
@@ -152,7 +152,9 @@ public class StatsPrinter {
                 myMetrics.getSizeOfHypothesisLargestConcept(),
                 myMetrics.getSizeOfLargestCounterExample(),
                 myMetrics.getMembCount(),
-                myMetrics.getEquivCount()
+                myMetrics.getEquivCount(),
+                myMetrics.getLhsTess(),
+                myMetrics.getRhsTess()
         );
         final Path filePath = Paths.get(filename);
         try {
