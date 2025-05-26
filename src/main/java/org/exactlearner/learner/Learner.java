@@ -57,7 +57,7 @@ public class Learner implements BaseLearner {
                 for (OWLClass cl : myEngineForT.getClassesInSignature()) {
                     myMetrics.setMembCount(myMetrics.getMembCount() + 1);
                     if (isCounterExample(nod.transformToDescription(), cl)) {
-                        leftDecompositionCounter++;
+                        //leftDecompositionCounter++;
                         return myEngineForT.getSubClassAxiom(nod.transformToDescription(), cl);
                     }
                 }
@@ -71,7 +71,7 @@ public class Learner implements BaseLearner {
                 for (OWLClass cl : myEngineForT.getClassesInSignature()) {
                     myMetrics.setMembCount(myMetrics.getMembCount() + 1);
                     if (isCounterExample(cl, nod.transformToDescription())) {
-                        rightDecompositionCounter++;
+                        //rightDecompositionCounter++;
                         return myEngineForT.getSubClassAxiom(cl, nod.transformToDescription());
                     }
                 }
@@ -87,7 +87,7 @@ public class Learner implements BaseLearner {
         ELTree oldTree = new ELTree(expression);
         this.leftTree = new ELTree(expression);
         this.rightTree = new ELTree(cl);
-        if (leftTree.getMaxLevel() > 1) {
+        //if (leftTree.getMaxLevel() > 1) {
 
             for (int i = 0; i < leftTree.getMaxLevel(); i++) {
                 for (ELNode nod : leftTree.getNodesOnLevel(i + 1)) {
@@ -104,7 +104,7 @@ public class Learner implements BaseLearner {
                     }
                 }
             }
-        }
+        //}
         myExpression = leftTree.transformToClassExpression();
         myClass = (OWLClass) rightTree.transformToClassExpression();
         myEngineForT.getSubClassAxiom(myExpression, myClass);
