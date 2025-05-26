@@ -238,10 +238,13 @@ public abstract class LaunchLearner {
 
     void saveTargetOntology() throws OWLOntologyStorageException, IOException {
         OWLDocumentFormat format = myManager.getOntologyFormat(groundTruthOntology);
+        /*
         ManchesterSyntaxDocumentFormat manSyntaxFormat = new ManchesterSyntaxDocumentFormat();
         if (format.isPrefixOWLDocumentFormat()) {
             manSyntaxFormat.copyPrefixesFrom(format.asPrefixOWLDocumentFormat());
         }
+
+         */
 
         File newFile = new File(ontologyFolder);
         if (newFile.exists()) {
@@ -252,7 +255,8 @@ public abstract class LaunchLearner {
             newFile.getParentFile().mkdirs();
         }
         newFile.createNewFile();
-        myManager.saveOntology(groundTruthOntology, manSyntaxFormat, IRI.create(newFile.toURI()));
+        myManager.saveOntology(groundTruthOntology, IRI.create(newFile.toURI()));
+        //myManager.saveOntology(groundTruthOntology, manSyntaxFormat, IRI.create(newFile.toURI()));
     }
 
     protected void loadHypothesisOntology() throws OWLOntologyCreationException, IOException {
@@ -292,12 +296,15 @@ public abstract class LaunchLearner {
         //learner.minimiseHypothesis(elQueryEngineForH, hypothesisOntology);
         addLabelsHypothesisOntology();
         OWLDocumentFormat format = myManager.getOntologyFormat(ontology);
+        /*
         ManchesterSyntaxDocumentFormat manSyntaxFormat = new ManchesterSyntaxDocumentFormat();
         if (format.isPrefixOWLDocumentFormat()) {
             // need to remove prefixes
             manSyntaxFormat.clear();
         }
-        myManager.saveOntology(ontology, manSyntaxFormat, IRI.create(file.toURI()));
+         */
+        myManager.saveOntology(ontology, IRI.create(file.toURI()));
+        //myManager.saveOntology(ontology, manSyntaxFormat, IRI.create(file.toURI()));
     }
 
     protected void addLabelsHypothesisOntology() {

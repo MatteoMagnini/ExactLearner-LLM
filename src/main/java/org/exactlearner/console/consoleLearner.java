@@ -268,6 +268,7 @@ public class consoleLearner {
     private void saveOWLFile(OWLOntology ontology, File file) throws Exception {
 
         //learner.minimiseHypothesis(elQueryEngineForH, hypothesisOntology);
+        /*
         OWLDocumentFormat format = myManager.getOntologyFormat(ontology);
         ManchesterSyntaxDocumentFormat manSyntaxFormat = new ManchesterSyntaxDocumentFormat();
         if (format.isPrefixOWLDocumentFormat()) {
@@ -275,7 +276,10 @@ public class consoleLearner {
             manSyntaxFormat.clear();
         }
 
-        myManager.saveOntology(ontology, manSyntaxFormat, IRI.create(file.toURI()));
+         */
+
+        myManager.saveOntology(ontology, IRI.create(file.toURI()));
+        //myManager.saveOntology(ontology, manSyntaxFormat, IRI.create(file.toURI()));
     }
 
     private Boolean canTransformELrhs() {
@@ -410,11 +414,13 @@ public class consoleLearner {
             lastCE = null;
 
             // transfer Origin targetOntology to ManchesterOWLSyntaxOntologyFormat
+            /*
             OWLDocumentFormat format = myManager.getOntologyFormat(targetOntology);
             ManchesterSyntaxDocumentFormat manSyntaxFormat = new ManchesterSyntaxDocumentFormat();
             if (format.isPrefixOWLDocumentFormat()) {
                 manSyntaxFormat.copyPrefixesFrom(format.asPrefixOWLDocumentFormat());
             }
+             */
 
             // create personalized names for targetOntology
             ontologyFolderH = "src/main/resources/tmp/";
@@ -430,7 +436,8 @@ public class consoleLearner {
                 newFile.delete();
             }
             newFile.createNewFile();
-            myManager.saveOntology(targetOntology, manSyntaxFormat, IRI.create(newFile.toURI()));
+            myManager.saveOntology(targetOntology, IRI.create(newFile.toURI()));
+            //myManager.saveOntology(targetOntology, manSyntaxFormat, IRI.create(newFile.toURI()));
 
             // Create OWL Ontology Manager for hypothesis and load hypothesis file
             if (hypoFile.exists()) {
