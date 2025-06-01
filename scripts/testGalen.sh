@@ -30,8 +30,8 @@ queryFormat: \"nlp\"
 type: \"statementsQuerying\"
 " > tmp/test_file.yml
     
-    timeout 2h mvn exec:java -Dexec.mainClass="org.experiments.exp2.LaunchLLMLearner" -Dexec.args="tmp/test_file.yml"
-    timeout 4h mvn exec:java -Dexec.mainClass="org.analysis.exp3.PartialResultAnalyzer" -Dexec.args="tmp/test_file.yml"
+    timeout 2h mvn exec:java -Dexec.mainClass="org.experiments.LaunchLLMLearner" -Dexec.args="tmp/test_file.yml"
+    timeout 4h mvn exec:java -Dexec.mainClass="org.analysis.specialized.ResultAnalyzer" -Dexec.args="tmp/test_file.yml"
     timeout 4h mvn exec:java -Dexec.mainClass="org.analysis.exp3.ResultCheck" -Dexec.args="tmp/test_file.yml"
 
     echo "models:
@@ -45,7 +45,7 @@ queryFormat: \"nlp\"
 type: \"statementsQuerying\"
 " > tmp/test_file.yml
 
-    timeout 2h mvn exec:java -Dexec.mainClass="org.experiments.exp2.LaunchLLMLearner" -Dexec.args="tmp/test_file.yml"
-    timeout 4h mvn exec:java -Dexec.mainClass="org.analysis.exp3.PartialResultAnalyzer" -Dexec.args="tmp/test_file.yml"
+    timeout 2h mvn exec:java -Dexec.mainClass="org.experiments.LaunchLLMLearner" -Dexec.args="tmp/test_file.yml"
+    timeout 4h mvn exec:java -Dexec.mainClass="org.analysis.specialized.ResultAnalyzer" -Dexec.args="tmp/test_file.yml"
     timeout 4h mvn exec:java -Dexec.mainClass="org.analysis.exp3.ResultCheck" -Dexec.args="tmp/test_file.yml"
 done

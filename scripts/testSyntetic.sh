@@ -29,6 +29,6 @@ queryFormat: \"synthetic\"
 type: \"statementsQuerying\"
 " >> tmp/test_file.yml
     
-timeout 2h mvn exec:java -Dexec.mainClass="org.experiments.exp2.LaunchExactLearner" -Dexec.args="tmp/test_file.yml"
-timeout 4h mvn exec:java -Dexec.mainClass="org.analysis.exp3.PartialResultAnalyzer" -Dexec.args="tmp/test_file.yml"
+timeout 2h mvn exec:java -Dexec.mainClass="org.experiments.LaunchExactLearner" -Dexec.args="tmp/test_file.yml"
+timeout 4h mvn exec:java -Dexec.mainClass="org.analysis.specialized.ResultAnalyzer" -Dexec.args="tmp/test_file.yml"
 timeout 4h mvn exec:java -Dexec.mainClass="org.analysis.exp3.ResultCheck" -Dexec.args="tmp/test_file.yml"

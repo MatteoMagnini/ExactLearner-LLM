@@ -8,7 +8,7 @@ import org.exactlearner.engine.LLMEngine;
 import org.exactlearner.engine.NLPLLMEngine;
 import org.exactlearner.parser.OWLParser;
 import org.exactlearner.parser.OWLParserCustomSignature;
-import org.experiments.exp2.LaunchLLMLearner;
+import org.experiments.LaunchLLMLearner;
 import org.experiments.workload.WorkLoadCounter;
 import org.experiments.workload.WorkloadManager;
 import org.experiments.workload.WorkloadManagerImpl;

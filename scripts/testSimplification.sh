@@ -18,12 +18,12 @@ function run_test {
   export EXACTLEARNER_DESATURATE=$2
 
   mvn clean install -DskipTests
-  mvn exec:java -Dexec.mainClass="org.experiments.exp2.LaunchLLMLearner" -Dexec.args="src/main/java/org/configurations/statementsQueryingConf.yml"
-  mvn exec:java -Dexec.mainClass="org.experiments.exp2.LaunchLLMLearner" -Dexec.args="src/main/java/org/configurations/statementsQueryingConf2.yml"
-  mvn exec:java -Dexec.mainClass="org.experiments.exp2.LaunchLLMLearner" -Dexec.args="src/main/java/org/configurations/statementsQueryingConfAdvanced.yml"
-  mvn exec:java -Dexec.mainClass="org.experiments.exp2.LaunchLLMLearner" -Dexec.args="src/main/java/org/configurations/statementsQueryingConfTrueFalse.yml"
+  mvn exec:java -Dexec.mainClass="org.experiments.LaunchLLMLearner" -Dexec.args="src/main/java/org/configurations/statementsQueryingConf.yml"
+  mvn exec:java -Dexec.mainClass="org.experiments.LaunchLLMLearner" -Dexec.args="src/main/java/org/configurations/statementsQueryingConf2.yml"
+  mvn exec:java -Dexec.mainClass="org.experiments.LaunchLLMLearner" -Dexec.args="src/main/java/org/configurations/statementsQueryingConfAdvanced.yml"
+  mvn exec:java -Dexec.mainClass="org.experiments.LaunchLLMLearner" -Dexec.args="src/main/java/org/configurations/statementsQueryingConfTrueFalse.yml"
 
-  mvn exec:java -Dexec.mainClass="org.analysis.exp2.ResultAnalyzer" -Dexec.args="src/main/java/org/configurations/statementsQueryingConf.yml"
+  mvn exec:java -Dexec.mainClass="org.analysis.ResultAnalyzer" -Dexec.args="src/main/java/org/configurations/statementsQueryingConf.yml"
 
   mkdir -p results/ontologies/$3
 
