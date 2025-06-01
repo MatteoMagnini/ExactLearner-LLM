@@ -1,0 +1,789 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://krono.act.uji.es/Links/ontologies/module_http://purl.obolibrary.org/obo/GO_0019288.owl#"
+     xml:base="http://krono.act.uji.es/Links/ontologies/module_http://purl.obolibrary.org/obo/GO_0019288.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://krono.act.uji.es/Links/ontologies/module_http://purl.obolibrary.org/obo/GO_0019288.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>part of</rdfs:label>
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
+        <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>has part</rdfs:label>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
+        <oboInOwl:hasDbXref>BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:id>has_part</oboInOwl:id>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006081">
+        <rdfs:label>aldehyde metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28908</obo:IAO_0000233>
+        <oboInOwl:hasExactSynonym>alkanal metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>aldehyde metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006081</oboInOwl:id>
+        <obo:IAO_0000115>The chemical reactions and pathways involving aldehydes, any organic compound with the formula R-CH=O, as carried out by individual cells.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>alkanal metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving aldehydes, any organic compound with the formula R-CH=O, as carried out by individual cells.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006081"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006629">
+        <rdfs:label>lipid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044238"/>
+        <oboInOwl:hasDbXref>Wikipedia:Lipid_metabolism</oboInOwl:hasDbXref>
+        <oboInOwl:id>GO:0006629</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>lipid metabolism</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways involving lipids, compounds soluble in an organic solvent but not, or sparingly, in an aqueous solvent. Includes fatty acids; neutral fats, other fatty-acid esters, and soaps; long-chain (fatty) alcohols and waxes; sphingoids and other long-chain bases; glycolipids, phospholipids and sphingolipids; and carotenes, polyprenols, sterols, terpenes and other isoprenoids.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-556833</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_mouse"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:ma</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving lipids, compounds soluble in an organic solvent but not, or sparingly, in an aqueous solvent. Includes fatty acids; neutral fats, other fatty-acid esters, and soaps; long-chain (fatty) alcohols and waxes; sphingoids and other long-chain bases; glycolipids, phospholipids and sphingolipids; and carotenes, polyprenols, sterols, terpenes and other isoprenoids.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006629"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>Metabolism of lipids</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-556833</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006629"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006644 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006644">
+        <rdfs:label>phospholipid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006629"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006796"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019637"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28908</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1483152</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The chemical reactions and pathways involving phospholipids, any lipid containing phosphoric acid as a mono- or diester.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1483257</oboInOwl:hasDbXref>
+        <oboInOwl:id>GO:0006644</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>phospholipid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1483115</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <rdfs:label>Hydrolysis of LPE</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-1483152</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006644"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>Hydrolysis of LPC</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-1483115</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006644"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>Phospholipid metabolism</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-1483257</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006644"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving phospholipids, any lipid containing phosphoric acid as a mono- or diester.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006644"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006720 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006720">
+        <rdfs:label>isoprenoid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006629"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28908</obo:IAO_0000233>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym>polyisoprenoid metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>isoprenoid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>polyterpene metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>GO:0006720</oboInOwl:id>
+        <obo:IAO_0000115>The chemical reactions and pathways involving isoprenoid compounds, isoprene (2-methylbuta-1,3-diene) or compounds containing or derived from linked isoprene (3-methyl-2-butenylene) residues.</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym>polyterpene metabolism</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>polyisoprenoid metabolism</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasAlternativeId>GO:0016096</oboInOwl:hasAlternativeId>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving isoprenoid compounds, isoprene (2-methylbuta-1,3-diene) or compounds containing or derived from linked isoprene (3-methyl-2-butenylene) residues.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006720"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006793 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006793">
+        <rdfs:label>phosphorus metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>phosphorus metabolism</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways involving the nonmetallic element phosphorus or compounds that contain phosphorus.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0006793</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving the nonmetallic element phosphorus or compounds that contain phosphorus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006793"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006796 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006796">
+        <rdfs:label>phosphate-containing compound metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006793"/>
+        <oboInOwl:hasExactSynonym>phosphate metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>The chemical reactions and pathways involving the phosphate group, the anion or salt of any phosphoric acid.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>phosphate metabolic process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0006796</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving the phosphate group, the anion or salt of any phosphoric acid.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006796"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:label>biological_process</rdfs:label>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
+        <oboInOwl:hasAlternativeId>GO:0044699</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0000004</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym>single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym>single-organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:creation_date>2012-09-19T15:05:24Z</oboInOwl:creation_date>
+        <oboInOwl:id>GO:0008150</oboInOwl:id>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedTarget>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008152">
+        <rdfs:label>metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28932</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1430728</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId>GO:0044710</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115>A cellular process consisting of the biochemical pathways by which a living organism transforms chemical substances. This includes including anabolism (biosynthetic process) and catabolism (catabolic process). Metabolic processes includes the transformation of small molecules, as well  macromolecular processes such as DNA repair and replication, protein synthesis and degradation.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0044236</oboInOwl:hasAlternativeId>
+        <rdfs:comment>Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.</rdfs:comment>
+        <oboInOwl:creation_date>2012-10-17T15:46:40Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>Wikipedia:Metabolism</oboInOwl:hasDbXref>
+        <oboInOwl:id>GO:0008152</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A cellular process consisting of the biochemical pathways by which a living organism transforms chemical substances. This includes including anabolism (biosynthetic process) and catabolism (catabolic process). Metabolic processes includes the transformation of small molecules, as well  macromolecular processes such as DNA repair and replication, protein synthesis and degradation.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>Metabolism</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-1430728</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008299">
+        <rdfs:label>isoprenoid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006720"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008610"/>
+        <oboInOwl:hasExactSynonym>isoprenoid anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>polyisoprenoid formation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>polyterpene biosynthesis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasAlternativeId>GO:0009241</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>isoprenoid synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>polyisoprenoid synthesis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>polyterpene biosynthetic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDbXref>MetaCyc:POLYISOPRENSYN-PWY</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>isoprenoid formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0008299</oboInOwl:id>
+        <oboInOwl:hasNarrowSynonym>polyisoprenoid anabolism</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>polyisoprenoid biosynthesis</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of an isoprenoid compound, isoprene (2-methylbuta-1,3-diene) or compounds containing or derived from linked isoprene (3-methyl-2-butenylene) residues.</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym>polyisoprenoid biosynthetic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>isoprenoid biosynthesis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of an isoprenoid compound, isoprene (2-methylbuta-1,3-diene) or compounds containing or derived from linked isoprene (3-methyl-2-butenylene) residues.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008299"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008610">
+        <rdfs:label>lipid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006629"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <oboInOwl:hasExactSynonym>lipid synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lipogenesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lipid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0008610</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>lipid formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of lipids, compounds soluble in an organic solvent but not, or sparingly, in an aqueous solvent.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>lipid anabolism</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>lipogenesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:sl</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008610"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of lipids, compounds soluble in an organic solvent but not, or sparingly, in an aqueous solvent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008610"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008654 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008654">
+        <rdfs:label>phospholipid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006644"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008610"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0090407"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/20092</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28527</obo:IAO_0000233>
+        <oboInOwl:hasExactSynonym>phospholipid anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>phospholipid formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0008654</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>phospholipid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>phospholipid synthesis</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of a phospholipid, a lipid containing phosphoric acid as a mono- or diester.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of a phospholipid, a lipid containing phosphoric acid as a mono- or diester.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008654"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009058">
+        <rdfs:label>biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28932</obo:IAO_0000233>
+        <oboInOwl:creation_date>2012-10-17T15:52:18Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasAlternativeId>GO:0044274</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym>multicellular organismal biosynthetic process</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000115>A cellular process consisting of the biochemical pathways by which a living organism synthesizes chemical substances. This typically represents the energy-requiring part of metabolism in which simpler substances are transformed into more complex ones.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0009058</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>Wikipedia:Anabolism</oboInOwl:hasDbXref>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym>anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>single-organism biosynthetic process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym>formation</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasAlternativeId>GO:0044711</oboInOwl:hasAlternativeId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>A cellular process consisting of the biochemical pathways by which a living organism synthesizes chemical substances. This typically represents the energy-requiring part of metabolism in which simpler substances are transformed into more complex ones.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009240">
+        <rdfs:label>isopentenyl diphosphate biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008654"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046490"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008299"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl pyrophosphate biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>IPP biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>IPP biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate formation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of isopentenyl diphosphate, an isomer of dimethylallyl diphosphate and the key precursor of all isoprenoids.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl pyrophosphate biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0009240</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of isopentenyl diphosphate, an isomer of dimethylallyl diphosphate and the key precursor of all isoprenoids.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009240"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987">
+        <rdfs:label>cellular process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <oboInOwl:hasAlternativeId>GO:0044763</oboInOwl:hasAlternativeId>
+        <oboInOwl:id>GO:0009987</oboInOwl:id>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasAlternativeId>GO:0008151</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym>cell growth and/or maintenance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:creation_date>2012-12-11T16:56:55Z</oboInOwl:creation_date>
+        <rdfs:comment>This term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>single-organism cellular process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>cellular physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cell physiology</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0050875</oboInOwl:hasAlternativeId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019288">
+        <rdfs:label>isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009240"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019682"/>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate biosynthetic process, non-mevalonate pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate biosynthesis, mevalonate-independent</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0019288</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate biosynthesis, non-mevalonate pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate biosynthetic process via 1-deoxy-D-xylulose 5-phosphate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mevalonate-independent isopentenyl diphosphate biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-MVA pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate biosynthetic process, MEP pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate formation, mevalonate-independent pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>MetaCyc:NONMEVIPP-PWY</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of isopentenyl diphosphate by the mevalonate-independent pathway. Isopentenyl diphosphate (IPP) is the fundamental unit in isoprenoid biosynthesis and is biosynthesized from pyruvate and glyceraldehyde 3-phosphate via intermediates, including 1-deoxy-D-xylulose 5-phosphate.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate anabolism, mevalonate-independent pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mevalonate-independent isopentenyl diphosphate biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate biosynthetic process, mevalonate-independent pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate synthesis, mevalonate-independent pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate biosynthetic process, mevalonate-independent</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>isopentenyl diphosphate biosynthetic process via 1-deoxy-D-xylulose 5-phosphate</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019288"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>PMID:18948055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MetaCyc:NONMEVIPP-PWY</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of isopentenyl diphosphate by the mevalonate-independent pathway. Isopentenyl diphosphate (IPP) is the fundamental unit in isoprenoid biosynthesis and is biosynthesized from pyruvate and glyceraldehyde 3-phosphate via intermediates, including 1-deoxy-D-xylulose 5-phosphate.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019288"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019637 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019637">
+        <rdfs:label>organophosphate metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006793"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26992</obo:IAO_0000233>
+        <oboInOwl:hasExactSynonym>organophosphate metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0019637</oboInOwl:id>
+        <obo:IAO_0000115>The chemical reactions and pathways involving organophosphates, any phosphate-containing organic compound.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving organophosphates, any phosphate-containing organic compound.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019637"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019682">
+        <rdfs:label>glyceraldehyde-3-phosphate metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006081"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006796"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019637"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901135"/>
+        <oboInOwl:hasExactSynonym>glyceraldehyde 3-phosphate metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>glyceraldehyde-3-phosphate metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>The chemical reactions and pathways involving glyceraldehyde-3-phosphate, an important intermediate in glycolysis.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>glyceraldehyde 3-phosphate metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0019682</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving glyceraldehyde-3-phosphate, an important intermediate in glycolysis.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019682"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044238">
+        <rdfs:label>primary metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
+        <oboInOwl:id>GO:0044238</oboInOwl:id>
+        <obo:IAO_0000115>The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_metabolite</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>primary metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044238"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046490 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0046490">
+        <rdfs:label>isopentenyl diphosphate metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006644"/>
+        <oboInOwl:id>GO:0046490</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>isopentenyl pyrophosphate metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl diphosphate metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isopentenyl pyrophosphate metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>IPP metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>The chemical reactions and pathways involving isopentenyl diphosphate, an isomer of dimethylallyl diphosphate and the key precursor of all isoprenoids.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>IPP metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving isopentenyl diphosphate, an isomer of dimethylallyl diphosphate and the key precursor of all isoprenoids.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0046490"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0090407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0090407">
+        <rdfs:label>organophosphate biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019637"/>
+        <oboInOwl:created_by>tb</oboInOwl:created_by>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the biosynthesis of deoxyribose phosphate, the phosphorylated sugar 2-deoxy-erythro-pentose.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:creation_date>2011-02-26T02:22:41Z</oboInOwl:creation_date>
+        <oboInOwl:id>GO:0090407</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the biosynthesis of deoxyribose phosphate, the phosphorylated sugar 2-deoxy-erythro-pentose.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:chem_mtg</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0090407"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901135">
+        <rdfs:label>carbohydrate derivative metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1901135</oboInOwl:id>
+        <obo:IAO_0000115>The chemical reactions and pathways involving carbohydrate derivative.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>carbohydrate derivative metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by>bf</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-07-12T04:05:09Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_mouse"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>carbohydrate derivative metabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901135"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving carbohydrate derivative.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901135"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
+

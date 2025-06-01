@@ -1,0 +1,14 @@
+Target TBox logical axioms,Size of T,Hypothesis TBox logical axioms,Size of H,Number of concept names,Number of role names,Size of largest  concept in T,Size of largest  concept in H,Size of largest counterexample, Total membership queries, Total equivalent queries
+4,24,16,117,7,3,5,46,5,241,9
+4,24,20,128,7,3,5,42,5,346,13
+4,24,17,107,7,3,5,40,5,279,10
+4,24,17,102,7,3,5,36,5,281,10
+4,24,15,112,7,3,5,46,5,225,8
+4,24,19,123,7,3,5,42,5,330,12
+4,24,16,102,7,3,5,40,5,263,9
+4,24,17,102,7,3,5,36,5,281,10
+4,24,16,117,7,3,5,46,5,241,9
+4,24,16,117,7,3,5,46,5,241,9
+4,24,19,123,7,3,5,42,5,330,12
+4,24,16,102,7,3,5,40,5,263,9
+4,24,17,102,7,3,5,36,5,281,10

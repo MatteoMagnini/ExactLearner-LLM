@@ -1,0 +1,1488 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://krono.act.uji.es/Links/ontologies/module_http://purl.obolibrary.org/obo/GO_0019284.owl#"
+     xml:base="http://krono.act.uji.es/Links/ontologies/module_http://purl.obolibrary.org/obo/GO_0019284.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://krono.act.uji.es/Links/ontologies/module_http://purl.obolibrary.org/obo/GO_0019284.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>part of</rdfs:label>
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
+        <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>has part</rdfs:label>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
+        <oboInOwl:hasDbXref>BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:id>has_part</oboInOwl:id>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0000096">
+        <rdfs:label>sulfur amino acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006790"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
+        <obo:IAO_0000115>The chemical reactions and pathways involving amino acids containing sulfur, comprising cysteine, homocysteine, methionine and selenocysteine.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>sulphur amino acid metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1614635</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0000096</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>sulfur amino acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sulphur amino acid metabolism</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving amino acids containing sulfur, comprising cysteine, homocysteine, methionine and selenocysteine.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000096"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>Sulfur amino acid metabolism</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-1614635</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0000097">
+        <rdfs:label>sulfur amino acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000096"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044272"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046394"/>
+        <oboInOwl:hasExactSynonym>sulfur amino acid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sulfur amino acid formation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of amino acids containing sulfur, comprising cysteine, methionine and selenocysteine.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>sulphur amino acid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0000097</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>sulfur amino acid synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sulphur amino acid biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sulfur amino acid anabolism</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of amino acids containing sulfur, comprising cysteine, methionine and selenocysteine.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000097"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003674">
+        <rdfs:label>molecular_function</rdfs:label>
+        <oboInOwl:id>GO:0003674</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>molecular function</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this. Despite its name, this is not a type of &apos;function&apos; in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.</rdfs:comment>
+        <oboInOwl:hasAlternativeId>GO:0005554</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedTarget>A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003674"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003824 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003824">
+        <rdfs:label>catalytic activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003674"/>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0003824</oboInOwl:id>
+        <oboInOwl:hasDbXref>Wikipedia:Enzyme</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>enzyme activity</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003824"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>enzyme activity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003824"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006082">
+        <rdfs:label>organic acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044281"/>
+        <obo:IAO_0000115>The chemical reactions and pathways involving organic acids, any acidic compound containing carbon in covalent linkage.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0006082</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>organic acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving organic acids, any acidic compound containing carbon in covalent linkage.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006082"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006520">
+        <rdfs:label>amino acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044238"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/17904</obo:IAO_0000233>
+        <oboInOwl:hasExactSynonym>cellular amino acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>cellular amino acid and derivative metabolic process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>amino acid and derivative metabolism</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasAlternativeId>GO:0006519</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115>The chemical reactions and pathways involving amino acids, carboxylic acids containing one or more amino groups.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>cellular amino acid metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0006520</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving amino acids, carboxylic acids containing one or more amino groups.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006520"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006555">
+        <rdfs:label>methionine metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000096"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009066"/>
+        <oboInOwl:hasExactSynonym>methionine metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>methionine and threonine metabolism</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways involving methionine (2-amino-4-(methylthio)butanoic acid), a sulfur-containing, essential amino acid found in peptide linkage in proteins.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0006555</oboInOwl:id>
+        <oboInOwl:hasBroadSynonym>methionine and threonine metabolic process</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>UM-BBD_pathwayID:met</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving methionine (2-amino-4-(methylthio)butanoic acid), a sulfur-containing, essential amino acid found in peptide linkage in proteins.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006555"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006790 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006790">
+        <rdfs:label>sulfur compound metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <obo:IAO_0000115>The chemical reactions and pathways involving the nonmetallic element sulfur or compounds that contain sulfur, such as the amino acids methionine and cysteine or the tripeptide glutathione.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Sulfur_metabolism</oboInOwl:hasDbXref>
+        <oboInOwl:id>GO:0006790</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>sulphur metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sulfur metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sulphur metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving the nonmetallic element sulfur or compounds that contain sulfur, such as the amino acids methionine and cysteine or the tripeptide glutathione.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006790"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:label>biological_process</rdfs:label>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
+        <oboInOwl:hasAlternativeId>GO:0044699</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0000004</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym>single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym>single-organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:creation_date>2012-09-19T15:05:24Z</oboInOwl:creation_date>
+        <oboInOwl:id>GO:0008150</oboInOwl:id>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedTarget>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008152">
+        <rdfs:label>metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28932</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1430728</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId>GO:0044710</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115>A cellular process consisting of the biochemical pathways by which a living organism transforms chemical substances. This includes including anabolism (biosynthetic process) and catabolism (catabolic process). Metabolic processes includes the transformation of small molecules, as well  macromolecular processes such as DNA repair and replication, protein synthesis and degradation.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0044236</oboInOwl:hasAlternativeId>
+        <rdfs:comment>Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.</rdfs:comment>
+        <oboInOwl:creation_date>2012-10-17T15:46:40Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>Wikipedia:Metabolism</oboInOwl:hasDbXref>
+        <oboInOwl:id>GO:0008152</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A cellular process consisting of the biochemical pathways by which a living organism transforms chemical substances. This includes including anabolism (biosynthetic process) and catabolism (catabolic process). Metabolic processes includes the transformation of small molecules, as well  macromolecular processes such as DNA repair and replication, protein synthesis and degradation.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>Metabolism</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-1430728</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008168">
+        <rdfs:label>methyltransferase activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016741"/>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-71286</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Catalysis of the transfer of a methyl group to an acceptor molecule.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-212269</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym>methylase</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-379387</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-379464</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-6800149</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-9710490</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EC:2.1.1.-</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId>GO:0004480</oboInOwl:hasAlternativeId>
+        <oboInOwl:id>GO:0008168</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    </owl:Class>
+    <owl:Axiom>
+        <rdfs:label>N6AMT1:TRMT112 transfers CH3 group from AdoMet to MMAIII</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-6800149</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>guanidinoacetate + S-adenosylmethionine =&gt; creatine + S-adenosylhomocysteine</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-71286</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>COMT transfers Met to DA to form 3MT</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-379387</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>The GSDME gene promoter is hypermethylated</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-9710490</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>DNMT1,3A,3B:PRC2 methylates cytosine and histone H3</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-212269</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>COMT transfers Met to DOPAC to form HVA</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-379464</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>Catalysis of the transfer of a methyl group to an acceptor molecule.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008168"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008172">
+        <rdfs:label>S-methyltransferase activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008168"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/25591</obo:IAO_0000233>
+        <obo:IAO_0000115>Catalysis of the transfer of a methyl group to the sulfur atom of an acceptor molecule.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0008172</oboInOwl:id>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-209821</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>Catalysis of the transfer of a methyl group to the sulfur atom of an acceptor molecule.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008172"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>Methylation of N-acetyl-5-HT to form melatonin</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-209821</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008172"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008652">
+        <rdfs:label>amino acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006520"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/17904</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/27304</obo:IAO_0000233>
+        <oboInOwl:hasExactSynonym>cellular amino acid biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>amino acid formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>Wikipedia:Amino_acid_synthesis</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>amino acid anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>amino acid synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0008652</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>amino acid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of amino acids, organic acids containing one or more amino substituents.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of amino acids, organic acids containing one or more amino substituents.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008652"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008757 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008757">
+        <rdfs:label>S-adenosylmethionine-dependent methyltransferase activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008168"/>
+        <obo:IAO_0000115>Catalysis of the transfer of a methyl group from S-adenosyl-L-methionine to a substrate.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0008757</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>S-adenosyl methionine-dependent methyltransferase activity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>SAM-dependent methyltransferase activity</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>Catalysis of the transfer of a methyl group from S-adenosyl-L-methionine to a substrate.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008757"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008898 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008898">
+        <rdfs:label>S-adenosylmethionine-homocysteine S-methyltransferase activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008172"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008757"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/25824</obo:IAO_0000233>
+        <oboInOwl:id>GO:0008898</oboInOwl:id>
+        <oboInOwl:hasDbXref>MetaCyc:HOMOCYSTEINE-S-METHYLTRANSFERASE-RXN</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RHEA:21820</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>L-homocysteine S-methyltransferase activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>S-adenosyl-L-methionine:L-homocysteine methyltransferase activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>S-adenosylmethionine-homocysteine transmethylase activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>homocysteine transmethylase activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>homocysteine methyltransferase activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>adenosylmethionine:homocysteine methyltransferase activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>adenosylmethionine transmethylase activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>S-adenosyl-L-methionine:L-homocysteine S-methyltransferase activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>S-adenosylmethionine homocysteine transmethylase activity</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>Catalysis of the reaction: S-adenosyl-L-methionine + L-homocysteine = S-adenosyl-L-homocysteine + L-methionine.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>S-adenosylmethionine:homocysteine methyltransferase activity</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>S-adenosylmethionine:homocysteine methyltransferase activity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>adenosylmethionine:homocysteine methyltransferase activity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>S-adenosylmethionine homocysteine transmethylase activity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>homocysteine transmethylase activity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>L-homocysteine S-methyltransferase activity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>adenosylmethionine transmethylase activity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>homocysteine methyltransferase activity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>S-adenosyl-L-methionine:L-homocysteine methyltransferase activity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>RHEA:21820</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Catalysis of the reaction: S-adenosyl-L-methionine + L-homocysteine = S-adenosyl-L-homocysteine + L-methionine.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>S-adenosyl-L-methionine:L-homocysteine S-methyltransferase activity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>EC:2.1.1.10</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>S-adenosylmethionine-homocysteine transmethylase activity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009058">
+        <rdfs:label>biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28932</obo:IAO_0000233>
+        <oboInOwl:creation_date>2012-10-17T15:52:18Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasAlternativeId>GO:0044274</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym>multicellular organismal biosynthetic process</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000115>A cellular process consisting of the biochemical pathways by which a living organism synthesizes chemical substances. This typically represents the energy-requiring part of metabolism in which simpler substances are transformed into more complex ones.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0009058</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>Wikipedia:Anabolism</oboInOwl:hasDbXref>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym>anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>single-organism biosynthetic process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym>formation</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasAlternativeId>GO:0044711</oboInOwl:hasAlternativeId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>A cellular process consisting of the biochemical pathways by which a living organism synthesizes chemical substances. This typically represents the energy-requiring part of metabolism in which simpler substances are transformed into more complex ones.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009066">
+        <rdfs:label>aspartate family amino acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0170033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0170039"/>
+        <obo:IAO_0000115>The chemical reactions and pathways involving amino acids of the aspartate family, comprising asparagine, aspartate, lysine, methionine and threonine.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-8963693</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0009066</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>aspartate family amino acid metabolism</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <rdfs:label>Aspartate and asparagine metabolism</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-8963693</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009066"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving amino acids of the aspartate family, comprising asparagine, aspartate, lysine, methionine and threonine.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009066"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009067">
+        <rdfs:label>aspartate family amino acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0170034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0170038"/>
+        <oboInOwl:hasExactSynonym>aspartate family amino acid anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0009067</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>aspartate family amino acid formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>aspartate family amino acid biosynthesis</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of amino acids of the aspartate family, comprising asparagine, aspartate, lysine, methionine and threonine.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>aspartate family amino acid synthesis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of amino acids of the aspartate family, comprising asparagine, aspartate, lysine, methionine and threonine.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009067"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009086">
+        <rdfs:label>methionine biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000097"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006555"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009067"/>
+        <oboInOwl:hasExactSynonym>methionine biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>methionine anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>methionine formation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of methionine (2-amino-4-(methylthio)butanoic acid), a sulfur-containing, essential amino acid found in peptide linkage in proteins.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0009086</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>methionine synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of methionine (2-amino-4-(methylthio)butanoic acid), a sulfur-containing, essential amino acid found in peptide linkage in proteins.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009086"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987">
+        <rdfs:label>cellular process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <oboInOwl:hasAlternativeId>GO:0044763</oboInOwl:hasAlternativeId>
+        <oboInOwl:id>GO:0009987</oboInOwl:id>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasAlternativeId>GO:0008151</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym>cell growth and/or maintenance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:creation_date>2012-12-11T16:56:55Z</oboInOwl:creation_date>
+        <rdfs:comment>This term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>single-organism cellular process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>cellular physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cell physiology</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0050875</oboInOwl:hasAlternativeId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016053">
+        <rdfs:label>organic acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044283"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>organic acid formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0016053</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>organic acid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>organic acid anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>organic acid synthesis</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of organic acids, any acidic compound containing carbon in covalent linkage.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of organic acids, any acidic compound containing carbon in covalent linkage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016053"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016740 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016740">
+        <rdfs:label>transferase activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003824"/>
+        <oboInOwl:hasDbXref>EC:2.-.-.-</oboInOwl:hasDbXref>
+        <oboInOwl:id>GO:0016740</oboInOwl:id>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1483186</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1483089</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Catalysis of the transfer of a group, e.g. a methyl group, glycosyl group, acyl group, phosphorus-containing, or other groups, from one compound (generally regarded as the donor) to another compound (generally regarded as the acceptor). Transferase is the systematic name for any enzyme of EC class 2.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5668414</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-8868783</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_mouse"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    </owl:Class>
+    <owl:Axiom>
+        <rdfs:label>PC is converted to PS by PTDSS1</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-1483186</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016740"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>PE is converted to PS by PTDSS2</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-1483089</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016740"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>Catalysis of the transfer of a group, e.g. a methyl group, glycosyl group, acyl group, phosphorus-containing, or other groups, from one compound (generally regarded as the donor) to another compound (generally regarded as the acceptor). Transferase is the systematic name for any enzyme of EC class 2.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>EC:2.-.-.-</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016740"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>TSR3 transfers aminocarboxypropyl group from S-adenosylmethionine to N(1)-methylpseudouridine-1248 of 18SE rRNA yielding N(1)-methyl-N(3)-aminocarboxypropylpseudouridine-1248</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-8868783</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016740"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>TRAF2 ubiquitinates cIAP1,2 in cIAP1,2:TRAF1:TRAF2:TRAF3:NIK</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-5668414</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016740"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016741 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016741">
+        <rdfs:label>transferase activity, transferring one-carbon groups</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016740"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/20486</obo:IAO_0000233>
+        <oboInOwl:id>GO:0016741</oboInOwl:id>
+        <obo:IAO_0000115>Catalysis of the transfer of a one-carbon group from one compound (donor) to another (acceptor).</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym>methyltransferase activity</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>EC:2.1.-.-</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Catalysis of the transfer of a one-carbon group from one compound (donor) to another (acceptor).</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016741"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019284">
+        <rdfs:label>L-methionine salvage from S-adenosylmethionine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071267"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0033353"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>L-methionine synthesis from S-adenosylmethionine</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of L-methionine from S-adenosylmethionine.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>L-methionine formation from S-adenosylmethionine</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0019284</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of L-methionine from S-adenosylmethionine.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019284"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>L-methionine synthesis from S-adenosylmethionine</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019284"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>L-methionine formation from S-adenosylmethionine</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019284"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019752 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019752">
+        <rdfs:label>carboxylic acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043436"/>
+        <obo:IAO_0000115>The chemical reactions and pathways involving carboxylic acids, any organic acid containing one or more carboxyl (COOH) groups or anions (COO-).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0019752</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>carboxylic acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-389661</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving carboxylic acids, any organic acid containing one or more carboxyl (COOH) groups or anions (COO-).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:label>Glyoxylate metabolism and glycine degradation</rdfs:label>
+        <owl:annotatedTarget>Reactome:R-HSA-389661</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0033353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0033353">
+        <rdfs:label>S-adenosylmethionine cycle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046500"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008898"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cyclic series of interconversions involving S-adenosylmethionine, S-adenosyl-L-homocysteine, L-cysteine, and L-methionine. Couples utilization of the methyl group of SAM with recycling of the homocysteinyl group and regeneration of methionine.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0033353</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>activated methyl cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>MetaCyc:PWY-5041</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SAM cycle</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>A cyclic series of interconversions involving S-adenosylmethionine, S-adenosyl-L-homocysteine, L-cysteine, and L-methionine. Couples utilization of the methyl group of SAM with recycling of the homocysteinyl group and regeneration of methionine.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MetaCyc:PWY-5041</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0033353"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043094">
+        <rdfs:label>metabolic compound salvage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>Any process which produces a useful metabolic compound from derivatives of it without de novo synthesis, as carried out by individual cells.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0043094</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:mlg</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Any process which produces a useful metabolic compound from derivatives of it without de novo synthesis, as carried out by individual cells.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043094"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043102">
+        <rdfs:label>amino acid salvage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008652"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043094"/>
+        <obo:IAO_0000115>Any process which produces an amino acid from derivatives of it, without de novo synthesis.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0043102</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>Any process which produces an amino acid from derivatives of it, without de novo synthesis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043102"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043436">
+        <rdfs:label>oxoacid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006082"/>
+        <oboInOwl:hasExactSynonym>oxo acid metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ketoacid metabolism</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways involving any oxoacid; an oxoacid is a compound which contains oxygen, at least one other element, and at least one hydrogen bound to oxygen, and which produces a conjugate base by loss of positive hydrogen ion(s) (hydrons).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>keto acid metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>keto acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0043436</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>oxo acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ketoacid metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>oxoacid metabolism</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>Wikipedia:Oxyacid</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving any oxoacid; an oxoacid is a compound which contains oxygen, at least one other element, and at least one hydrogen bound to oxygen, and which produces a conjugate base by loss of positive hydrogen ion(s) (hydrons).</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043436"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044238">
+        <rdfs:label>primary metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
+        <oboInOwl:id>GO:0044238</oboInOwl:id>
+        <obo:IAO_0000115>The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_metabolite</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>primary metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044238"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044272">
+        <rdfs:label>sulfur compound biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006790"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of compounds that contain sulfur, such as the amino acids methionine and cysteine or the tripeptide glutathione.</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym>sulfur biosynthesis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>GO:0044272</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym>sulfur biosynthetic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>sulfur compound anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sulfur compound synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sulfur compound formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sulfur compound biosynthesis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of compounds that contain sulfur, such as the amino acids methionine and cysteine or the tripeptide glutathione.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044272"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044281">
+        <rdfs:label>small molecule metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <oboInOwl:hasExactSynonym>small molecule metabolism</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Small molecules in GO include monosaccharides but exclude disaccharides and polysaccharides.</rdfs:comment>
+        <obo:IAO_0000115>The chemical reactions and pathways involving small molecules, any low molecular weight, monomeric, non-encoded molecule.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:creation_date>2010-01-26T12:05:20Z</oboInOwl:creation_date>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:id>GO:0044281</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving small molecules, any low molecular weight, monomeric, non-encoded molecule.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pde</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044281"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044283">
+        <rdfs:label>small molecule biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044281"/>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:id>GO:0044283</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>small molecule biosynthesis</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Small molecules in GO include monosaccharides but exclude disaccharides and polysaccharides.</rdfs:comment>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of small molecules, any low molecular weight, monomeric, non-encoded molecule.</obo:IAO_0000115>
+        <oboInOwl:creation_date>2010-01-26T12:06:49Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of small molecules, any low molecular weight, monomeric, non-encoded molecule.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:pde</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044283"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0046394">
+        <rdfs:label>carboxylic acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016053"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of carboxylic acids, any organic acid containing one or more carboxyl (-COOH) groups.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>carboxylic acid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0046394</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>carboxylic acid synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>carboxylic acid formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>carboxylic acid anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of carboxylic acids, any organic acid containing one or more carboxyl (-COOH) groups.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0046394"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0046500">
+        <rdfs:label>S-adenosylmethionine metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006790"/>
+        <oboInOwl:id>GO:0046500</oboInOwl:id>
+        <obo:IAO_0000115>The chemical reactions and pathways involving S-adenosylmethionine, S-(5&apos;-adenosyl)-L-methionine, an important intermediate in one-carbon metabolism.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>S-adenosylmethionine metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>SAM metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>S-adenosyl methionine metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>S-adenosyl methionine metabolic process</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving S-adenosylmethionine, S-(5&apos;-adenosyl)-L-methionine, an important intermediate in one-carbon metabolism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0046500"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0071265">
+        <rdfs:label>L-methionine biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009086"/>
+        <oboInOwl:hasExactSynonym>L-methionine anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>L-methionine biosynthesis</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of L-methionine, the L-enantiomer of (2S)-2-amino-4-(methylsulfanyl)butanoic acid.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>L-methionine synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0071265</oboInOwl:id>
+        <oboInOwl:creation_date>2009-12-09T04:28:15Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>L-methionine formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by>mah</oboInOwl:created_by>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>L-methionine anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0071265"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>L-methionine biosynthesis</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0071265"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>L-methionine formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0071265"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>L-methionine synthesis</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0071265"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of L-methionine, the L-enantiomer of (2S)-2-amino-4-(methylsulfanyl)butanoic acid.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ecd</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0071265"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0071267">
+        <rdfs:label>L-methionine salvage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043102"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071265"/>
+        <oboInOwl:creation_date>2009-12-09T04:36:49Z</oboInOwl:creation_date>
+        <oboInOwl:created_by>mah</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0071267</oboInOwl:id>
+        <obo:IAO_0000115>Any process that generates L-methionine from derivatives of it, without de novo synthesis.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>Any process that generates L-methionine from derivatives of it, without de novo synthesis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ecd</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0071267"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0170033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0170033">
+        <rdfs:label>L-amino acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901605"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/23268</obo:IAO_0000233>
+        <oboInOwl:hasExactSynonym>L-alpha-amino acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:creation_date>2023-11-20T23:41:23Z</oboInOwl:creation_date>
+        <oboInOwl:created_by>ew</oboInOwl:created_by>
+        <oboInOwl:id>GO:0170033</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>L-amino acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>The chemical reactions and pathways involving an L-amino acid.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:edw</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways involving an L-amino acid.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0170033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0170034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0170034">
+        <rdfs:label>L-amino acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0170033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901607"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/23268</obo:IAO_0000233>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0170034</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>L-amino acid biosynthesis</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of L-amino acids, the L-enantiomers of amino acids.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>L-amino acid formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>L-amino acid anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:creation_date>2023-11-20T23:42:06Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>L-amino acid synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by>ew</oboInOwl:created_by>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of L-amino acids, the L-enantiomers of amino acids.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:edw</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0170034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0170038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0170038">
+        <rdfs:label>proteinogenic amino acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046394"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0170039"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/23268</obo:IAO_0000233>
+        <oboInOwl:hasExactSynonym>proteinogenic amino acid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proteinogenic amino acid formation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of any amino acid that is incorporated into protein naturally by ribosomal translation of mRNA, and that has a specific codon for translation from mRNA to protein.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>proteinogenic amino acid synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proteinogenic amino acid anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0170038</oboInOwl:id>
+        <oboInOwl:created_by>ew</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:creation_date>2023-12-18T16:28:19Z</oboInOwl:creation_date>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:ew</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of any amino acid that is incorporated into protein naturally by ribosomal translation of mRNA, and that has a specific codon for translation from mRNA to protein.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0170038"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0170039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0170039">
+        <rdfs:label>proteinogenic amino acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006520"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/23268</obo:IAO_0000233>
+        <oboInOwl:created_by>ew</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>The chemical reactions and pathways involving any amino acid that is incorporated into protein naturally by ribosomal translation of mRNA, and that has a specific codon for translation from mRNA to protein.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0170039</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>proteinogenic amino acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:creation_date>2023-12-18T17:31:08Z</oboInOwl:creation_date>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving any amino acid that is incorporated into protein naturally by ribosomal translation of mRNA, and that has a specific codon for translation from mRNA to protein.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ew</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0170039"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901605">
+        <rdfs:label>alpha-amino acid metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006520"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
+        <obo:IAO_0000115>The chemical reactions and pathways involving an alpha-amino acid.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>alpha-amino acid metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1901605</oboInOwl:id>
+        <oboInOwl:created_by>tb</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-11-08T17:39:50Z</oboInOwl:creation_date>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>alpha-amino acid metabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901605"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways involving an alpha-amino acid.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901605"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901607">
+        <rdfs:label>alpha-amino acid biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008652"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046394"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901605"/>
+        <oboInOwl:hasExactSynonym>alpha-amino acid synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>alpha-amino acid formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>alpha-amino acid biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of an alpha-amino acid.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>alpha-amino acid anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:1901607</oboInOwl:id>
+        <oboInOwl:creation_date>2012-11-08T17:39:58Z</oboInOwl:creation_date>
+        <oboInOwl:created_by>tb</oboInOwl:created_by>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>alpha-amino acid formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901607"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of an alpha-amino acid.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901607"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>alpha-amino acid biosynthesis</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901607"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>alpha-amino acid synthesis</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901607"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>alpha-amino acid anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901607"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
+

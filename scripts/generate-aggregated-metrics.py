@@ -76,7 +76,7 @@ def main():
         n = 0
         
         for ontology_name, model_metrics in sorted(ontology_metrics.items()):
-            if ontology_name not in ["animals", "football", "generations", "university"]:
+            if ontology_name not in ["animals", "football", "generations", "university", "cl"]:
                 continue
             n+=1
             for model_name, model_metric in model_metrics.items():

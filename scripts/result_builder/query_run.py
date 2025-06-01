@@ -9,7 +9,7 @@ from result_saver import ResultSaver
 
 con = sqlite3.connect("./results.sqlite3")
 
-test = 2
+test = 5
 
 settings = pd.read_sql(f"""
                        select ROWID from tbl_setting ts where ts.rowid in

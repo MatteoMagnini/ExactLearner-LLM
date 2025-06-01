@@ -13,8 +13,26 @@ import java.util.List;
 public class StructureLaunch {
     public static void main(String[] args) {
         List<String> l = List.of(
-                "src/main/resources/ontologies/large/go.owl",
-                "src/main/resources/ontologies/large/galen_fixed.owl"
+			"results/ontologies/target_AboveElbowJacketCast.owl",
+"results/ontologies/target_BNFSection13_11.owl",
+"results/ontologies/target_Chlorhexidine.owl",
+"results/ontologies/target_ConeOfTissue.owl",
+"results/ontologies/target_GO_0044204.owl",
+"results/ontologies/target_GO_0044220.owl",
+"results/ontologies/target_GO_0044223.owl",
+"results/ontologies/target_GO_0044225.owl",
+"results/ontologies/target_GO_0044231.owl",
+"results/ontologies/target_GO_0044232.owl",
+"results/ontologies/target_GO_0044233.owl",
+"results/ontologies/target_GO_0044280.owl",
+"results/ontologies/target_GO_0044284.owl",
+"results/ontologies/target_GO_0044295.owl",
+"results/ontologies/target_Kallikrein.owl",
+"results/ontologies/target_Neon.owl",
+"results/ontologies/target_Pin.owl",
+"results/ontologies/target_ProstaglandinDrug.owl",
+"results/ontologies/target_Zopiclone.owl",
+"results/ontologies/target_Zuccini.owl"
         );
         for (String o : l) {
             File fileName = new File(o);
